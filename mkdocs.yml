@@ -1,0 +1,124 @@
+site_name: Useful - Technical Documentation Collection
+site_description: A comprehensive collection of useful documents and tools across programming, AI, astronomy, and more
+site_author: Project Contributors
+site_url: https://your-domain.github.io/Useful-1/
+
+repo_name: Useful-1
+repo_url: https://github.com/your-username/Useful-1
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
+  - toc:
+      permalink: true
+      title: On this page
+  - attr_list
+  - md_in_html
+  - tables
+
+nav:
+  - Home: index.md
+  - Programming:
+    - Overview: programming/index.md
+    - C Programming:
+      - Overview: programming/c/index.md
+      - Day 7 - Structures & Unions: programming/c/day7-structures-unions.md
+      - Day 8 - Linked Lists: programming/c/day8-linked-lists.md
+      - Day 9 - File Operations: programming/c/day9-file-operations.md
+      - Day 10 - Macros: programming/c/day10-macros.md
+      - Day 11 - Random Numbers: programming/c/day11-random-numbers.md
+      - Environment Setup: programming/c/environment.md
+      - Format Control: programming/c/format-control.md
+    - C++ Programming:
+      - Overview: programming/cpp/index.md
+      - C++20 Guide: programming/cpp/cpp20.md
+      - Type Erasure: programming/cpp/type-erasure/index.md
+      - String Operations: programming/cpp/noob/string.md
+    - C# Programming:
+      - Overview: programming/csharp/index.md
+      - Data Structures: programming/csharp/data-structure.md
+      - TCP Programming: programming/csharp/tcp.md
+    - JavaScript:
+      - Overview: programming/javascript/index.md
+      - PrimeVue Guide: programming/javascript/primevue.md
+      - Zustand State Management: programming/javascript/zustand/index.md
+    - Python:
+      - Overview: programming/python/index.md
+      - Auto WiFi Tool: programming/python/auto-wifi.md
+      - Web Crawling: programming/python/crawl.md
+  - Artificial Intelligence:
+    - Overview: ai/index.md
+    - Building Effective Agents: ai/building-effective-agents.md
+    - Sky-T1 Model: ai/sky-t1.md
+    - Tools:
+      - Compression: ai/tools/compress.md
+      - Conversion: ai/tools/convert.md
+  - Astronomy:
+    - Overview: astronomy/index.md
+    - NINA:
+      - Touch'N'Stars: astronomy/nina/touch-n-star.md
+    - Siril:
+      - Python Integration: astronomy/siril/python.md
+  - Linux:
+    - Overview: linux/index.md
+    - Tools:
+      - grep Command: linux/tools/grep.md
+  - Libraries:
+    - Overview: libraries/index.md
+    - scnlib: libraries/scnlib.md
+  - Creative Writing:
+    - Overview: creative/index.md
+    - Three Day War: creative/three-day-war.md
+    - Wave Function Collapse: creative/wave-function-collapse.md
+    - Quantum Entanglement: creative/quantum-entanglement.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/Useful-1
+  generator: false
+
+copyright: Copyright &copy; 2024 Project Contributors
