@@ -613,7 +613,7 @@ wheels = [
 ]
 
 [[package]]
-name = "useful-1"
+name = "useful"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

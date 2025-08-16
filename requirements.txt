@@ -60,7 +60,7 @@ mergedeep==1.3.4
     #   mkdocs-get-deps
 mkdocs==1.6.1
     # via
-    #   useful-1 (pyproject.toml)
+    #   useful (pyproject.toml)
     #   mkdocs-awesome-pages-plugin
     #   mkdocs-git-revision-date-localized-plugin
     #   mkdocs-material
@@ -68,21 +68,21 @@ mkdocs==1.6.1
     #   mkdocs-minify-plugin
     #   mkdocs-static-i18n
 mkdocs-awesome-pages-plugin==2.10.1
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 mkdocs-get-deps==0.2.0
     # via mkdocs
 mkdocs-git-revision-date-localized-plugin==1.4.7
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 mkdocs-material==9.6.17
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
 mkdocs-mermaid2-plugin==1.2.1
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 mkdocs-minify-plugin==0.8.0
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 mkdocs-static-i18n==1.3.0
-    # via useful-1 (pyproject.toml)
+    # via useful (pyproject.toml)
 natsort==8.4.0
     # via mkdocs-awesome-pages-plugin
 packaging==25.0
@@ -97,7 +97,7 @@ pygments==2.19.2
     # via mkdocs-material
 pymdown-extensions==10.16.1
     # via
-    #   useful-1 (pyproject.toml)
+    #   useful (pyproject.toml)
     #   mkdocs-material
     #   mkdocs-mermaid2-plugin
 python-dateutil==2.9.0.post0
