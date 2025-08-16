@@ -1,7 +1,7 @@
 site_name: Manbo Guides
 site_description: A comprehensive collection of useful documents and tools across programming, AI, astronomy, and more
 site_author: Project Contributors
-site_url: https://your-domain.github.io/Useful-1/
+site_url: https://mambos-guides.readthedocs.io/
 
 repo_name: Useful
 repo_url: https://github.com/AstroAir/Useful
@@ -318,7 +318,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/Useful-1
+      link: https://github.com/AstroAir/Useful
   generator: false
 
 copyright: Copyright &copy; 2024 Project Contributors
