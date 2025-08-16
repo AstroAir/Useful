@@ -53,7 +53,7 @@ const useStore = create((set) => ({
 }))
 ```
 
-## Then bind your components, and that's it!
+## Then bind your components, and that's it
 
 You can use the hook anywhere, without the need of providers.
 Select your state and the consuming component

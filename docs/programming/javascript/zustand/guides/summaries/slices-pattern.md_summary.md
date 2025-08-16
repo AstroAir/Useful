@@ -3,17 +3,20 @@
 1. **`createFishSlice`**:
    - **描述**: 创建一个包含鱼数量和增加鱼数量的方法的独立状态切片。
    - **示例用法**:
+
      ```js
      export const createFishSlice = (set) => ({
        fishes: 0,
        addFish: () => set((state) => ({ fishes: state.fishes + 1 })),
      })
      ```
+
    - **注意事项**: 该切片仅管理鱼的数量的状态，不涉及其他状态。
 
 2. **`createBearSlice`**:
    - **描述**: 创建一个包含熊数量、增加熊数量和减少鱼数量的方法的独立状态切片。
    - **示例用法**:
+
      ```js
      export const createBearSlice = (set) => ({
        bears: 0,
@@ -21,11 +24,13 @@
        eatFish: () => set((state) => ({ fishes: state.fishes - 1 })),
      })
      ```
+
    - **注意事项**: 该切片管理熊的数量和鱼的数量的状态，注意`eatFish`方法会减少鱼的数量的状态。
 
 3. **`useBoundStore`**:
    - **描述**: 将多个独立的状态切片组合成一个统一的状态存储。
    - **示例用法**:
+
      ```js
      import { create } from 'zustand'
      import { createBearSlice } from './bearSlice'
@@ -36,11 +41,13 @@
        ...createFishSlice(...a),
      }))
      ```
+
    - **注意事项**: 组合后的存储可以同时管理多个独立的状态切片，确保每个切片的状态不会相互干扰。
 
 4. **`createBearFishSlice`**:
    - **描述**: 创建一个包含同时增加熊和鱼数量的方法的独立状态切片。
    - **示例用法**:
+
      ```js
      export const createBearFishSlice = (set, get) => ({
        addBearAndFish: () => {
@@ -49,11 +56,13 @@
        },
      })
      ```
+
    - **注意事项**: 该切片依赖于其他切片的方法，确保在组合时其他切片已经定义。
 
 5. **`persist` Middleware**:
    - **描述**: 为组合后的状态存储添加持久化中间件，使得状态可以在页面刷新后保持。
    - **示例用法**:
+
      ```js
      import { create } from 'zustand'
      import { createBearSlice } from './bearSlice'
@@ -70,6 +79,7 @@
        ),
      )
      ```
+
    - **注意事项**: 中间件应仅在组合后的存储中应用，避免在独立切片中应用，以免引发意外问题。
 
 ### 示例用法

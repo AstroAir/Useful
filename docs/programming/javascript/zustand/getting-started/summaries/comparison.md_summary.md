@@ -6,6 +6,7 @@
 `create` 是 Zustand 库中的一个函数，用于创建一个状态管理 store。它接受一个函数作为参数，该函数定义了状态的初始值以及状态的更新方法。
 
 **示例用法**:
+
 ```ts
 import { create } from 'zustand'
 
@@ -26,6 +27,7 @@ const useCountStore = create<State & Actions>((set) => ({
 ```
 
 **注意事项**:  
+
 - `create` 返回的是一个 hook，可以在组件中使用。
 - `set` 函数用于更新状态，且状态是不可变的（immutable）。
 
@@ -37,6 +39,7 @@ const useCountStore = create<State & Actions>((set) => ({
 `useSelector` 是 Redux 库中的一个 hook，用于从 Redux store 中选择特定的状态。它接受一个选择器函数作为参数，返回选择器函数的结果。
 
 **示例用法**:
+
 ```ts
 import { useSelector } from 'react-redux'
 
@@ -47,6 +50,7 @@ const Component = () => {
 ```
 
 **注意事项**:  
+
 - `useSelector` 会订阅 Redux store，并在状态变化时重新渲染组件。
 - 选择器函数应尽量保持简单，以避免不必要的重新渲染。
 
@@ -58,6 +62,7 @@ const Component = () => {
 `proxy` 是 Valtio 库中的一个函数，用于创建一个可变的状态对象。与 Zustand 的不可变状态模型不同，Valtio 的状态是可变的。
 
 **示例用法**:
+
 ```ts
 import { proxy } from 'valtio'
 
@@ -67,6 +72,7 @@ state.obj.count += 1
 ```
 
 **注意事项**:  
+
 - `proxy` 创建的状态对象是可变的，可以直接修改其属性。
 - 由于状态是可变的，Valtio 的渲染优化是通过属性访问实现的。
 
@@ -78,6 +84,7 @@ state.obj.count += 1
 `atom` 是 Jotai 库中的一个函数，用于创建一个原子状态。Jotai 的状态管理是基于原子的，原子可以组合在一起形成复杂的状态。
 
 **示例用法**:
+
 ```ts
 import { atom } from 'jotai'
 
@@ -85,6 +92,7 @@ const countAtom = atom<number>(0)
 ```
 
 **注意事项**:  
+
 - `atom` 创建的原子状态是不可变的，更新原子状态时需要使用特定的更新函数。
 - Jotai 的渲染优化是通过原子依赖实现的。
 
@@ -96,6 +104,7 @@ const countAtom = atom<number>(0)
 `useSnapshot` 是 Valtio 库中的一个 hook，用于在组件中订阅 Valtio 状态的快照。它返回状态的快照，并在状态变化时重新渲染组件。
 
 **示例用法**:
+
 ```ts
 import { proxy, useSnapshot } from 'valtio'
 
@@ -110,6 +119,7 @@ const Component = () => {
 ```
 
 **注意事项**:  
+
 - `useSnapshot` 返回的状态快照是不可变的，即使底层状态是可变的。
 - 使用 `useSnapshot` 可以实现组件的渲染优化。
 
@@ -121,6 +131,7 @@ const Component = () => {
 `useAtom` 是 Jotai 库中的一个 hook，用于在组件中订阅 Jotai 原子状态。它返回原子状态的当前值以及更新原子状态的函数。
 
 **示例用法**:
+
 ```ts
 import { atom, useAtom } from 'jotai'
 
@@ -133,6 +144,7 @@ const Component = () => {
 ```
 
 **注意事项**:  
+
 - `useAtom` 返回的数组中，第一个元素是原子状态的当前值，第二个元素是更新原子状态的函数。
 - Jotai 的渲染优化是通过原子依赖实现的。
 
@@ -144,6 +156,7 @@ const Component = () => {
 `atom` 是 Recoil 库中的一个函数，用于创建一个原子状态。Recoil 的状态管理是基于原子的，原子可以组合在一起形成复杂的状态。
 
 **示例用法**:
+
 ```ts
 import { atom } from 'recoil'
 
@@ -154,6 +167,7 @@ const countAtom = atom({
 ```
 
 **注意事项**:  
+
 - `atom` 创建的原子状态是不可变的，更新原子状态时需要使用特定的更新函数。
 - Recoil 的渲染优化是通过原子依赖实现的。
 
@@ -165,6 +179,7 @@ const countAtom = atom({
 `useRecoilState` 是 Recoil 库中的一个 hook，用于在组件中订阅 Recoil 原子状态。它返回原子状态的当前值以及更新原子状态的函数。
 
 **示例用法**:
+
 ```ts
 import { atom, useRecoilState } from 'recoil'
 
@@ -180,5 +195,6 @@ const Component = () => {
 ```
 
 **注意事项**:  
+
 - `useRecoilState` 返回的数组中，第一个元素是原子状态的当前值，第二个元素是更新原子状态的函数。
 - Recoil 的渲染优化是通过原子依赖实现的。

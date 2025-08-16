@@ -14,12 +14,14 @@ The Auto WiFi tool automates the process of connecting to WiFi networks that req
 ## Features
 
 ### Automated Web Authentication
+
 - **Browser Automation** - Uses Microsoft Edge WebDriver for reliable web interaction
 - **Form Handling** - Automatically fills and submits login forms
 - **Dropdown Selection** - Handles complex form elements like operator selection
 - **Wait Conditions** - Intelligent waiting for page elements to load
 
 ### Configuration Options
+
 - **Customizable URLs** - Support for different portal addresses
 - **Operator Selection** - Automatic selection of network operators
 - **Timeout Management** - Configurable wait times for page loading
@@ -28,17 +30,21 @@ The Auto WiFi tool automates the process of connecting to WiFi networks that req
 ## Installation
 
 ### Prerequisites
+
 ```bash
 pip install selenium
 ```
 
 ### WebDriver Setup
+
 1. Download Microsoft Edge WebDriver from the official Microsoft website
 2. Extract the driver to a known location (e.g., `D:\webdriver\msedgedriver.exe`)
 3. Update the driver path in the script
 
 ### Alternative WebDrivers
+
 The tool can be adapted for other browsers:
+
 - **Chrome** - Use ChromeDriver with `webdriver.Chrome()`
 - **Firefox** - Use GeckoDriver with `webdriver.Firefox()`
 - **Safari** - Use Safari WebDriver (macOS only)
@@ -46,6 +52,7 @@ The tool can be adapted for other browsers:
 ## Usage
 
 ### Basic Usage
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
@@ -65,6 +72,7 @@ driver.quit()
 ```
 
 ### Current Implementation
+
 The tool is configured for a specific network portal:
 
 ```python
@@ -81,12 +89,14 @@ login_button.click()
 ## Configuration
 
 ### Network Settings
+
 - **Portal URL** - The web address of the authentication portal
 - **Operator Selection** - Network provider or service type
 - **Credentials** - Username and password (if required)
 - **Timeout Values** - Wait times for page loading
 
 ### WebDriver Configuration
+
 ```python
 # Service configuration
 service = Service('D:\webdriver\msedgedriver.exe')
@@ -102,6 +112,7 @@ driver = webdriver.Edge(service=service, options=options)
 ## Advanced Features
 
 ### Error Handling
+
 ```python
 try:
     # Authentication logic
@@ -116,6 +127,7 @@ finally:
 ```
 
 ### Headless Operation
+
 ```python
 options = webdriver.EdgeOptions()
 options.add_argument('--headless')
@@ -123,6 +135,7 @@ driver = webdriver.Edge(service=service, options=options)
 ```
 
 ### Multiple Portal Support
+
 ```python
 portals = [
     {"url": "http://portal1.com", "operator": "Provider1"},
@@ -140,12 +153,14 @@ for portal in portals:
 ## Customization
 
 ### Adapting for Different Portals
+
 1. **Identify Form Elements** - Use browser developer tools to find form field names
 2. **Update Selectors** - Modify the element selection logic
 3. **Adjust Wait Conditions** - Configure appropriate timeouts
 4. **Handle Different Flows** - Adapt to specific authentication sequences
 
 ### Adding Credential Management
+
 ```python
 import os
 from dotenv import load_dotenv
@@ -161,6 +176,7 @@ password_field.send_keys(password)
 ```
 
 ### Logging and Monitoring
+
 ```python
 import logging
 
@@ -175,18 +191,21 @@ logger.info("Authentication successful")
 ## Best Practices
 
 ### Security Considerations
+
 - **Credential Protection** - Store sensitive information securely
 - **HTTPS Verification** - Ensure secure connections when possible
 - **Network Validation** - Verify portal authenticity
 - **Access Control** - Limit script access and permissions
 
 ### Performance Optimization
+
 - **Headless Mode** - Run without GUI for better performance
 - **Element Caching** - Store frequently used element references
 - **Timeout Tuning** - Optimize wait times for your network
 - **Resource Cleanup** - Always close browser instances
 
 ### Reliability Improvements
+
 - **Retry Logic** - Implement automatic retry on failures
 - **Health Checks** - Verify connection status after authentication
 - **Fallback Options** - Support multiple authentication methods
@@ -195,12 +214,14 @@ logger.info("Authentication successful")
 ## Troubleshooting
 
 ### Common Issues
+
 - **WebDriver Path** - Ensure correct driver location and permissions
 - **Element Not Found** - Verify form element selectors
 - **Timeout Errors** - Increase wait times for slow networks
 - **Portal Changes** - Update selectors when portals are modified
 
 ### Debugging Tips
+
 - **Screenshot Capture** - Take screenshots for debugging
 - **Element Inspection** - Use browser tools to verify selectors
 - **Verbose Logging** - Enable detailed logging for troubleshooting

@@ -69,6 +69,6 @@ export const create = (<T>() => {
 
 ## CodeSandbox Demo
 
-- Basic: https://codesandbox.io/s/zustand-how-to-reset-state-basic-demo-rrqyon
-- Advanced: https://codesandbox.io/s/zustand-how-to-reset-state-advanced-demo-gtu0qe
-- Immer: https://codesandbox.io/s/how-to-reset-state-advance-immer-demo-nyet3f
+- Basic: <https://codesandbox.io/s/zustand-how-to-reset-state-basic-demo-rrqyon>
+- Advanced: <https://codesandbox.io/s/zustand-how-to-reset-state-advanced-demo-gtu0qe>
+- Immer: <https://codesandbox.io/s/how-to-reset-state-advance-immer-demo-nyet3f>

@@ -3,6 +3,7 @@
 1. **`create` (Zustand Store Creator)**
    - **描述**: 用于创建一个 Zustand 状态管理存储。它接受一个状态创建函数，并返回一个包含状态和操作的存储对象。
    - **示例用法**:
+
      ```ts
      const useSlice = create<State & Actions>()((set, get) => ({
        ...initialState,
@@ -17,7 +18,8 @@
        },
      }))
      ```
-   - **注意事项**: 
+
+   - **注意事项**:
      - `set` 用于更新状态。
      - `get` 用于获取当前状态。
      - `initialState` 是状态的初始值。
@@ -25,18 +27,21 @@
 2. **`reset` (State Reset Function)**
    - **描述**: 用于将状态重置为其初始值。
    - **示例用法**:
+
      ```ts
      const reset = () => {
        set(initialState)
      }
      ```
-   - **注意事项**: 
+
+   - **注意事项**:
      - `set` 函数用于更新状态。
      - `initialState` 是状态的初始值。
 
 3. **`resetAllStores` (Reset Multiple Stores)**
    - **描述**: 用于重置多个 Zustand 存储的状态。
    - **示例用法**:
+
      ```ts
      const resetAllStores = () => {
        storeResetFns.forEach((resetFn) => {
@@ -44,13 +49,15 @@
        })
      }
      ```
-   - **注意事项**: 
+
+   - **注意事项**:
      - `storeResetFns` 是一个包含所有存储重置函数的集合。
      - `resetFn` 是每个存储的重置函数。
 
 4. **`create` (Custom Store Creator for Resetting Multiple Stores)**
    - **描述**: 自定义的 Zustand 存储创建函数，用于在创建存储时自动注册重置函数。
    - **示例用法**:
+
      ```ts
      export const create = (<T>() => {
        return (stateCreator: StateCreator<T>) => {
@@ -63,7 +70,8 @@
        }
      }) as typeof actualCreate
      ```
-   - **注意事项**: 
+
+   - **注意事项**:
      - `actualCreate` 是原始的 Zustand 存储创建函数。
      - `storeResetFns` 是一个包含所有存储重置函数的集合。
      - `store.setState(initialState, true)` 用于将存储状态重置为初始值。

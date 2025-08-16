@@ -6,6 +6,7 @@
 `counterStoreCreator` 是一个用于创建 Zustand 状态存储的函数。它定义了一个计数器状态，包含一个 `count` 属性和一个 `inc` 方法，用于增加计数器的值。
 
 **示例用法**:
+
 ```ts
 import { create } from 'zustand';
 import { counterStoreCreator } from '../shared/counter-store-creator';
@@ -19,6 +20,7 @@ console.log(count); // 输出: 2
 ```
 
 **注意事项**:  
+
 - 该函数通常用于测试环境中，确保状态在每次测试后重置。
 - 使用 `create` 函数时，确保 Zustand 的 mock 配置正确。
 
@@ -30,6 +32,7 @@ console.log(count); // 输出: 2
 `create` 是一个用于 mock Zustand 的 `create` 函数的实现。它确保在每次测试后重置状态，避免状态污染。
 
 **示例用法**:
+
 ```ts
 import { create } from 'zustand';
 import { counterStoreCreator } from '../shared/counter-store-creator';
@@ -43,6 +46,7 @@ afterEach(() => {
 ```
 
 **注意事项**:  
+
 - 该 mock 函数通常用于 Jest 或 Vitest 环境中。
 - 确保在测试结束后调用 `afterEach` 来重置状态。
 
@@ -54,6 +58,7 @@ afterEach(() => {
 `createStore` 是一个用于 mock Zustand 的 `createStore` 函数的实现。它与 `create` 类似，但用于创建独立的状态存储。
 
 **示例用法**:
+
 ```ts
 import { createStore } from 'zustand';
 import { counterStoreCreator } from '../shared/counter-store-creator';
@@ -67,6 +72,7 @@ afterEach(() => {
 ```
 
 **注意事项**:  
+
 - 该 mock 函数通常用于 Jest 或 Vitest 环境中。
 - 确保在测试结束后调用 `afterEach` 来重置状态。
 
@@ -78,6 +84,7 @@ afterEach(() => {
 `useCounterStore` 是一个使用 Zustand 创建的状态存储钩子，基于 `counterStoreCreator` 创建的状态。
 
 **示例用法**:
+
 ```tsx
 import { useCounterStore } from '../../stores/use-counter-store';
 
@@ -95,6 +102,7 @@ function Counter() {
 ```
 
 **注意事项**:  
+
 - 该钩子通常用于 React 组件中，确保状态管理正确。
 - 在测试中，确保状态在每次测试后重置。
 
@@ -106,6 +114,7 @@ function Counter() {
 `CounterStoreProvider` 是一个 React 上下文提供者，用于在组件树中共享 Zustand 状态存储。
 
 **示例用法**:
+
 ```tsx
 import { CounterStoreProvider } from '../../contexts/use-counter-store-context';
 
@@ -119,6 +128,7 @@ function App() {
 ```
 
 **注意事项**:  
+
 - 确保在测试中正确配置上下文提供者。
 - 使用 `useCounterStoreContext` 钩子来访问上下文中的状态。
 
@@ -130,6 +140,7 @@ function App() {
 `useCounterStoreContext` 是一个自定义钩子，用于从 `CounterStoreProvider` 提供的上下文中获取状态。
 
 **示例用法**:
+
 ```tsx
 import { useCounterStoreContext } from '../../contexts/use-counter-store-context';
 
@@ -147,6 +158,7 @@ function Counter() {
 ```
 
 **注意事项**:  
+
 - 确保在 `CounterStoreProvider` 上下文中使用该钩子。
 - 在测试中，确保上下文提供者正确配置。
 
@@ -158,6 +170,7 @@ function Counter() {
 `renderCounter` 是一个辅助函数，用于在测试中渲染 `Counter` 组件。
 
 **示例用法**:
+
 ```tsx
 import { renderCounter } from './counter.test';
 
@@ -170,6 +183,7 @@ describe('Counter', () => {
 ```
 
 **注意事项**:  
+
 - 该函数通常用于测试文件中，简化渲染逻辑。
 - 确保在测试中正确使用 `render` 函数。
 
@@ -181,6 +195,7 @@ describe('Counter', () => {
 `renderCounterWithContext` 是一个辅助函数，用于在测试中渲染 `CounterWithContext` 组件。
 
 **示例用法**:
+
 ```tsx
 import { renderCounterWithContext } from './counter-with-context.test';
 
@@ -193,6 +208,7 @@ describe('CounterWithContext', () => {
 ```
 
 **注意事项**:  
+
 - 该函数通常用于测试文件中，简化渲染逻辑。
 - 确保在测试中正确使用 `render` 函数，并配置上下文提供者。
 

@@ -464,5 +464,6 @@ struct Student* createStudent(int id, const char *name, float gpa) {
 ---
 
 **语言版本：**
+
 - [English](day7-structures-unions.md) - 英文版本
 - **中文** - 当前页面

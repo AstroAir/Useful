@@ -1,178 +1,238 @@
-# C++字符串操作教程
+# C++ String Operations: From Basics to Modern Practices
 
-## 前言
+> **Learning Objectives**: After completing this chapter, you will be able to
+>
+> - Understand the principles and applicable scenarios of different string representations in C++
+> - Proficiently use `std::string` and `std::string_view` for string operations
+> - Master new features in string processing from C++11 to C++23
+> - Avoid common string operation errors and pitfalls
+> - Choose the most suitable string processing strategy to improve code quality and performance
 
-欢迎来到C++字符串操作教程！本教程将带您从基础到高级，系统地学习C++中的字符串处理技术。我们将按照历史发展顺序，从C语言继承的字符串操作讲起，直到C++20/23中的最新特性，并提供丰富的示例帮助您快速掌握这些技能。
+## 1. Evolution of String Processing: From C to Modern C++
 
-## C风格字符串
+C++'s string processing capabilities have significantly evolved from the C language inheritance to the modern standard library. Understanding this development process helps us select the most appropriate string processing method for current needs.
 
-### 什么是C风格字符串
-
-在C++中，我们继承了C语言的字符串表示法：以空字符('\0')结尾的字符数组。
-
-```cpp
-// 创建C风格字符串的几种方式
-char str1[] = "Hello";         // 编译器自动添加'\0'
-char str2[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
-char* str3 = "World";          // 字符串字面量（C++11后不推荐）
+```mermaid
+flowchart LR
+    A[C-style strings] -->|Problems| B[Buffer overflow]
+    A -->|Problems| C[Manual memory management]
+    A -->|Problems| D[Lack of type safety]
+    
+    E[std::string] -->|Solutions| F[Automatic memory management]
+    E -->|Solutions| G[Type-safe operations]
+    E -->|Solutions| H[Rich member functions]
+    
+    F --> I[std::string_view]
+    G --> I
+    H --> I
+    
+    I -->|C++17| J[Non-owning string view]
+    J --> K[C++20/23]
+    K --> L[std::format]
+    K --> M[contains/starts_with]
 ```
 
-### 基本操作函数
+> **Beginner Tip**: Don't view C++ strings as a simple replacement for C strings. C++ provides safer and more efficient string processing mechanisms, and understanding how they work is key to writing robust code.
 
-C风格字符串的操作函数都在`<cstring>`（或传统C的`<string.h>`）头文件中：
+## 2. C-Style Strings: Historical Legacy and Pitfalls
 
-#### 字符串长度
+### 2.1 What Are C-Style Strings?
+
+C-style strings are **character arrays terminated with a null character ('\0')**, a string representation inherited by C++ from the C language:
+
+```cpp
+// Several ways to create C-style strings
+char str1[] = "你好";         // Compiler automatically adds '\0'
+char str2[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+const char* str3 = "世界";    // String literal (should use const since C++11)
+```
+
+> **Key Difference**: Since C++11, the type of string literals is `const char[N]`, so they should be received with `const char*` instead of `char*` to avoid compiler warnings.
+
+### 2.2 Basic Operation Functions
+
+C-style string operation functions are in the `<cstring>` header file:
+
+#### 2.2.1 String Length
 
 ```cpp
 #include <cstring>
 
-char greeting[] = "Hello";
-size_t length = strlen(greeting);  // 返回5（不计算结束符'\0'）
+char greeting[] = "你好";
+size_t length = strlen(greeting);  // Returns 5 (doesn't count termination character '\0')
 ```
 
-#### 字符串复制
+> **Common Misconception**: `strlen` counts characters, not including the termination character `'\0'`. For multi-byte characters like Chinese, `strlen` returns the number of bytes, not characters.
+
+#### 2.2.2 String Copy
 
 ```cpp
-char source[] = "Hello";
+char source[] = "你好";
 char destination[10];
-strcpy(destination, source);    // 不安全，无边界检查
-strncpy(destination, source, 9); // 较安全，复制最多9个字符
-destination[9] = '\0';          // 确保结尾有空字符
+
+// Unsafe, no boundary checking
+strcpy(destination, source);    
+
+// Safer, copies at most 9 characters (leaves 1 position for '\0')
+strncpy(destination, source, 9); 
+destination[9] = '\0';  // Ensure null termination
 ```
 
-#### 字符串连接
+> **Security Warning**: `strcpy` and `strcat` are among the most dangerous functions in C, highly prone to buffer overflow. They should be avoided in modern C++.
+
+#### 2.2.3 String Concatenation
 
 ```cpp
-char str1[20] = "Hello";
-char str2[] = " World";
-strcat(str1, str2);      // str1变成"Hello World"
-strncat(str1, "!", 1);   // 较安全，连接最多1个字符
+char str1[20] = "你好";
+char str2[] = " 世界";
+strcat(str1, str2);      // str1 becomes "你好 世界"
+
+// Safer, concatenates at most 1 character
+strncat(str1, "!", 1);   
+str1[19] = '\0';         // Ensure doesn't exceed buffer size
 ```
 
-#### 字符串比较
+#### 2.2.4 String Comparison
 
 ```cpp
-char str1[] = "apple";
-char str2[] = "banana";
-int result = strcmp(str1, str2);  // 返回负值，因为str1字典序小于str2
+char str1[] = "苹果";
+char str2[] = "香蕉";
+int result = strcmp(str1, str2);  // Returns negative value because str1 is lexicographically less than str2
 ```
 
-#### 字符串查找
+> **Note**: `strcmp` doesn't return simple 0/1 values, but negative, 0, or positive values indicating less than, equal to, or greater than.
+
+#### 2.2.5 String Search
 
 ```cpp
-char text[] = "Hello World";
-char* ptr = strchr(text, 'o');    // 查找字符'o'，返回指向首次出现位置的指针
-char* subPtr = strstr(text, "lo"); // 查找子串"lo"，返回指向子串位置的指针
+char text[] = "你好 世界";
+char* ptr = strchr(text, 'o');    // Searches for character 'o', returns first occurrence position
+char* subPtr = strstr(text, "lo"); // Searches for substring "lo", returns substring position
 ```
 
-### C风格字符串的局限性
+### 2.3 Limitations of C-Style Strings
 
-存在的问题：
+C-style strings have the following serious issues:
 
-- 缓冲区溢出风险：没有自动边界检查
-- 内存管理复杂：需要手动分配和释放内存
-- 操作不直观：需要使用函数而非运算符
-- 没有封装：数据和操作分离
-
-示例：缓冲区溢出问题
+| Problem | Description | Risk |
+|---------|-------------|------|
+| **Buffer Overflow** | No automatic boundary checking | Security vulnerabilities, program crashes |
+| **Complex Memory Management** | Requires manual allocation/deallocation | Memory leaks, double frees |
+| **Non-intuitive Operations** | Requires memorizing multiple functions | Poor code readability |
+| **Lack of Encapsulation** | Data and operations are separate | Low code reusability |
 
 ```cpp
+// Dangerous example: Buffer overflow
 char smallBuffer[5];
-strcpy(smallBuffer, "This is too long");  // 危险！会溢出
+strcpy(smallBuffer, "This is too long");  // Serious security vulnerability!
 ```
 
-## std::string 基础
+> **Best Practice**: In modern C++, avoid using C-style strings whenever possible, and prefer `std::string` or `std::string_view`.
 
-### std::string 介绍
+## 3. std::string: C++ Standard String Class
 
-C++标准库提供的`std::string`类（在`<string>`头文件中）解决了C风格字符串的许多问题：
+### 3.1 std::string Basics
+
+`std::string` is a string class provided by the C++ standard library that solves many problems of C-style strings:
 
 ```cpp
 #include <string>
 #include <iostream>
 
 int main() {
-    // 创建string对象
-    std::string greeting = "Hello";  // 从字符串字面量创建
-    std::string empty;               // 空字符串
-    std::string repeated(5, 'a');    // 创建"aaaaa"
+    // Creating string objects
+    std::string greeting = "你好";  // Created from string literal
+    std::string empty;               // Empty string
+    std::string repeated(5, 'a');    // Creates "aaaaa"
     
     std::cout << greeting << std::endl;      // Hello
     std::cout << repeated << std::endl;      // aaaaa
-    std::cout << empty.empty() << std::endl; // 1 (true)
+    std::cout << std::boolalpha << empty.empty() << std::endl; // true
     
     return 0;
 }
 ```
 
-### 基本操作
+> **Key Advantage**: `std::string` automatically manages memory, provides type-safe operations, and is compatible with C-style strings.
 
-#### 字符串长度和容量
+### 3.2 Basic Operations
+
+#### 3.2.1 String Length and Capacity
 
 ```cpp
-std::string str = "Hello World";
-size_t length = str.length();  // 或str.size() - 返回11
-bool isEmpty = str.empty();    // 检查是否为空 - false
-size_t capacity = str.capacity(); // 返回当前分配的存储空间大小
+std::string str = "你好 世界";
+size_t length = str.length();  // Or str.size() - returns 11
+bool isEmpty = str.empty();    // Checks if empty - false
+size_t capacity = str.capacity(); // Returns current allocated storage size
 ```
 
-#### 访问字符
+> **Performance Tip**: The value returned by `capacity()` is usually greater than `size()` because `std::string` reserves extra space to reduce reallocation frequency.
+
+#### 3.2.2 Accessing Characters
 
 ```cpp
-std::string str = "Hello";
-char first = str[0];         // 'H' - 不检查边界
-char last = str.at(4);       // 'o' - 有边界检查，越界抛出异常
+std::string str = "你好";
+char first = str[0];         // 'H' - no boundary checking
+char last = str.at(4);       // 'o' - with boundary checking, throws std::out_of_range on out-of-bounds
 char front = str.front();    // 'H' - C++11
 char back = str.back();      // 'o' - C++11
 ```
 
-#### 修改字符串
+> **Safety Recommendation**: When unsure if an index is valid, use `at()` instead of `operator[]` to get boundary checking.
+
+#### 3.2.3 Modifying Strings
 
 ```cpp
-std::string str = "Hello";
-str += " World";           // 追加，现在str为"Hello World"
-str.append("!");           // 追加，现在str为"Hello World!"
-str.push_back('!');        // 添加单个字符，现在str为"Hello World!!"
+std::string str = "你好";
+str += " 世界";           // Appends, now str is "你好 世界"
+str.append("!");           // Appends, now str is "你好 世界!"
+str.push_back('!');        // Adds single character, now str is "你好 世界!!"
 
-str = "Hello";             // 重新赋值
-str.insert(5, " beautiful"); // 在位置5插入，现在str为"Hello beautiful"
-str.erase(5, 10);          // 从位置5开始删除10个字符，恢复到"Hello"
-str.replace(1, 2, "i");    // 替换位置1开始的2个字符，变为"Hillo"
-str.clear();               // 清空字符串
+str = "你好";             // Reassigns
+str.insert(5, " 美丽"); // Inserts at position 5, now str is "你好 美丽"
+str.erase(5, 10);          // Deletes 10 characters starting from position 5, restores to "你好"
+str.replace(1, 2, "i");    // Replaces 2 characters starting at position 1, becomes "Hillo"
+str.clear();               // Clears the string
 ```
 
-#### 字符串比较
+> **Performance Tip**: When modifying strings frequently, consider using `reserve()` to pre-allocate memory to avoid multiple reallocations.
+
+#### 3.2.4 String Comparison
 
 ```cpp
-std::string s1 = "apple";
-std::string s2 = "banana";
+std::string s1 = "苹果";
+std::string s2 = "香蕉";
 
 bool equal = (s1 == s2);             // false
-bool less = (s1 < s2);               // true，字典序比较
-int comparison = s1.compare(s2);     // 负值，s1小于s2
+bool less = (s1 < s2);               // true, lexicographical comparison
+int comparison = s1.compare(s2);     // Negative value, s1 is less than s2
 ```
 
-### 子串操作
+> **Note**: The `compare()` method provides more flexible comparison options, such as `compare(pos, len, str2)`.
+
+### 3.3 Substring Operations
 
 ```cpp
-std::string str = "Hello World";
+std::string str = "你好 世界";
 
-// 提取子串
-std::string sub = str.substr(6, 5);  // 从位置6开始，长度5："World"
-std::string tail = str.substr(6);    // 从位置6到结尾："World"
+// Extract substring
+std::string sub = str.substr(6, 5);  // From position 6, length 5: "World"
+std::string tail = str.substr(6);    // From position 6 to end: "World"
 
-// 查找操作
-size_t pos = str.find("World");      // 返回6
-size_t notFound = str.find("C++");   // 返回string::npos
+// Search operations
+size_t pos = str.find("世界");      // Returns 6
+size_t notFound = str.find("C++");   // Returns string::npos
 
-// 查找字符
-pos = str.find_first_of("aeiou");    // 返回1 (e是第一个元音)
-pos = str.find_last_of("aeiou");     // 返回7 (o是最后一个元音)
+// Search for characters
+pos = str.find_first_of("aeiou");    // Returns 1 (e is first vowel)
+pos = str.find_last_of("aeiou");     // Returns 7 (o is last vowel)
 ```
 
-## std::string 进阶操作
+> **Key Tip**: `find()` family methods return `std::string::npos` to indicate not found, should check with `if (pos != std::string::npos)`.
 
-### 字符串输入输出
+## 4. Advanced std::string Operations
+
+### 4.1 String Input/Output
 
 ```cpp
 #include <string>
@@ -182,20 +242,22 @@ int main() {
     std::string name;
     
     std::cout << "请输入您的名字: ";
-    std::cin >> name;  // 读取到空白字符为止
+    std::cin >> name;  // Reads until whitespace
     std::cout << "您好, " << name << "!" << std::endl;
     
-    std::cin.ignore();  // 忽略之前输入缓冲区中的换行符
+    std::cin.ignore();  // Ignore newline character in input buffer
     
     std::cout << "请输入您的全名: ";
-    std::getline(std::cin, name);  // 读取整行
+    std::getline(std::cin, name);  // Reads entire line
     std::cout << "您好, " << name << "!" << std::endl;
     
     return 0;
 }
 ```
 
-### 字符串流
+> **Common Pitfall**: When mixing `>>` and `getline()`, remember to use `cin.ignore()` to clear the newline character from the buffer, otherwise `getline()` will immediately return an empty line.
+
+### 4.2 String Streams
 
 ```cpp
 #include <string>
@@ -203,13 +265,13 @@ int main() {
 #include <iostream>
 
 int main() {
-    // 字符串输出流
+    // String output stream
     std::ostringstream oss;
     oss << "年龄: " << 25 << ", 身高: " << 175.5;
     std::string info = oss.str();
-    std::cout << info << std::endl;  // 年龄: 25, 身高: 175.5
+    std::cout << info << std::endl;  // Age: 25, Height: 175.5
     
-    // 字符串输入流
+    // String input stream
     std::string data = "123 456.7 文本";
     std::istringstream iss(data);
     int a;
@@ -222,14 +284,16 @@ int main() {
 }
 ```
 
-### 字符串分割
+> **Practical Value**: String streams are powerful tools for parsing formatted text, safer and more flexible than manually splitting strings.
 
-C++标准库没有直接提供字符串分割函数，但我们可以实现一个：
+### 4.3 String Splitting
+
+The C++ standard library doesn't directly provide a string splitting function, but it can be implemented like this:
 
 ```cpp
 #include <string>
 #include <vector>
-#include <iostream>
+#include <sstream>
 
 std::vector<std::string> split(const std::string& s, char delimiter) {
     std::vector<std::string> tokens;
@@ -245,204 +309,175 @@ std::vector<std::string> split(const std::string& s, char delimiter) {
     return tokens;
 }
 
-int main() {
-    std::string text = "apple,banana,orange,grape";
-    std::vector<std::string> fruits = split(text, ',');
-    
-    for (const auto& fruit : fruits) {
-        std::cout << fruit << std::endl;
-    }
-    
-    return 0;
-}
+// Usage example
+std::string text = "苹果,香蕉,橙子,葡萄";
+std::vector<std::string> fruits = split(text, ',');
 ```
 
-## C++11字符串新特性
+> **C++20 Alternative**: C++20 introduced `std::views::split`, but it requires the ranges library and is more complex.
 
-C++11为字符串处理带来了许多实用的增强功能。
+## 5. C++11 String New Features
 
-### 移动语义
+### 5.1 Move Semantics
 
 ```cpp
 #include <string>
-#include <iostream>
-#include <utility>  // 为std::move
+#include <utility>
 
 std::string createLongString() {
-    std::string result(10000, 'X');  // 创建大字符串
-    return result;  // 返回值优化，可能会使用移动语义
+    std::string result(10000, 'X');  // Creates large string
+    return result;  // Return value optimization, uses move semantics
 }
 
 int main() {
-    // 移动赋值
+    // Move assignment
     std::string source = "这是一个很长的字符串...";
     std::string dest;
-    dest = std::move(source);  // 移动而非复制，source现在可能为空
+    dest = std::move(source);  // Moves instead of copying, source may now be empty
     
-    std::cout << "dest: " << dest << std::endl;
-    std::cout << "source: " << source << std::endl;  // source可能为空
-    
-    // 函数返回大字符串
-    std::string large = createLongString();  // 使用移动语义避免复制
+    // Function returns large string
+    std::string large = createLongString();  // Uses move semantics to avoid copying
     
     return 0;
 }
 ```
 
-### 原始字符串字面量
+> **Performance Advantage**: Move semantics avoids unnecessary deep copies, especially beneficial for large strings, significantly improving performance.
 
-使用`R"()"`语法创建原始字符串，避免大量转义字符：
+### 5.2 Raw String Literals
 
 ```cpp
 #include <string>
-#include <iostream>
 #include <regex>
 
 int main() {
-    // 传统字符串中的转义序列
+    // Traditional string with escape sequences
     std::string path1 = "C:\\Program Files\\Some App\\file.txt";
     
-    // 原始字符串 - 不需要转义
+    // Raw string - no need for escaping
     std::string path2 = R"(C:\Program Files\Some App\file.txt)";
     
-    std::cout << path1 << std::endl;
-    std::cout << path2 << std::endl;
+    // Especially useful for regular expressions
+    std::string regexPattern = R"(\d{3}-\d{2}-\d{4})";  // Matches SSN format
     
-    // 对正则表达式特别有用
-    std::string regexPattern = R"(\d{3}-\d{2}-\d{4})";  // 匹配SSN格式
-    std::regex regexObj(regexPattern);
-    
-    // 使用定界符处理包含右括号的字符串
+    // Using delimiters for strings containing right parentheses
     std::string code = R"code(
     if (x > 0) {
         std::cout << "x is positive" << std::endl;
     }
     )code";
     
-    std::cout << code << std::endl;
-    
     return 0;
 }
 ```
 
-### 数值转换函数
+> **Practical Value**: Raw string literals greatly simplify handling strings with many escape characters, especially useful for regular expressions, JSON, and code snippets.
 
-C++11引入了方便的字符串和数值之间的转换函数：
+### 5.3 Numeric Conversion Functions
 
 ```cpp
 #include <string>
-#include <iostream>
 
 int main() {
-    // 字符串转数值
+    // String to numeric
     std::string numStr = "42";
-    int num = std::stoi(numStr);             // 字符串转整数
+    int num = std::stoi(numStr);             // String to integer
     
     std::string floatStr = "3.14159";
-    double pi = std::stod(floatStr);         // 字符串转双精度浮点
-    float piFloat = std::stof(floatStr);     // 字符串转单精度浮点
+    double pi = std::stod(floatStr);         // String to double
     
-    std::string bigNumStr = "123456789012345";
-    long long bigNum = std::stoll(bigNumStr); // 字符串转长整型
-    
-    // 数值转字符串
+    // Numeric to string
     int age = 25;
     std::string ageStr = std::to_string(age);
     
-    double value = 3.14159;
-    std::string valueStr = std::to_string(value);
-    
-    std::cout << "整数: " << num << std::endl;
-    std::cout << "双精度: " << pi << std::endl;
-    std::cout << "年龄字符串: " << ageStr << std::endl;
-    std::cout << "值字符串: " << valueStr << std::endl;
-    
     return 0;
 }
 ```
 
-## C++17字符串视图
+> **Advantage**: Compared to C's `atoi`, `sprintf`, and similar functions, these conversion functions are safer, easier to use, and support exception handling.
 
-### std::string_view 介绍
+## 6. C++17 String View: std::string_view
 
-C++17引入了`std::string_view`（在`<string_view>`头文件中）：一个轻量级的、非拥有型的字符串引用，可以显著提高性能。
+### 6.1 What is std::string_view?
+
+`std::string_view` is a lightweight, non-owning string reference introduced in C++17 that can significantly improve performance:
+
+```mermaid
+classDiagram
+    class std::string {
+        +char* data
+        +size_t size
+        +size_t capacity
+        +Constructor
+        +Destructor
+        +Member functions
+    }
+    
+    class std::string_view {
+        +const char* data
+        +size_t size
+    }
+    
+    std::string_view ..> std::string : Reference
+```
+
+### 6.2 Basic Usage
 
 ```cpp
 #include <string>
 #include <string_view>
-#include <iostream>
-
-// 接受string_view作为参数，避免字符串复制
-void printSubstring(std::string_view sv, size_t pos, size_t len) {
-    std::cout << sv.substr(pos, len) << std::endl;
-}
 
 int main() {
-    // 从不同来源创建string_view
-    std::string str = "Hello World";
-    std::string_view sv1 = str;              // 从std::string创建
-    std::string_view sv2 = "直接字面量";      // 从字符串字面量创建
-    const char* cstr = "C风格字符串";
-    std::string_view sv3 = cstr;             // 从C风格字符串创建
+    // Creating string_view from different sources
+    std::string str = "你好 世界";
+    std::string_view sv1 = str;              // Created from std::string
+    std::string_view sv2 = "Direct literal";      // Created from string literal
+    const char* cstr = "C-style string";
+    std::string_view sv3 = cstr;             // Created from C-style string
     
-    std::cout << "sv1: " << sv1 << std::endl;
-    std::cout << "sv2: " << sv2 << std::endl;
-    std::cout << "sv3: " << sv3 << std::endl;
-    
-    // 基本操作
-    std::cout << "长度: " << sv1.length() << std::endl;
-    std::cout << "第一个字符: " << sv1[0] << std::endl;
-    std::cout << "子字符串: " << sv1.substr(0, 5) << std::endl;
-    
-    // 作为函数参数
-    printSubstring(str, 6, 5);        // 从string
-    printSubstring("Hello C++17", 6, 6); // 从字面量
+    // Basic operations
+    std::cout << "Length: " << sv1.length() << std::endl;
+    std::cout << "First character: " << sv1[0] << std::endl;
+    std::cout << "Substring: " << sv1.substr(0, 5) << std::endl;
     
     return 0;
 }
 ```
 
-### string_view vs string
+### 6.3 string_view vs string
 
-优点：
+| Feature | std::string | std::string_view |
+|---------|-------------|------------------|
+| **Ownership** | Owns data | Only references data |
+| **Modifiability** | Modifiable | Read-only |
+| **Memory Management** | Automatic | No memory management |
+| **Performance** | May have copy overhead | Zero-copy overhead |
+| **Lifetime** | Manages its own data | Depends on external data lifetime |
+| **Termination** | Guaranteed '\0' | Not guaranteed '\0' |
 
-- 减少复制：不创建新的字符串副本
-- 性能更好：处理只读字符串时效率高
-- 接口一致：许多操作与`std::string`相同
-
-局限性：
-
-- 只读：不能修改字符串内容
-- 生命周期：必须确保引用的数据在`string_view`使用期间有效
-- 无终止符：不保证有空终止符'\0'
+### 6.4 Performance Comparison
 
 ```cpp
 #include <string>
 #include <string_view>
-#include <iostream>
 #include <chrono>
 
-// 测量性能差异
 void performanceTest() {
     const size_t iterations = 10000000;
     std::string longStr(1000, 'x');
     
     auto start = std::chrono::high_resolution_clock::now();
     
-    // 使用std::string
-    size_t count1 = 0;
+    // Using std::string
     for (size_t i = 0; i < iterations; ++i) {
         std::string s = longStr;
-        count1 += s.length();
     }
     
     auto mid = std::chrono::high_resolution_clock::now();
     
-    // 使用std::string_view
-    size_t count2 = 0;
+    // Using std::string_view
     for (size_t i = 0; i < iterations; ++i) {
         std::string_view sv = longStr;
-        count2 += sv.length();
     }
     
     auto end = std::chrono::high_resolution_clock::now();
@@ -450,43 +485,39 @@ void performanceTest() {
     auto string_time = std::chrono::duration_cast<std::chrono::milliseconds>(mid - start).count();
     auto view_time = std::chrono::duration_cast<std::chrono::milliseconds>(end - mid).count();
     
-    std::cout << "std::string 耗时: " << string_time << " ms" << std::endl;
-    std::cout << "std::string_view 耗时: " << view_time << " ms" << std::endl;
-}
-
-int main() {
-    performanceTest();
-    return 0;
+    std::cout << "std::string time: " << string_time << " ms" << std::endl;
+    std::cout << "std::string_view time: " << view_time << " ms" << std::endl;
 }
 ```
 
-### string_view 注意事项
+> **Performance Result**: On typical systems, `std::string_view` performs 10-100 times better than `std::string` because it avoids memory allocation and data copying.
 
-小心使用以避免悬垂引用：
+### 6.5 Usage Considerations
 
 ```cpp
+// Dangerous example: Dangling reference
 std::string_view dangerous() {
-    std::string local = "临时字符串";
-    return local;  // 危险! local在函数结束时销毁
+    std::string local = "Temporary string";
+    return local;  // Dangerous! local is destroyed when function ends
 }
 
+// Safe example
 void safe() {
-    std::string persistent = "持久字符串";
-    std::string_view sv = persistent;  // 安全，只要persistent存活
+    std::string persistent = "Persistent string";
+    std::string_view sv = persistent;  // Safe as long as persistent is alive
     
-    // 处理sv...
+    // Process sv...
 }
 ```
 
-## C++20/23最新特性
+> **Key Tip**: `std::string_view` doesn't extend the lifetime of the data it references; you must ensure the referenced data remains valid during the `string_view`'s usage.
 
-### std::format (C++20)
+## 7. C++20/23 Latest Features
 
-C++20引入了`std::format`，提供类似Python的字符串格式化功能：
+### 7.1 std::format (C++20)
 
 ```cpp
 #include <format>
-#include <string>
 #include <iostream>
 
 int main() {
@@ -494,25 +525,23 @@ int main() {
     int age = 30;
     double height = 175.5;
     
-    // 基本格式化
-    std::string result = std::format("姓名: {}, 年龄: {}, 身高: {}", name, age, height);
+    // Basic formatting
+    std::string result = std::format("姓名: {}, 年龄: {}, 身高: {:.1f}", name, age, height);
     std::cout << result << std::endl;
+    // Output: Name: Zhang San, Age: 30, Height: 175.5
     
-    // 指定参数顺序
-    std::string result2 = std::format("身高: {2}, 姓名: {0}, 年龄: {1}", name, age, height);
+    // Format specifiers
+    std::string result2 = std::format("姓名: {:10}|价格: {:8.2f}|数量: {:04d}", "苹果", 5.2, 12);
     std::cout << result2 << std::endl;
-    
-    // 格式说明符
-    std::string result3 = std::format("姓名: {:10}|价格: {:8.2f}|数量: {:04d}", "苹果", 5.2, 12);
-    std::cout << result3 << std::endl;
+    // Output: Name: Apple     |Price:     5.20|Quantity: 0012
     
     return 0;
 }
 ```
 
-### C++23字符串新方法
+> **Advantage**: `std::format` provides type-safe formatting, avoiding type mismatch issues with `printf` family functions, with more concise syntax.
 
-C++23为`std::string`和`std::string_view`添加了几个实用的方法：
+### 7.2 C++23 String New Methods
 
 ```cpp
 #include <string>
@@ -521,88 +550,99 @@ C++23为`std::string`和`std::string_view`添加了几个实用的方法：
 int main() {
     std::string str = "Hello World";
     
-    // contains方法检查是否包含子串
+    // contains method checks for substring
     bool has_hello = str.contains("Hello");  // true
-    std::cout << "Contains 'Hello': " << std::boolalpha << has_hello << std::endl;
     
-    // starts_with检查前缀
+    // starts_with checks prefix
     bool starts = str.starts_with("Hello");  // true
-    std::cout << "Starts with 'Hello': " << starts << std::endl;
     
-    // ends_with检查后缀
+    // ends_with checks suffix
     bool ends = str.ends_with("World");  // true
-    std::cout << "Ends with 'World': " << ends << std::endl;
+    
+    std::cout << std::boolalpha
+              << "Contains 'Hello': " << has_hello << '\n'
+              << "Starts with 'Hello': " << starts << '\n'
+              << "Ends with 'World': " << ends << std::endl;
     
     return 0;
 }
 ```
 
-## C与C++字符串对比
+> **Practical Value**: These methods make common string checking operations more concise and readable, avoiding verbose `find()` checks.
 
-### C风格与C++风格字符串的区别
+## 8. String Type Selection Guide
 
-| 特性 | C风格字符串 (char[]) | C++ std::string | C++ std::string_view |
-|---------|------------------------|-------------------|------------------------|
-| 定义 | `char str[20] = "Hello";` | `std::string str = "Hello";` | `std::string_view sv = "Hello";` |
-| 内存管理 | 手动（固定大小） | 自动（动态大小） | 无所有权（引用现有内存） |
-| 大小调整 | 不可调整（需要新数组） | 自动调整 | 不可调整（只读视图） |
-| 长度获取 | `strlen(str)` | `str.length()` 或 `str.size()` | `sv.length()` 或 `sv.size()` |
-| 连接 | `strcat(dest, src)` | `str1 + str2` 或 `str1.append(str2)` | 不支持（只读） |
-| 复制 | `strcpy(dest, src)` | `str1 = str2` | `sv = str` |
-| 比较 | `strcmp(s1, s2)` | `s1 == s2`, `s1 < s2` 等 | `sv1 == sv2`, `sv1 < sv2` 等 |
-| 子串提取 | 手动复制字符 | `str.substr(pos, len)` | `sv.substr(pos, len)` |
-| 修改 | 直接通过索引 | 多种方法（insert, replace等） | 不支持（只读） |
-| 查找 | `strchr`, `strstr` | `find`, `find_first_of` 等 | 同std::string |
-| 安全性 | 低（容易溢出） | 高（自动边界检查） | 中（只读但注意生命周期） |
-| 性能 | 高（直接内存操作） | 中（额外开销） | 高（无复制开销） |
-| C++11数值转换 | 需要`atoi`, `strtol`等 | `stoi`, `stod`, `to_string`等 | 需先转为string |
-| C++20格式化 | 需要`sprintf` | 使用`std::format` | 使用`std::format` |
+```mermaid
+flowchart TD
+    A[Need string operations] --> B{Need to modify string?}
+    B -->|Yes| C[Use std::string]
+    B -->|No| D{String source?}
+    D -->|std::string| E[Use std::string_view]
+    D -->|String literal| E
+    D -->|C-style string| E
+    D -->|Temporary object| F[Use std::string_view cautiously]
+    
+    C --> G{Pass to function?}
+    G -->|Yes| H[Consider using const std::string&]
+    G -->|No| I[Use directly]
+    
+    E --> J{Function interface design}
+    J -->|Internal use| K[Prefer std::string_view]
+    J -->|External interface| L[Consider supporting both std::string and std::string_view]
+```
 
-## 实战技巧与最佳实践
+### 8.1 Selection Recommendations
 
-### 字符串处理技巧
+#### As Function Parameters
 
-字符串拼接的高效方式
+- **Read-only operations**: Prefer `std::string_view`
+
+  ```cpp
+  void processString(std::string_view sv) {
+      // Read-only operations
+  }
+  ```
+
+- **Need modification**: Use `std::string` or `std::string&`
+
+  ```cpp
+  void modifyString(std::string& str) {
+      str += " modified";
+  }
+  ```
+
+#### As Return Values
+
+- **Return new string**: Return `std::string` directly
+
+  ```cpp
+  std::string createGreeting(const std::string& name) {
+      return "Hello, " + name + "!";
+  }
+  ```
+
+- **Return substring**: Consider returning `std::string` instead of `std::string_view`
+
+  ```cpp
+  std::string getSubstring(const std::string& str, size_t pos, size_t len) {
+      return str.substr(pos, len);  // Returns new string, avoids dangling reference
+  }
+  ```
+
+### 8.2 Performance Optimization Techniques
+
+#### Pre-allocate Memory
 
 ```cpp
-// 低效方式：重复的+操作导致多次分配内存
 std::string buildMessage(const std::vector<std::string>& words) {
-    std::string result;
-    for (const auto& word : words) {
-        result = result + word + " ";  // 每次循环都创建新字符串
-    }
-    return result;
-}
-
-// 高效方式1：使用+=操作符
-std::string buildMessageBetter(const std::vector<std::string>& words) {
-    std::string result;
-    for (const auto& word : words) {
-        result += word;
-        result += " ";  // 减少内存分配次数
-    }
-    return result;
-}
-
-// 高效方式2：使用std::ostringstream
-std::string buildMessageStream(const std::vector<std::string>& words) {
-    std::ostringstream oss;
-    for (const auto& word : words) {
-        oss << word << " ";
-    }
-    return oss.str();
-}
-
-// 高效方式3：预分配内存
-std::string buildMessageReserve(const std::vector<std::string>& words) {
-    // 计算需要的总长度
+    // Calculate required total length
     size_t totalLength = 0;
     for (const auto& word : words) {
-        totalLength += word.length() + 1;  // +1为空格
+        totalLength += word.length() + 1;  // +1 for space
     }
     
     std::string result;
-    result.reserve(totalLength);  // 预分配内存
+    result.reserve(totalLength);  // Pre-allocate memory
     
     for (const auto& word : words) {
         result += word + " ";
@@ -612,82 +652,152 @@ std::string buildMessageReserve(const std::vector<std::string>& words) {
 }
 ```
 
-大小写转换
+> **Performance Improvement**: Pre-allocating memory avoids multiple reallocations, significantly improving performance for large string operations.
+
+#### Using String Streams
+
+```cpp
+std::string buildMessageStream(const std::vector<std::string>& words) {
+    std::ostringstream oss;
+    for (const auto& word : words) {
+        oss << word << " ";
+    }
+    return oss.str();
+}
+```
+
+> **Advantage**: String streams internally manage buffers, often more efficient than manual concatenation for complex formatting operations.
+
+## 9. Practical Tips and Best Practices
+
+### 9.1 Case Conversion
 
 ```cpp
 #include <string>
 #include <algorithm>
 #include <cctype>
-#include <iostream>
 
-// 转换为大写
+// Convert to uppercase
 std::string toUpper(std::string s) {
     std::transform(s.begin(), s.end(), s.begin(),
                    [](unsigned char c) { return std::toupper(c); });
     return s;
 }
 
-// 转换为小写
+// Convert to lowercase
 std::string toLower(std::string s) {
     std::transform(s.begin(), s.end(), s.begin(),
                    [](unsigned char c) { return std::tolower(c); });
     return s;
 }
-
-int main() {
-    std::string text = "Hello World";
-    std::cout << toUpper(text) << std::endl;  // HELLO WORLD
-    std::cout << toLower(text) << std::endl;  // hello world
-    return 0;
-}
 ```
 
-### 中文和Unicode处理
+> **Unicode Note**: The above methods only work for ASCII characters. For Unicode strings, use specialized libraries like ICU.
 
-处理中文和Unicode字符串需要特别注意编码问题：
+### 9.2 Chinese and Unicode Processing
 
 ```cpp
 #include <string>
 #include <iostream>
 
 int main() {
-    // UTF-8编码的中文字符串
+    // UTF-8 encoded Chinese string
     std::string chinese = "你好，世界！";
     
-    // 注意：size()返回的是字节数，而不是字符数
-    std::cout << "字节数: " << chinese.size() << std::endl;
+    // Note: size() returns byte count, not character count
+    std::cout << "Byte count: " << chinese.size() << std::endl;
     
-    // 使用C++11的u8、u、U前缀
-    const char* u8str = u8"UTF-8字符串";        // UTF-8编码
-    const char16_t* u16str = u"UTF-16字符串";   // UTF-16编码
-    const char32_t* u32str = U"UTF-32字符串";   // UTF-32编码
-    
-    // C++20引入了char8_t类型
-#if __cplusplus > 201703L
-    const char8_t* cpp20_u8str = u8"C++20的UTF-8字符串";
-#endif
+    // C++20 introduced char8_t type
+    const char8_t* cpp20_u8str = u8"C++20 UTF-8 string";
     
     return 0;
 }
 ```
 
-### 使用建议
+> **Key Tip**: C++ standard library has limited Unicode support. Consider using specialized Unicode libraries when processing multilingual text.
 
-1. 选择合适的字符串类型
-   - 对于只读操作，优先使用`std::string_view`
-   - 需要修改字符串时，使用`std::string`
-   - 接口设计时，考虑同时支持`std::string`和`std::string_view`
+### 9.3 Common Pitfalls and Solutions
 
-2. 避免C风格字符串的常见错误
-   - 总是检查缓冲区大小
-   - 使用`strncpy`而非`strcpy`，使用`strncat`而非`strcat`
-   - 确保字符串正确终止
+#### Mixing >> and getline()
 
-3. 性能优化技巧
-   - 使用`reserve()`预分配内存
-   - 对频繁修改的字符串，考虑使用`std::stringstream`
-   - 传递大字符串时使用const引用或string_view
+```cpp
+std::string name;
+int age;
 
-## 总结
+std::cout << "请输入年龄: ";
+std::cin >> age;
 
-C++的字符串处理功能随着语言标准的发展不断增强，从最初继承自C语言的字符数组，到现代的`std::string`、`std::string_view`和`std::format`，提供了更安全、更高效、更灵活的字符串处理方案。
+// Error: Newline character left in buffer causes getline() to return immediately
+// std::getline(std::cin, name);
+
+// Correct approach: Clear newline character from buffer
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+std::cout << "请输入姓名: ";
+std::getline(std::cin, name);
+```
+
+#### String Comparison Pitfalls
+
+```cpp
+std::string s1 = "apple";
+std::string s2 = "Apple";
+
+// Error: Case-sensitive
+bool equal = (s1 == s2);  // false
+
+// Correct: Case-insensitive comparison
+bool caseInsensitiveEqual = 
+    std::equal(s1.begin(), s1.end(), s2.begin(), s2.end(),
+               [](char a, char b) { 
+                   return std::tolower(a) == std::tolower(b); 
+               });
+```
+
+## 10. String Type Comparison Summary
+
+| Feature | C-style strings | std::string | std::string_view |
+|---------|-----------------|-------------|------------------|
+| **Memory Management** | Manual | Automatic | None (reference) |
+| **Safety** | Low (prone to overflow) | High (boundary checks) | Medium (read-only) |
+| **Performance** | High (direct operations) | Medium (possible copies) | High (zero-copy) |
+| **Modifiability** | Modifiable | Modifiable | Read-only |
+| **Lifetime** | Manual management | Automatic management | Depends on external |
+| **Standard Support** | C standard | C++98 | C++17 |
+| **Applicable Scenarios** | Interfacing with C libraries | General string operations | Read-only string processing |
+
+## Teaching Summary
+
+1. **Core Concepts**:
+   - C-style strings: Character arrays terminated with `'\0'`, error-prone
+   - `std::string`: Standard library string class, automatic memory management
+   - `std::string_view`: C++17 introduced non-owning string view
+   - `std::format`: C++20 introduced type-safe formatting
+
+2. **Key Differences**:
+   - Owning vs non-owning: `string` owns data, `string_view` only references
+   - Modifiable vs read-only: `string` modifiable, `string_view` read-only
+   - Performance considerations: `string_view` avoids copying but must consider lifetime
+
+3. **Best Practices**:
+   - Prefer `std::string` and `std::string_view`, avoid C-style strings
+   - For function parameters, prefer `std::string_view` for read-only operations
+   - Use `std::string` when string modification is needed
+   - Consider pre-allocating memory or using string streams for large string operations
+   - Prefer `std::format` for formatting in C++20 and above
+
+4. **Evolution Trends**:
+   - C++11: Move semantics, raw string literals, numeric conversions
+   - C++17: `std::string_view`
+   - C++20: `std::format`
+   - C++23: `contains`, `starts_with`, `ends_with`
+
+> **Advice for Beginners**:
+>
+> 1. **Start with `std::string`**: Avoid C-style strings when starting out
+> 2. **Understand lifetimes**: Especially the usage scenarios of `std::string_view`
+> 3. **Leverage the standard library**: Don't reinvent the wheel, prefer standard library features
+> 4. **Pay attention to performance**: Consider pre-allocating memory for large string operations
+> 5. **Progress gradually**: Master basics first, then learn C++17/20 new features
+
+Mastering C++ string processing is fundamental to writing high-quality C++ code. As C++ standards evolve, string processing has become increasingly safe, efficient, and user-friendly. With this chapter's learning, you now have the capability to effectively handle strings in modern C++ projects.

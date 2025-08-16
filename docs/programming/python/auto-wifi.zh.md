@@ -16,12 +16,14 @@
 ## 功能特性
 
 ### 自动化 Web 身份验证
+
 - **浏览器自动化** - 使用 Microsoft Edge WebDriver 进行可靠的 Web 交互
 - **表单处理** - 自动填写和提交登录表单
 - **下拉选择** - 处理复杂的表单元素，如运营商选择
 - **等待条件** - 智能等待页面元素加载
 
 ### 配置选项
+
 - **可自定义 URL** - 支持不同的门户地址
 - **运营商选择** - 自动选择网络运营商
 - **超时管理** - 可配置的页面加载等待时间
@@ -30,17 +32,21 @@
 ## 安装
 
 ### 先决条件
+
 ```bash
 pip install selenium
 ```
 
 ### WebDriver 设置
+
 1. 从 Microsoft 官方网站下载 Microsoft Edge WebDriver
 2. 将驱动程序解压到已知位置（例如，`D:\webdriver\msedgedriver.exe`）
 3. 在脚本中更新驱动程序路径
 
 ### 替代 WebDriver
+
 该工具可以适配其他浏览器：
+
 - **Chrome** - 使用 ChromeDriver 和 `webdriver.Chrome()`
 - **Firefox** - 使用 GeckoDriver 和 `webdriver.Firefox()`
 - **Safari** - 使用 Safari WebDriver（仅限 macOS）
@@ -48,6 +54,7 @@ pip install selenium
 ## 使用方法
 
 ### 基本用法
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -89,6 +96,7 @@ finally:
 ```
 
 ### 高级配置
+
 ```python
 import time
 from selenium.webdriver.edge.options import Options
@@ -218,6 +226,7 @@ if __name__ == "__main__":
 ## 配置文件支持
 
 ### JSON 配置
+
 ```python
 import json
 
@@ -275,16 +284,19 @@ class ConfigManager:
 ### 常见问题
 
 #### WebDriver 问题
+
 - **驱动程序版本不匹配**：确保 WebDriver 版本与浏览器版本兼容
 - **路径错误**：检查驱动程序路径是否正确
 - **权限问题**：确保驱动程序具有执行权限
 
 #### 网络问题
+
 - **门户 URL 错误**：验证 WiFi 门户的正确 URL
 - **网络超时**：增加等待时间或检查网络连接
 - **页面元素变化**：更新选择器以匹配新的页面结构
 
 #### 身份验证问题
+
 - **运营商选择失败**：检查运营商名称是否正确
 - **表单提交失败**：验证表单字段和提交按钮
 
@@ -333,16 +345,19 @@ class DebugWiFiConnector(WiFiAutoConnector):
 ## 最佳实践
 
 ### 安全考虑
+
 - 不要在代码中硬编码敏感信息
 - 使用环境变量或配置文件存储凭据
 - 定期更新 WebDriver 版本
 
 ### 性能优化
+
 - 使用无头模式减少资源消耗
 - 设置合理的超时时间
 - 实现连接状态缓存
 
 ### 可维护性
+
 - 使用配置文件管理设置
 - 实现详细的日志记录
 - 编写单元测试验证功能
@@ -352,5 +367,6 @@ class DebugWiFiConnector(WiFiAutoConnector):
 ---
 
 **语言版本：**
+
 - [English](auto-wifi.md) - 英文版本
 - **中文** - 当前页面

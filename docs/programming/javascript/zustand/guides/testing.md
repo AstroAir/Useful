@@ -511,8 +511,8 @@ const renderCounterWithContext = () => {
 
 **CodeSandbox Demos**
 
-- Jest Demo: https://stackblitz.com/edit/jest-zustand
-- Vitest Demo: https://stackblitz.com/edit/vitest-zustand
+- Jest Demo: <https://stackblitz.com/edit/jest-zustand>
+- Vitest Demo: <https://stackblitz.com/edit/vitest-zustand>
 
 ## References
 

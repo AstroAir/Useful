@@ -5,6 +5,7 @@
 ## 概述
 
 我们使用 `mkdocs-static-i18n` 插件来实现：
+
 - 自动语言切换器
 - 独立的语言版本构建
 - 智能的导航翻译
@@ -77,12 +78,14 @@ plugins:
 ### 配置参数说明
 
 #### 核心配置
+
 - `docs_structure: suffix` - 使用后缀结构（如 `index.zh.md`）
 - `fallback_to_default: true` - 如果翻译不存在，回退到默认语言
 - `reconfigure_material: true` - 自动配置 Material 主题的语言切换器
 - `reconfigure_search: true` - 自动配置搜索功能支持多语言
 
 #### 语言特定配置
+
 - `locale` - 语言代码（ISO 639-1 标准，如 `en`、`zh`）
 - `default: true` - 指定默认语言（必须有且仅有一个）
 - `name` - 语言显示名称（在切换器中显示）
@@ -92,6 +95,7 @@ plugins:
 - `nav_translations` - 导航项的翻译映射
 
 #### 高级选项
+
 - `link` - 自定义语言切换器链接（默认：`/<locale>/`）
 - `fixed_link` - 固定链接（用于外部链接）
 - `theme` - 每种语言的主题覆盖（如颜色、字体等）
@@ -131,7 +135,7 @@ mkdocs serve
 
 ### 2. 访问网站
 
-- 打开浏览器访问：http://127.0.0.1:8000
+- 打开浏览器访问：<http://127.0.0.1:8000>
 - 使用右上角的语言切换器切换语言
 - 测试不同页面的语言切换功能
 
@@ -142,6 +146,7 @@ mkdocs build
 ```
 
 构建后的文件结构：
+
 ```
 site/
 ├── en/                   # 英文版本
@@ -210,6 +215,7 @@ This content is only shown in English.
 
 **问题**：页面上没有语言切换器
 **解决方案**：
+
 - 确保 `reconfigure_material: true`
 - 检查是否有对应的翻译文件
 - 验证文件命名是否正确
@@ -218,6 +224,7 @@ This content is only shown in English.
 
 **问题**：搜索无法找到中文内容
 **解决方案**：
+
 - 确保 `reconfigure_search: true`
 - 检查搜索插件配置
 - 重新构建网站
@@ -226,6 +233,7 @@ This content is only shown in English.
 
 **问题**：导航项没有翻译
 **解决方案**：
+
 - 检查 `nav_translations` 配置
 - 确保键名与导航项完全匹配
 - 注意大小写和空格
@@ -330,6 +338,7 @@ jobs:
 ### 自定义域名
 
 在 `docs/` 目录下创建 `CNAME` 文件：
+
 ```
 your-domain.com
 ```

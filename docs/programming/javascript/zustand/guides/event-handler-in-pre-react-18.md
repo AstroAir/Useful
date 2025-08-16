@@ -21,4 +21,4 @@ const nonReactCallback = () => {
 }
 ```
 
-More details: https://github.com/pmndrs/zustand/issues/302
+More details: <https://github.com/pmndrs/zustand/issues/302>

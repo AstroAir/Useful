@@ -68,11 +68,20 @@ plugins:
             Python: Python
             Tools: 工具
             NINA: NINA
+            Siril: Siril
             "Auto WiFi Tool": "自动 WiFi 工具"
             "Web Crawling": "网络爬虫"
             "Three Day War": "三日之战"
             "Wave Function Collapse": "波函数坍塌"
             "Quantum Entanglement": "量子纠缠"
+            "CTAD": "类模板参数推导"
+            "Type Traits": "类型萃取"
+            "Fundamentals": "基础教程"
+            "Numerical Programming": "数值编程"
+            "Type Erasure": "类型擦除"
+            "Daily Intelligence": "每日情报"
+            "Development Tools": "开发工具"
+            "Command-Line Tools": "命令行工具"
   - search
 
 markdown_extensions:
@@ -110,8 +119,42 @@ nav:
     - C++ Programming:
       - Overview: programming/cpp/index.md
       - C++20 Guide: programming/cpp/cpp20.md
-      - Type Erasure: programming/cpp/type-erasure/index.md
-      - String Operations: programming/cpp/noob/string.md
+      - CTAD:
+        - Overview: programming/cpp/ctad/index.md
+        - CTAD Guide: programming/cpp/ctad/ctad.md
+      - Fundamentals:
+        - Overview: programming/cpp/noob/index.md
+        - Constructors & Destructors: programming/cpp/noob/class-constructor.md
+        - Copy Semantics: programming/cpp/noob/copy.md
+        - Type Casting: programming/cpp/noob/four_cast.md
+        - Inline Functions: programming/cpp/noob/inline.md
+        - I/O Operations: programming/cpp/noob/io.md
+        - Memory Management: programming/cpp/noob/new.md
+        - References: programming/cpp/noob/ref.md
+        - String Operations: programming/cpp/noob/string.md
+      - Numerical Programming:
+        - Overview: programming/cpp/number/index.md
+        - Bit Fields: programming/cpp/number/bit_fields.md
+        - Number Compression: programming/cpp/number/compress.md
+        - std::ratio: programming/cpp/number/ratio.md
+      - Type Erasure:
+        - Overview: programming/cpp/type-erasure/index.md
+        - C Implementation: programming/cpp/type-erasure/c.md
+        - C11 Generic: programming/cpp/type-erasure/c11_generic.md
+        - C Virtual Table: programming/cpp/type-erasure/c_virtual_table.md
+        - C++ Implementation: programming/cpp/type-erasure/cpp.md
+        - C++ Virtual Table: programming/cpp/type-erasure/cpp_virtual_table.md
+        - CRTP: programming/cpp/type-erasure/crtp.md
+        - std::variant: programming/cpp/type-erasure/variant.md
+      - Type Traits:
+        - Overview: programming/cpp/type-traits/index.md
+        - Introduction: programming/cpp/type-traits/intro.md
+        - decltype: programming/cpp/type-traits/decltype.md
+        - declval: programming/cpp/type-traits/declval.md
+        - Function Traits: programming/cpp/type-traits/function_traits.md
+        - Template Traits: programming/cpp/type-traits/template_traits.md
+        - Type Traits: programming/cpp/type-traits/type_traits.md
+        - typename Usage: programming/cpp/type-traits/when_typename.md
     - C# Programming:
       - Overview: programming/csharp/index.md
       - Data Structures: programming/csharp/data-structure.md
@@ -128,18 +171,26 @@ nav:
     - Overview: ai/index.md
     - Building Effective Agents: ai/building-effective-agents.md
     - Sky-T1 Model: ai/sky-t1.md
-    - Tools:
+    - Daily Intelligence:
+      - Overview: ai/daily/index.md
+      - August 15, 2025: ai/daily/8.15.md
+      - August 16, 2025: ai/daily/8.16.md
+    - Development Tools:
+      - Overview: ai/tools/index.md
       - Compression: ai/tools/compress.md
       - Conversion: ai/tools/convert.md
   - Astronomy:
     - Overview: astronomy/index.md
     - NINA:
+      - Overview: astronomy/nina/index.md
       - Touch'N'Stars: astronomy/nina/touch-n-star.md
     - Siril:
+      - Overview: astronomy/siril/index.md
       - Python Integration: astronomy/siril/python.md
   - Linux:
     - Overview: linux/index.md
-    - Tools:
+    - Command-Line Tools:
+      - Overview: linux/tools/index.md
       - grep Command: linux/tools/grep.md
   - Libraries:
     - Overview: libraries/index.md

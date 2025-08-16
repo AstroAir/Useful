@@ -2,11 +2,10 @@
 
 欢迎来到 **Useful** 文档集合！这个综合性资源汇集了编程、人工智能、天文学等多个领域的广泛技术文档、教程、工具和指南。
 
-[English](index.md) | **中文**
-
 ## 您将在这里找到什么
 
 ### 🖥️ [编程](programming/index.zh.md)
+
 涵盖多种编程语言的综合指南和教程：
 
 - **C 编程** - 基础知识、数据结构、文件操作等
@@ -16,6 +15,7 @@
 - **Python** - 实用工具和网络爬虫技术
 
 ### 🤖 [人工智能](ai/index.zh.md)
+
 AI 开发和理解的资源：
 
 - 构建有效的 AI 代理
@@ -23,23 +23,27 @@ AI 开发和理解的资源：
 - 压缩和转换工具
 
 ### 🔭 [天文学](astronomy/index.zh.md)
+
 天文成像和处理的工具和指南：
 
 - **NINA** - Touch'N'Stars 移动控制界面
 - **Siril** - 天文图像处理的 Python 集成
 
 ### 🐧 [Linux](linux/index.zh.md)
+
 基本的 Linux 工具和命令行实用程序：
 
 - 全面的 grep 命令指南
 - 系统管理工具
 
 ### 📚 [库](libraries/index.zh.md)
+
 有用编程库的文档：
 
 - scnlib - 现代 C++ 输入库
 
 ### ✍️ [创意写作](creative/index.zh.md)
+
 原创作品和故事：
 
 - 科幻小说叙述

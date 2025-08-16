@@ -154,7 +154,7 @@ shallow(mapLeft, mapRight) // -> true
 
 ## Troubleshooting
 
-### Comparing objects returns `false` even if they are identical.
+### Comparing objects returns `false` even if they are identical
 
 The `shallow` function performs a shallow comparison. A shallow comparison checks if the top-level
 properties of two objects are equal. It does not check nested objects or deeply nested properties.

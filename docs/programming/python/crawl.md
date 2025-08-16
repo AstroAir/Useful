@@ -14,18 +14,21 @@ The Web Crawling tool combines file system traversal, content extraction, and AI
 ## Key Features
 
 ### Multi-threaded Processing
+
 - **Concurrent Execution** - Process multiple files simultaneously
 - **Thread Pool Management** - Configurable worker thread count
 - **Progress Tracking** - Real-time progress monitoring with tqdm
 - **Graceful Interruption** - Signal handling for clean shutdown
 
 ### AI-Powered Analysis
+
 - **OpenAI Integration** - Uses DeepSeek API for content analysis
 - **Function Documentation** - Automatically generates function/method examples
 - **Intelligent Summarization** - Creates structured summaries with usage examples
 - **Retry Logic** - Automatic retry on API failures
 
 ### File Processing
+
 - **Multiple Formats** - Supports .txt, .md, and .py files
 - **Recursive Directory Traversal** - Processes entire directory trees
 - **Output Management** - Organized summary file generation
@@ -34,11 +37,13 @@ The Web Crawling tool combines file system traversal, content extraction, and AI
 ## Installation
 
 ### Prerequisites
+
 ```bash
 pip install openai concurrent.futures tqdm
 ```
 
 ### API Configuration
+
 ```python
 from openai import OpenAI
 
@@ -51,6 +56,7 @@ client = OpenAI(
 ## Usage
 
 ### Basic Usage
+
 ```python
 import os
 from crawl import process_directory
@@ -61,6 +67,7 @@ process_directory(directory_path)
 ```
 
 ### Advanced Configuration
+
 ```python
 # Custom thread count and processing
 process_directory(
@@ -74,6 +81,7 @@ process_directory(
 ## Core Functions
 
 ### File Discovery
+
 ```python
 def get_all_files(directory):
     """获取指定目录下所有文件的路径"""
@@ -86,6 +94,7 @@ def get_all_files(directory):
 ```
 
 ### Content Analysis
+
 ```python
 def generate_summary(content):
     """生成内容摘要，提示词更精准"""
@@ -103,6 +112,7 @@ def generate_summary(content):
 ```
 
 ### Concurrent Processing
+
 ```python
 def process_directory(directory, max_workers=5):
     """使用线程池并发处理整个目录"""
@@ -125,6 +135,7 @@ def process_directory(directory, max_workers=5):
 ## Configuration Options
 
 ### Thread Pool Settings
+
 ```python
 # Conservative setting for limited resources
 max_workers = 3
@@ -138,6 +149,7 @@ max_workers = min(os.cpu_count(), 8)
 ```
 
 ### API Configuration
+
 ```python
 # DeepSeek API (default)
 client = OpenAI(
@@ -158,6 +170,7 @@ client = OpenAI(
 ```
 
 ### File Type Configuration
+
 ```python
 # Default supported types
 SUPPORTED_EXTENSIONS = ('.txt', '.md', '.py')
@@ -177,6 +190,7 @@ def should_process_file(file_path):
 ## Advanced Features
 
 ### Signal Handling
+
 ```python
 import signal
 import sys
@@ -193,6 +207,7 @@ signal.signal(signal.SIGTERM, signal_handler)
 ```
 
 ### Retry Logic
+
 ```python
 def process_single_file(file_path):
     """处理单个文件并支持重试"""
@@ -212,6 +227,7 @@ def process_single_file(file_path):
 ```
 
 ### Output Management
+
 ```python
 def save_summary(summary, original_file_path):
     """保存摘要到文件"""
@@ -231,6 +247,7 @@ def save_summary(summary, original_file_path):
 ## Performance Optimization
 
 ### Memory Management
+
 ```python
 # Process files in batches to manage memory
 def process_in_batches(files, batch_size=100):
@@ -243,6 +260,7 @@ def process_in_batches(files, batch_size=100):
 ```
 
 ### Rate Limiting
+
 ```python
 import time
 from functools import wraps
@@ -270,6 +288,7 @@ def generate_summary(content):
 ```
 
 ### Caching
+
 ```python
 import hashlib
 import json
@@ -299,18 +318,21 @@ def cache_summary(content, summary):
 ## Best Practices
 
 ### Error Handling
+
 - **Graceful Degradation** - Continue processing other files on individual failures
 - **Detailed Logging** - Log errors with context for debugging
 - **Resource Cleanup** - Ensure proper cleanup on interruption
 - **Status Reporting** - Provide clear success/failure statistics
 
 ### API Usage
+
 - **Rate Limiting** - Respect API rate limits to avoid throttling
 - **Cost Management** - Monitor API usage and costs
 - **Error Recovery** - Implement exponential backoff for API failures
 - **Content Validation** - Validate API responses before processing
 
 ### File Management
+
 - **Path Handling** - Use os.path for cross-platform compatibility
 - **Encoding** - Specify UTF-8 encoding for international content
 - **Large Files** - Consider streaming for very large files

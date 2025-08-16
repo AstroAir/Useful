@@ -138,4 +138,4 @@ Both ramda and optics-ts also work with types.
 
 ### CodeSandbox Demo
 
-https://codesandbox.io/s/zustand-normal-immer-optics-ramda-updating-ynn3o?file=/src/App.tsx
+<https://codesandbox.io/s/zustand-normal-immer-optics-ramda-updating-ynn3o?file=/src/App.tsx>
