@@ -14,16 +14,6 @@ Complete guide to PrimeVue - the premier Vue.js UI component suite:
 - **Best Practices** - Effective usage patterns and recommendations
 - **Customization** - Theming and styling approaches
 
-### [Zustand State Management](zustand/index.md)
-
-Modern state management for React applications:
-
-- **Simple API** - Minimal boilerplate, maximum productivity
-- **TypeScript Support** - Full type safety and IntelliSense
-- **Performance Optimized** - Efficient re-rendering and updates
-- **Flexible Architecture** - Supports various application patterns
-- **Developer Experience** - Excellent debugging and development tools
-
 ## Framework Coverage
 
 ### Vue.js Ecosystem

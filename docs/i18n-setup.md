@@ -54,7 +54,7 @@ plugins:
         - locale: zh
           name: 中文
           build: true
-          site_name: "Useful - 技术文档集合"
+          site_name: "曼波教程"
           site_description: "涵盖编程、人工智能、天文学等多个领域的综合技术文档集合"
           nav_translations:
             Home: 主页

@@ -100,15 +100,6 @@ Understand C's most powerful feature:
 - **Function Pointers** - Dynamic function calls
 - **Common Pitfalls** - Null pointers and memory errors
 
-### [Memory Management](memory-management.md)
-
-Control dynamic memory allocation:
-
-- **Stack vs Heap** - Memory organization
-- **Dynamic Allocation** - malloc, calloc, realloc, free
-- **Memory Leaks** - Detection and prevention
-- **Best Practices** - Safe memory handling patterns
-
 ## Advanced Topics
 
 ### [Day 7 - Structures & Unions](day7-structures-unions.md)
@@ -184,9 +175,8 @@ Complete reference for input/output formatting:
 
 1. **[Arrays and Strings](arrays-strings.md)** - Master fundamental data structures
 2. **[Pointers](pointers.md)** - Understand C's most powerful feature
-3. **[Memory Management](memory-management.md)** - Control dynamic memory
-4. **[Day 7 - Structures & Unions](day7-structures-unions.md)** - Composite data types
-5. **[Format Control](format-control.md)** - Advanced I/O formatting
+3. **[Day 7 - Structures & Unions](day7-structures-unions.md)** - Composite data types
+4. **[Format Control](format-control.md)** - Advanced I/O formatting
 
 ### Advanced Track
 

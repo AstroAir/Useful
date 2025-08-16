@@ -100,15 +100,6 @@
 - **函数指针** - 动态函数调用
 - **常见陷阱** - 空指针和内存错误
 
-### [内存管理](memory-management.zh.md)
-
-控制动态内存分配：
-
-- **栈与堆** - 内存组织
-- **动态分配** - malloc、calloc、realloc、free
-- **内存泄漏** - 检测和预防
-- **最佳实践** - 安全内存处理模式
-
 ## 高级主题
 
 ### [第7天 - 结构体与联合体](day7-structures-unions.zh.md)
@@ -184,9 +175,8 @@
 
 1. **[数组和字符串](arrays-strings.zh.md)** - 掌握基本数据结构
 2. **[指针](pointers.zh.md)** - 理解 C 语言最强大的特性
-3. **[内存管理](memory-management.zh.md)** - 控制动态内存
-4. **[第7天 - 结构体与联合体](day7-structures-unions.zh.md)** - 复合数据类型
-5. **[格式控制](format-control.zh.md)** - 高级 I/O 格式化
+3. **[第7天 - 结构体与联合体](day7-structures-unions.zh.md)** - 复合数据类型
+4. **[格式控制](format-control.zh.md)** - 高级 I/O 格式化
 
 ### 高级路径
 

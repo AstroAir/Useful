@@ -1,10 +1,10 @@
-site_name: Useful - Technical Documentation Collection
+site_name: Manbo Guides
 site_description: A comprehensive collection of useful documents and tools across programming, AI, astronomy, and more
 site_author: Project Contributors
 site_url: https://your-domain.github.io/Useful-1/
 
-repo_name: Useful-1
-repo_url: https://github.com/your-username/Useful-1
+repo_name: Useful
+repo_url: https://github.com/AstroAir/Useful
 edit_uri: edit/main/docs/
 
 theme:
@@ -35,6 +35,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
 
 plugins:
   - i18n:
@@ -50,7 +52,7 @@ plugins:
         - locale: zh
           name: 中文
           build: true
-          site_name: "Useful - 技术文档集合"
+          site_name: "曼波教程"
           site_description: "涵盖编程、人工智能、天文学等多个领域的综合技术文档集合"
           nav_translations:
             Home: 主页
@@ -82,6 +84,112 @@ plugins:
             "Daily Intelligence": "每日情报"
             "Development Tools": "开发工具"
             "Command-Line Tools": "命令行工具"
+          nav:
+            - 主页: index.md
+            - 编程:
+                - 概览: programming/index.md
+                - C:
+                    - 概览: programming/c/index.md
+                    - Day 1 - Hello World: programming/c/day1-helloworld.md
+                    - Day 2 - 控制语句: programming/c/day2-choice.md
+                    - Day 3 - 循环: programming/c/day3-loop.md
+                    - Day 4 - 数据类型: programming/c/day4-type.md
+                    - Day 5 - 输入: programming/c/day5-input.md
+                    - Day 5.5 - 输出: programming/c/day5.5-output.md
+                    - Day 6 - 函数: programming/c/day6-function.md
+                    - Day 7 - 结构体: programming/c/day7-structures-unions.md
+                    - Day 8 - 链表: programming/c/day8-linked-lists.md
+                    - Day 9 - 文件操作: programming/c/day9-file-operations.md
+                    - Day 10 - 宏: programming/c/day10-macros.md
+                    - Day 11 - 随机数: programming/c/day11-random-numbers.md
+                    - 环境配置: programming/c/environment.md
+                    - 格式控制: programming/c/format-control.md
+                    - 数组与字符串: programming/c/arrays-strings.md
+                    - 指针: programming/c/pointers.md
+                    - 递归: programming/c/recursion.md
+                - C++ 编程:
+                    - 概览: programming/cpp/index.md
+                    - C++20 入门: programming/cpp/cpp20.md
+                    - CTAD:
+                        - 概览: programming/cpp/ctad/index.md
+                        - CTAD 指南: programming/cpp/ctad/ctad.md
+                    - Fundamentals:
+                        - 概览: programming/cpp/noob/index.md
+                        - 构造函数和析构函数: programming/cpp/noob/class-constructor.md
+                        - 复制语义: programming/cpp/noob/copy.md
+                        - 类型转换: programming/cpp/noob/four_cast.md
+                        - 内联函数: programming/cpp/noob/inline.md
+                        - 输入输出操作: programming/cpp/noob/io.md
+                        - 内存管理: programming/cpp/noob/new.md
+                        - 引用: programming/cpp/noob/ref.md
+                        - 字符串操作: programming/cpp/noob/string.md
+                    - Numerical Programming:
+                        - 概览: programming/cpp/number/index.md
+                        - 位域: programming/cpp/number/bit_fields.md
+                        - 数字压缩: programming/cpp/number/compress.md
+                        - std::ratio: programming/cpp/number/ratio.md
+                    - Type Erasure:
+                        - 概览: programming/cpp/type-erasure/index.md
+                        - C 实现: programming/cpp/type-erasure/c.md
+                        - C11 泛型: programming/cpp/type-erasure/c11_generic.md
+                        - C 虚表: programming/cpp/type-erasure/c_virtual_table.md
+                        - C++ 实现: programming/cpp/type-erasure/cpp.md
+                        - C++ 虚表: programming/cpp/type-erasure/cpp_virtual_table.md
+                        - CRTP: programming/cpp/type-erasure/crtp.md
+                        - std::variant: programming/cpp/type-erasure/variant.md
+                    - Type Traits:
+                        - 概览: programming/cpp/type-traits/index.md
+                        - 介绍: programming/cpp/type-traits/intro.md
+                        - decltype: programming/cpp/type-traits/decltype.md
+                        - declval: programming/cpp/type-traits/declval.md
+                        - 函数特性: programming/cpp/type-traits/function_traits.md
+                        - 模板特性: programming/cpp/type-traits/template_traits.md
+                        - 类型特性: programming/cpp/type-traits/type_traits.md
+                        - typename 用法: programming/cpp/type-traits/when_typename.md
+                - C# 编程:
+                    - 概览: programming/csharp/index.md
+                    - 数据结构: programming/csharp/data-structure.md
+                    - TCP 编程: programming/csharp/tcp.md
+                - JavaScript:
+                    - 概览: programming/javascript/index.md
+                    - PrimeVue 指南: programming/javascript/primevue.md
+                - Python:
+                    - 概览: programming/python/index.md
+                    - 自动 WiFi 工具: programming/python/auto-wifi.md
+                    - 网络爬虫: programming/python/crawl.md
+            - 人工智能:
+                - 概览: ai/index.md
+                - 构建有效的 AI 代理: ai/building-effective-agents.md
+                - Sky-T1 模型: ai/sky-t1.md
+                - 每日情报:
+                    - 概览: ai/daily/index.md
+                    - 8 月 15 日: ai/daily/8.15.md
+                    - 8 月 16 日: ai/daily/8.16.md
+                - 开发工具:
+                    - 概览: ai/tools/index.md
+                    - 压缩: ai/tools/compress.md
+                    - 转换: ai/tools/convert.md
+            - 天文学:
+                - 概览: astronomy/index.md
+                - NINA:
+                    - 概览: astronomy/nina/index.md
+                    - Touch'N'Stars: astronomy/nina/touch-n-star.md
+                - Siril:
+                    - 概览: astronomy/siril/index.md
+                    - Python 集成: astronomy/siril/python.md
+            - Linux 工具:
+                - 概览: linux/index.md
+                - 命令行工具:
+                    - 概览: linux/tools/index.md
+                    - grep 命令: linux/tools/grep.md
+            - 库:
+                - 概览: libraries/index.md
+                - scnlib: libraries/scnlib.md
+            - 创意写作:
+                - 概览: creative/index.md
+                - 三日之战: creative/three-day-war.md
+                - 波函数坍塌: creative/wave-function-collapse.md
+                - 量子纠缠: creative/quantum-entanglement.md
   - search
 
 markdown_extensions:
@@ -106,100 +214,106 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Programming:
-    - Overview: programming/index.md
-    - C Programming:
-      - Overview: programming/c/index.md
-      - Day 7 - Structures & Unions: programming/c/day7-structures-unions.md
-      - Day 8 - Linked Lists: programming/c/day8-linked-lists.md
-      - Day 9 - File Operations: programming/c/day9-file-operations.md
-      - Day 10 - Macros: programming/c/day10-macros.md
-      - Day 11 - Random Numbers: programming/c/day11-random-numbers.md
-      - Environment Setup: programming/c/environment.md
-      - Format Control: programming/c/format-control.md
-    - C++ Programming:
-      - Overview: programming/cpp/index.md
-      - C++20 Guide: programming/cpp/cpp20.md
-      - CTAD:
-        - Overview: programming/cpp/ctad/index.md
-        - CTAD Guide: programming/cpp/ctad/ctad.md
-      - Fundamentals:
-        - Overview: programming/cpp/noob/index.md
-        - Constructors & Destructors: programming/cpp/noob/class-constructor.md
-        - Copy Semantics: programming/cpp/noob/copy.md
-        - Type Casting: programming/cpp/noob/four_cast.md
-        - Inline Functions: programming/cpp/noob/inline.md
-        - I/O Operations: programming/cpp/noob/io.md
-        - Memory Management: programming/cpp/noob/new.md
-        - References: programming/cpp/noob/ref.md
-        - String Operations: programming/cpp/noob/string.md
-      - Numerical Programming:
-        - Overview: programming/cpp/number/index.md
-        - Bit Fields: programming/cpp/number/bit_fields.md
-        - Number Compression: programming/cpp/number/compress.md
-        - std::ratio: programming/cpp/number/ratio.md
-      - Type Erasure:
-        - Overview: programming/cpp/type-erasure/index.md
-        - C Implementation: programming/cpp/type-erasure/c.md
-        - C11 Generic: programming/cpp/type-erasure/c11_generic.md
-        - C Virtual Table: programming/cpp/type-erasure/c_virtual_table.md
-        - C++ Implementation: programming/cpp/type-erasure/cpp.md
-        - C++ Virtual Table: programming/cpp/type-erasure/cpp_virtual_table.md
-        - CRTP: programming/cpp/type-erasure/crtp.md
-        - std::variant: programming/cpp/type-erasure/variant.md
-      - Type Traits:
-        - Overview: programming/cpp/type-traits/index.md
-        - Introduction: programming/cpp/type-traits/intro.md
-        - decltype: programming/cpp/type-traits/decltype.md
-        - declval: programming/cpp/type-traits/declval.md
-        - Function Traits: programming/cpp/type-traits/function_traits.md
-        - Template Traits: programming/cpp/type-traits/template_traits.md
-        - Type Traits: programming/cpp/type-traits/type_traits.md
-        - typename Usage: programming/cpp/type-traits/when_typename.md
-    - C# Programming:
-      - Overview: programming/csharp/index.md
-      - Data Structures: programming/csharp/data-structure.md
-      - TCP Programming: programming/csharp/tcp.md
-    - JavaScript:
-      - Overview: programming/javascript/index.md
-      - PrimeVue Guide: programming/javascript/primevue.md
-      - Zustand State Management: programming/javascript/zustand/index.md
-    - Python:
-      - Overview: programming/python/index.md
-      - Auto WiFi Tool: programming/python/auto-wifi.md
-      - Web Crawling: programming/python/crawl.md
+      - Overview: programming/index.md
+      - C Programming:
+          - Overview: programming/c/index.md
+          - Day 1 - Hello World: programming/c/day1-helloworld.md
+          - Day 2 - Control Structures: programming/c/day2-choice.md
+          - Day 3 - Loops: programming/c/day3-loop.md
+          - Day 4 - Data Types: programming/c/day4-type.md
+          - Day 5 - Input Operations: programming/c/day5-input.md
+          - Day 5.5 - Output Operations: programming/c/day5.5-output.md
+          - Day 6 - Functions: programming/c/day6-function.md
+          - Day 7 - Structures & Unions: programming/c/day7-structures-unions.md
+          - Day 8 - Linked Lists: programming/c/day8-linked-lists.md
+          - Day 9 - File Operations: programming/c/day9-file-operations.md
+          - Day 10 - Macros: programming/c/day10-macros.md
+          - Day 11 - Random Numbers: programming/c/day11-random-numbers.md
+          - Environment Setup: programming/c/environment.md
+          - Format Control: programming/c/format-control.md
+      - C++ Programming:
+          - Overview: programming/cpp/index.md
+          - C++20 Guide: programming/cpp/cpp20.md
+          - CTAD:
+              - Overview: programming/cpp/ctad/index.md
+              - CTAD Guide: programming/cpp/ctad/ctad.md
+          - Fundamentals:
+              - Overview: programming/cpp/noob/index.md
+              - Constructors & Destructors: programming/cpp/noob/class-constructor.md
+              - Copy Semantics: programming/cpp/noob/copy.md
+              - Type Casting: programming/cpp/noob/four_cast.md
+              - Inline Functions: programming/cpp/noob/inline.md
+              - I/O Operations: programming/cpp/noob/io.md
+              - Memory Management: programming/cpp/noob/new.md
+              - References: programming/cpp/noob/ref.md
+              - String Operations: programming/cpp/noob/string.md
+          - Numerical Programming:
+              - Overview: programming/cpp/number/index.md
+              - Bit Fields: programming/cpp/number/bit_fields.md
+              - Number Compression: programming/cpp/number/compress.md
+              - std::ratio: programming/cpp/number/ratio.md
+          - Type Erasure:
+              - Overview: programming/cpp/type-erasure/index.md
+              - C Implementation: programming/cpp/type-erasure/c.md
+              - C11 Generic: programming/cpp/type-erasure/c11_generic.md
+              - C Virtual Table: programming/cpp/type-erasure/c_virtual_table.md
+              - C++ Implementation: programming/cpp/type-erasure/cpp.md
+              - C++ Virtual Table: programming/cpp/type-erasure/cpp_virtual_table.md
+              - CRTP: programming/cpp/type-erasure/crtp.md
+              - std::variant: programming/cpp/type-erasure/variant.md
+          - Type Traits:
+              - Overview: programming/cpp/type-traits/index.md
+              - Introduction: programming/cpp/type-traits/intro.md
+              - decltype: programming/cpp/type-traits/decltype.md
+              - declval: programming/cpp/type-traits/declval.md
+              - Function Traits: programming/cpp/type-traits/function_traits.md
+              - Template Traits: programming/cpp/type-traits/template_traits.md
+              - Type Traits: programming/cpp/type-traits/type_traits.md
+              - typename Usage: programming/cpp/type-traits/when_typename.md
+      - C# Programming:
+          - Overview: programming/csharp/index.md
+          - Data Structures: programming/csharp/data-structure.md
+          - TCP Programming: programming/csharp/tcp.md
+      - JavaScript:
+          - Overview: programming/javascript/index.md
+          - PrimeVue Guide: programming/javascript/primevue.md
+      - Python:
+          - Overview: programming/python/index.md
+          - Auto WiFi Tool: programming/python/auto-wifi.md
+          - Web Crawling: programming/python/crawl.md
   - Artificial Intelligence:
-    - Overview: ai/index.md
-    - Building Effective Agents: ai/building-effective-agents.md
-    - Sky-T1 Model: ai/sky-t1.md
-    - Daily Intelligence:
-      - Overview: ai/daily/index.md
-      - August 15, 2025: ai/daily/8.15.md
-      - August 16, 2025: ai/daily/8.16.md
-    - Development Tools:
-      - Overview: ai/tools/index.md
-      - Compression: ai/tools/compress.md
-      - Conversion: ai/tools/convert.md
+      - Overview: ai/index.md
+      - Building Effective Agents: ai/building-effective-agents.md
+      - Sky-T1 Model: ai/sky-t1.md
+      - Daily Intelligence:
+          - Overview: ai/daily/index.md
+          - August 15, 2025: ai/daily/8.15.md
+          - August 16, 2025: ai/daily/8.16.md
+      - Development Tools:
+          - Overview: ai/tools/index.md
+          - Compression: ai/tools/compress.md
+          - Conversion: ai/tools/convert.md
   - Astronomy:
-    - Overview: astronomy/index.md
-    - NINA:
-      - Overview: astronomy/nina/index.md
-      - Touch'N'Stars: astronomy/nina/touch-n-star.md
-    - Siril:
-      - Overview: astronomy/siril/index.md
-      - Python Integration: astronomy/siril/python.md
+      - Overview: astronomy/index.md
+      - NINA:
+          - Overview: astronomy/nina/index.md
+          - Touch'N'Stars: astronomy/nina/touch-n-star.md
+      - Siril:
+          - Overview: astronomy/siril/index.md
+          - Python Integration: astronomy/siril/python.md
   - Linux:
-    - Overview: linux/index.md
-    - Command-Line Tools:
-      - Overview: linux/tools/index.md
-      - grep Command: linux/tools/grep.md
+      - Overview: linux/index.md
+      - Command-Line Tools:
+          - Overview: linux/tools/index.md
+          - grep Command: linux/tools/grep.md
   - Libraries:
-    - Overview: libraries/index.md
-    - scnlib: libraries/scnlib.md
+      - Overview: libraries/index.md
+      - scnlib: libraries/scnlib.md
   - Creative Writing:
-    - Overview: creative/index.md
-    - Three Day War: creative/three-day-war.md
-    - Wave Function Collapse: creative/wave-function-collapse.md
-    - Quantum Entanglement: creative/quantum-entanglement.md
+      - Overview: creative/index.md
+      - Three Day War: creative/three-day-war.md
+      - Wave Function Collapse: creative/wave-function-collapse.md
+      - Quantum Entanglement: creative/quantum-entanglement.md
 
 extra:
   social:
