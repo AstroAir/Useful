@@ -1,179 +1,179 @@
-# Day9 - C 语言文件操作详解
+# Day9 - Detailed Explanation of File Operations in C
 
-文件操作是 C 语言中的一项重要功能，用于实现对磁盘文件的读写、创建、修改等操作。C 语言通过标准库函数提供了强大的文件操作支持，这些函数位于头文件 `<stdio.h>` 中。
+File operations are an essential feature in the C language, enabling the creation, reading, writing, and modification of disk files. C provides robust file operation support through standard library functions located in the `<stdio.h>` header file.
 
-## 文件的基本概念
+## Basic Concepts of Files
 
-文件是存储在磁盘上的数据集合，可以是文本文件或二进制文件：
+A file is a collection of data stored on a disk, which can be either a text file or a binary file:
 
-- **文本文件**：以可读字符存储（ASCII/UTF-8 等编码），适合人类阅读。
-- **二进制文件**：以原始数据的形式存储，不能直接阅读。
+- **Text File**: Stores data as readable characters (encoded in ASCII/UTF-8, etc.), suitable for human reading.
+- **Binary File**: Stores raw data in its original form, not directly readable by humans.
 
-在 C 语言中，文件操作基于文件指针 `FILE*`，用于引用文件。
+In C, file operations are based on the file pointer `FILE*`, which is used to reference a file.
 
-## 文件操作的基本步骤
+## Basic Steps for File Operations
 
-文件操作的基本流程分为四步：
+The basic workflow for file operations consists of four steps:
 
-1. **打开文件**（`fopen()` 或 `freopen()`）
-2. **读/写文件**（如：`fscanf()`, `fprintf()`, `fread()`, `fwrite()` 等）
-3. **关闭文件**（`fclose()`）
-4. **处理错误**（通过返回值或 `ferror()` 检测）
+1. **Open the file** (`fopen()` or `freopen()`)
+2. **Read/write the file** (e.g., `fscanf()`, `fprintf()`, `fread()`, `fwrite()`, etc.)
+3. **Close the file** (`fclose()`)
+4. **Handle errors** (detected via return values or `ferror()`)
 
-## 文件指针
+## File Pointers
 
-`FILE*` 是一个指向文件的指针，用于操作文件。打开文件后，会返回一个指向文件流的指针，该指针用于后续的读写操作。
+`FILE*` is a pointer to a file, used to manipulate the file. After opening a file, a pointer to the file stream is returned, which is then used for subsequent read/write operations.
 
-## 文件打开与关闭
+## Opening and Closing Files
 
-### 打开文件：`fopen()`
+### Opening a File: `fopen()`
 
-**语法**：
+**Syntax**:
 
 ```c
 FILE* fopen(const char* filename, const char* mode);
 ```
 
-**参数说明**：
+**Parameter Description**:
 
-- `filename`：文件名（包含路径）
-- `mode`：文件的打开模式
+- `filename`: File name (including path)
+- `mode`: File opening mode
 
-**常见的文件模式**：
+**Common File Modes**:
 
-| 模式   | 含义                                      |
+| Mode   | Meaning                                      |
 | ------ | ----------------------------------------- |
-| `"r"`  | 以只读模式打开文件，文件必须存在          |
-| `"w"`  | 以写入模式打开文件，若文件存在则清空内容  |
-| `"a"`  | 以追加模式打开文件，不存在则创建          |
-| `"r+"` | 以读写模式打开文件，文件必须存在          |
-| `"w+"` | 以读写模式打开文件，若文件存在则清空内容  |
-| `"a+"` | 以读写模式打开文件，从文件尾部追加数据    |
-| `"b"`  | 二进制模式（可与以上模式组合，如 `"rb"`） |
+| `"r"`  | Open file in read-only mode; file must exist          |
+| `"w"`  | Open file in write mode; clears content if file exists  |
+| `"a"`  | Open file in append mode; creates file if it doesn't exist          |
+| `"r+"` | Open file in read-write mode; file must exist          |
+| `"w+"` | Open file in read-write mode; clears content if file exists  |
+| `"a+"` | Open file in read-write mode; appends data from the end of the file    |
+| `"b"`  | Binary mode (can be combined with above modes, e.g., `"rb"`) |
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "w");
 if (fp == NULL) {
-    printf("文件打开失败！\n");
+    printf("Failed to open file!\n");
     return 1;
 }
 ```
 
-### 关闭文件：`fclose()`
+### Closing a File: `fclose()`
 
-**语法**：
+**Syntax**:
 
 ```c
 int fclose(FILE* stream);
 ```
 
-关闭文件并释放资源。成功返回 `0`，失败返回 `EOF`。
+Closes the file and releases resources. Returns `0` on success, `EOF` on failure.
 
-**示例**：
+**Example**:
 
 ```c
 fclose(fp);
 ```
 
-### 二合一
+### Combined Example
 
 ```c
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("example.txt", "w");  // 以写入模式打开文件
+    FILE* fp = fopen("example.txt", "w");  // Open file in write mode
 
-    if (fp == NULL) {  // 检查文件是否打开成功
-        printf("文件打开失败！\n");
+    if (fp == NULL) {  // Check if file opened successfully
+        printf("Failed to open file!\n");
         return 1;
     }
 
-    printf("文件打开成功！\n");
+    printf("File opened successfully!\n");
 
-    fclose(fp);  // 关闭文件
-    printf("文件关闭成功！\n");
+    fclose(fp);  // Close file
+    printf("File closed successfully!\n");
 
     return 0;
 }
 ```
 
-## 文件读写
+## File Reading and Writing
 
-### 文本文件的读写
+### Text File Reading and Writing
 
-#### 写入文本文件：`fprintf()`
+#### Writing to a Text File: `fprintf()`
 
-用于以格式化文本的方式写入数据。
+Used to write formatted text data.
 
-**语法**：
+**Syntax**:
 
 ```c
 int fprintf(FILE* stream, const char* format, ...);
 ```
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "w");
 if (fp != NULL) {
-    fprintf(fp, "姓名：%s\n年龄：%d\n", "张三", 25);
+    fprintf(fp, "Name: %s\nAge: %d\n", "Zhang San", 25);
     fclose(fp);
 }
 ```
 
-#### 读取文本文件：`fscanf()`
+#### Reading from a Text File: `fscanf()`
 
-用于以格式化文本的方式读取数据。
+Used to read formatted text data.
 
-**语法**：
+**Syntax**:
 
 ```c
 int fscanf(FILE* stream, const char* format, ...);
 ```
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "r");
 char name[50];
 int age;
 if (fp != NULL) {
-    fscanf(fp, "姓名：%s\n年龄：%d\n", name, &age);
-    printf("姓名：%s, 年龄：%d\n", name, age);
+    fscanf(fp, "Name: %s\nAge: %d\n", name, &age);
+    printf("Name: %s, Age: %d\n", name, age);
     fclose(fp);
 }
 ```
 
-#### 字符操作：`fgetc()` 和 `fputc()`
+#### Character Operations: `fgetc()` and `fputc()`
 
-- `fgetc(FILE* stream)`：从文件中读取一个字符
-- `fputc(int ch, FILE* stream)`：向文件中写入一个字符
+- `fgetc(FILE* stream)`: Reads one character from the file
+- `fputc(int ch, FILE* stream)`: Writes one character to the file
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "w");
 if (fp != NULL) {
-    fputc('A', fp);  // 写入字符 'A'
+    fputc('A', fp);  // Write character 'A'
     fclose(fp);
 }
 
 fp = fopen("example.txt", "r");
 if (fp != NULL) {
-    char ch = fgetc(fp);  // 读取字符
-    printf("读取的字符：%c\n", ch);
+    char ch = fgetc(fp);  // Read character
+    printf("Read character: %c\n", ch);
     fclose(fp);
 }
 ```
 
-#### 行操作：`fgets()` 和 `fputs()`
+#### Line Operations: `fgets()` and `fputs()`
 
-- `fgets(char* str, int n, FILE* stream)`：读取一行，最多读取 `n-1` 个字符
-- `fputs(const char* str, FILE* stream)`：写入一行
+- `fgets(char* str, int n, FILE* stream)`: Reads a line, up to `n-1` characters
+- `fputs(const char* str, FILE* stream)`: Writes a line
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "w");
@@ -185,29 +185,29 @@ if (fp != NULL) {
 fp = fopen("example.txt", "r");
 if (fp != NULL) {
     char line[100];
-    fgets(line, sizeof(line), fp);  // 读取一行
-    printf("读取的行：%s", line);
+    fgets(line, sizeof(line), fp);  // Read a line
+    printf("Read line: %s", line);
     fclose(fp);
 }
 ```
 
-#### 两个例子
+#### Two Examples
 
 ```c
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("example.txt", "w");  // 以写模式打开文件
+    FILE* fp = fopen("example.txt", "w");  // Open file in write mode
     if (fp == NULL) {
-        printf("文件打开失败！\n");
+        printf("Failed to open file!\n");
         return 1;
     }
 
-    fprintf(fp, "姓名：%s\n", "张三");
-    fprintf(fp, "年龄：%d\n", 25);  // 写入文本
+    fprintf(fp, "Name: %s\n", "Zhang San");
+    fprintf(fp, "Age: %d\n", 25);  // Write text
 
-    fclose(fp);  // 关闭文件
-    printf("写入完成！\n");
+    fclose(fp);  // Close file
+    printf("Write completed!\n");
 
     return 0;
 }
@@ -217,38 +217,38 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("example.txt", "r");  // 以读模式打开文件
+    FILE* fp = fopen("example.txt", "r");  // Open file in read mode
     if (fp == NULL) {
-        printf("文件打开失败！\n");
+        printf("Failed to open file!\n");
         return 1;
     }
 
     char name[50];
     int age;
-    fscanf(fp, "姓名：%s\n", name);
-    fscanf(fp, "年龄：%d\n", &age);  // 按格式读取内容
+    fscanf(fp, "Name: %s\n", name);
+    fscanf(fp, "Age: %d\n", &age);  // Read content by format
 
-    printf("姓名：%s\n", name);
-    printf("年龄：%d\n", age);
+    printf("Name: %s\n", name);
+    printf("Age: %d\n", age);
 
-    fclose(fp);  // 关闭文件
+    fclose(fp);  // Close file
     return 0;
 }
 ```
 
-### 二进制文件的读写
+### Binary File Reading and Writing
 
-#### 写入二进制文件：`fwrite()`
+#### Writing to a Binary File: `fwrite()`
 
-用于将数据块写入文件。
+Used to write data blocks to a file.
 
-**语法**：
+**Syntax**:
 
 ```c
 size_t fwrite(const void* ptr, size_t size, size_t count, FILE* stream);
 ```
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("data.bin", "wb");
@@ -257,17 +257,17 @@ fwrite(data, sizeof(int), 5, fp);
 fclose(fp);
 ```
 
-#### 读取二进制文件：`fread()`
+#### Reading from a Binary File: `fread()`
 
-用于从文件中读取数据块。
+Used to read data blocks from a file.
 
-**语法**：
+**Syntax**:
 
 ```c
 size_t fread(void* ptr, size_t size, size_t count, FILE* stream);
 ```
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("data.bin", "rb");
@@ -283,17 +283,17 @@ fclose(fp);
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("data.bin", "wb");  // 打开二进制文件
+    FILE* fp = fopen("data.bin", "wb");  // Open binary file
     if (fp == NULL) {
-        printf("文件打开失败！\n");
+        printf("Failed to open file!\n");
         return 1;
     }
 
     int numbers[] = {10, 20, 30, 40, 50};
-    fwrite(numbers, sizeof(int), 5, fp);  // 写入5个整数
+    fwrite(numbers, sizeof(int), 5, fp);  // Write 5 integers
 
     fclose(fp);
-    printf("二进制数据写入完成！\n");
+    printf("Binary data write completed!\n");
 
     return 0;
 }
@@ -303,17 +303,17 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("data.bin", "rb");  // 打开二进制文件
+    FILE* fp = fopen("data.bin", "rb");  // Open binary file
     if (fp == NULL) {
-        printf("文件打开失败！\n");
+        printf("Failed to open file!\n");
         return 1;
     }
 
     int numbers[5];
-    fread(numbers, sizeof(int), 5, fp);  // 读取5个整数
+    fread(numbers, sizeof(int), 5, fp);  // Read 5 integers
 
     for (int i = 0; i < 5; i++) {
-        printf("数字%d: %d\n", i + 1, numbers[i]);
+        printf("Number %d: %d\n", i + 1, numbers[i]);
     }
 
     fclose(fp);
@@ -321,13 +321,13 @@ int main() {
 }
 ```
 
-## 文件指针的位置操作
+## File Pointer Position Operations
 
 ### (1) `ftell()`
 
-返回当前文件指针的位置。
+Returns the current position of the file pointer.
 
-**语法**：
+**Syntax**:
 
 ```c
 long ftell(FILE* stream);
@@ -335,28 +335,28 @@ long ftell(FILE* stream);
 
 ### (2) `fseek()`
 
-移动文件指针到指定位置。
+Moves the file pointer to a specified position.
 
-**语法**：
+**Syntax**:
 
 ```c
 int fseek(FILE* stream, long offset, int origin);
 ```
 
-**示例**：
+**Example**:
 
 ```c
 FILE* fp = fopen("example.txt", "r");
-fseek(fp, 10, SEEK_SET);  // 将指针移动到文件的第10个字节
-printf("当前位置：%ld\n", ftell(fp));
+fseek(fp, 10, SEEK_SET);  // Move pointer to the 10th byte of the file
+printf("Current position: %ld\n", ftell(fp));
 fclose(fp);
 ```
 
 ### (3) `rewind()`
 
-将文件指针重置到文件开头。
+Resets the file pointer to the beginning of the file.
 
-**语法**：
+**Syntax**:
 
 ```c
 void rewind(FILE* stream);
@@ -368,26 +368,26 @@ void rewind(FILE* stream);
 int main() {
     FILE* fp = fopen("example.txt", "r");
     if (fp == NULL) {
-        printf("文件打开失败！\n");
+        printf("Failed to open file!\n");
         return 1;
     }
 
-    fseek(fp, 5, SEEK_SET);  // 将指针移动到文件的第5个字节
-    long pos = ftell(fp);   // 获取当前指针位置
-    printf("当前指针位置：%ld\n", pos);
+    fseek(fp, 5, SEEK_SET);  // Move pointer to the 5th byte of the file
+    long pos = ftell(fp);   // Get current pointer position
+    printf("Current pointer position: %ld\n", pos);
 
     fclose(fp);
     return 0;
 }
 ```
 
-## 7. 文件操作的错误处理
+## Error Handling in File Operations
 
 ### (1) `ferror()`
 
-检查文件操作是否出错。
+Checks if an error occurred during file operations.
 
-**语法**：
+**Syntax**:
 
 ```c
 int ferror(FILE* stream);
@@ -395,9 +395,9 @@ int ferror(FILE* stream);
 
 ### (2) `perror()`
 
-打印文件操作错误信息。
+Prints error messages related to file operations.
 
-**语法**：
+**Syntax**:
 
 ```c
 void perror(const char* str);
@@ -407,15 +407,15 @@ void perror(const char* str);
 #include <stdio.h>
 
 int main() {
-    FILE* fp = fopen("nonexistent.txt", "r");  // 尝试打开不存在的文件
+    FILE* fp = fopen("nonexistent.txt", "r");  // Attempt to open non-existent file
     if (fp == NULL) {
-        perror("文件打开失败");  // 打印错误信息
+        perror("Failed to open file");  // Print error message
         return 1;
     }
 
     char ch = fgetc(fp);
-    if (ferror(fp)) {  // 检查是否发生错误
-        printf("文件读取出错！\n");
+    if (ferror(fp)) {  // Check if an error occurred
+        printf("File read error!\n");
     }
 
     fclose(fp);
@@ -423,11 +423,11 @@ int main() {
 }
 ```
 
-## 8. 常见问题与注意事项
+## Common Issues and Notes
 
-- 文件打开失败要检查返回值是否为 `NULL`。
-- 文件操作完成后务必关闭文件以释放资源。
-- 注意文件读写模式的正确选择，否则可能导致数据丢失。
-- 处理二进制文件时要确保读取/写入的数据大小匹配。
+- Always check if the return value is `NULL` when opening a file.
+- Always close files after operations to release resources.
+- Choose the correct file read/write mode to avoid data loss.
+- Ensure data size matches when handling binary files.
 
-以上代码涵盖了所有常见的 C 语言文件操作，并且每个功能都配有完整的示例代码，可以直接运行测试。
+The above code covers all common C language file operations, with complete example code for each function that can be directly run and tested.

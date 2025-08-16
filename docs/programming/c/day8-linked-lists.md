@@ -1,101 +1,101 @@
-# Day8 - C 语言中的链表
+# Day8 - Linked Lists in C
 
-链表（Linked List）是 C 语言中一种常见的数据结构，属于线性数据结构。它不同于数组，链表的长度可以动态变化，适合需要频繁插入、删除元素的场景，当然，也是大学 c 语言考试中不可缺少的一部分。下面将详细介绍链表的原理、类型、实现方式、应用及其优缺点。
+Linked List is a common data structure in the C language, belonging to linear data structures. Unlike arrays, the length of a linked list can dynamically change, making it suitable for scenarios requiring frequent insertion and deletion of elements. Of course, it is also an indispensable part of university C language exams. Below, we will provide a detailed introduction to the principles, types, implementation methods, applications, and advantages and disadvantages of linked lists.
 
-## 基本概念
+## Basic Concepts
 
-链表由多个节点（Node）组成，每个节点包含两个部分：
+A linked list consists of multiple nodes (Node), each containing two parts:
 
-- **数据域（Data）**：存储节点的数据。
-- **指针域（Pointer）**：指向下一个节点的地址。
+- **Data Field**: Stores the node's data.
+- **Pointer Field**: Points to the address of the next node.
 
-链表通过指针将各个节点串联起来，形成一个链式结构。
+Linked lists connect individual nodes through pointers, forming a chain-like structure.
 
-## 分类
+## Classification
 
-链表根据结构的不同，可以分为以下几种类型：
+Based on structural differences, linked lists can be categorized into the following types:
 
-### 单向链表（Singly Linked List）
+### Singly Linked List
 
-- 每个节点只有一个指针，指向下一个节点。
-- 适合从头到尾的单向遍历。
-- 最后一个节点的指针为 `NULL`。
+- Each node has only one pointer pointing to the next node.
+- Suitable for unidirectional traversal from head to tail.
+- The pointer of the last node is `NULL`.
 
-### 双向链表（Doubly Linked List）
+### Doubly Linked List
 
-- 每个节点有两个指针：一个指向前一个节点，另一个指向后一个节点。
-- 支持双向遍历，插入和删除操作更灵活。
-- 需要额外的内存来存储两个指针。
+- Each node has two pointers: one pointing to the previous node and another pointing to the next node.
+- Supports bidirectional traversal, making insertion and deletion operations more flexible.
+- Requires additional memory to store two pointers.
 
-### 循环链表（Circular Linked List）
+### Circular Linked List
 
-- 尾节点的指针指向头节点，形成一个环状结构。
-- 可以是单向循环链表，也可以是双向循环链表。
-- 适用于需要循环访问的场景。
+- The pointer of the tail node points to the head node, forming a ring structure.
+- Can be either singly circular or doubly circular.
+- Suitable for scenarios requiring cyclic access.
 
-### 多重链表（Multi Linked List）
+### Multi Linked List
 
-- 每个节点可以有多个指针，形成复杂的链表结构。
-- 常用于表示图、稀疏矩阵等复杂数据结构。
+- Each node can have multiple pointers, forming complex linked structures.
+- Commonly used to represent complex data structures such as graphs and sparse matrices.
 
-## 链表与数组的比较
+## Comparison Between Linked Lists and Arrays
 
-| 特性      | 链表                 | 数组                   |
-| --------- | -------------------- | ---------------------- |
-| 存储方式  | 动态分配，分散存储   | 静态分配，连续存储     |
-| 访问时间  | O(n)，需逐个节点访问 | O(1)，可直接访问索引   |
-| 插入/删除 | 高效，不需要移动元素 | 低效，需要移动元素     |
-| 内存使用  | 节点需额外的指针空间 | 仅存储数据，无额外开销 |
+| Characteristic | Linked List                | Array                  |
+| -------------- | -------------------------- | ---------------------- |
+| Storage Method | Dynamically allocated, scattered storage | Statically allocated, contiguous storage |
+| Access Time    | O(n), requires sequential node access | O(1), direct index access |
+| Insertion/Deletion | Efficient, no element shifting required | Inefficient, requires element shifting |
+| Memory Usage   | Requires additional pointer space per node | Stores only data, no overhead |
 
-## 单向链表
+## Singly Linked List
 
-### 节点定义
+### Node Definition
 
-单向链表的节点定义如下：
+The node definition for a singly linked list is as follows:
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义单向链表的节点结构
+// Define the node structure of a singly linked list
 struct Node {
-    int data;           // 数据域
-    struct Node* next;  // 指针域，指向下一个节点
+    int data;           // Data field
+    struct Node* next;  // Pointer field, pointing to the next node
 };
 ```
 
-### 创建节点
+### Creating a Node
 
-节点的内存通过 `malloc` 函数动态分配：
+Node memory is dynamically allocated using the `malloc` function:
 
 ```c
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     if (newNode == NULL) {
-        printf("内存分配失败\n");
+        printf("Memory allocation failed\n");
         exit(1);
     }
-    newNode->data = data; // 设置数据域
-    newNode->next = NULL; // 初始化指针域
+    newNode->data = data; // Set data field
+    newNode->next = NULL; // Initialize pointer field
     return newNode;
 }
 ```
 
-### 基本操作
+### Basic Operations
 
-#### 插入节点
+#### Inserting a Node
 
-在链表头部插入
+Insert at the head of the list
 
 ```c
 struct Node* insertAtHead(struct Node* head, int data) {
     struct Node* newNode = createNode(data);
-    newNode->next = head; // 新节点的指针指向旧的头节点
-    return newNode;       // 返回新的头节点
+    newNode->next = head; // New node's pointer points to the old head node
+    return newNode;       // Return the new head node
 }
 ```
 
-在链表尾部插入
+Insert at the tail of the list
 
 ```c
 void insertAtTail(struct Node** head, int data) {
@@ -113,39 +113,39 @@ void insertAtTail(struct Node** head, int data) {
 }
 ```
 
-#### 删除节点
+#### Deleting a Node
 
-删除第一个匹配指定值的节点
+Delete the first node matching the specified value
 
 ```c
 struct Node* deleteNode(struct Node* head, int key) {
     struct Node* temp = head;
     struct Node* prev = NULL;
 
-    // 处理头节点
+    // Handle head node
     if (temp != NULL && temp->data == key) {
         head = temp->next;
         free(temp);
         return head;
     }
 
-    // 查找要删除的节点
+    // Find the node to delete
     while (temp != NULL && temp->data != key) {
         prev = temp;
         temp = temp->next;
     }
 
-    if (temp == NULL) return head; // 未找到节点
+    if (temp == NULL) return head; // Node not found
 
-    prev->next = temp->next; // 跳过要删除的节点
-    free(temp);              // 释放内存
+    prev->next = temp->next; // Skip the node to delete
+    free(temp);              // Free memory
     return head;
 }
 ```
 
-#### 遍历链表
+#### Traversing the List
 
-通过循环逐个访问节点
+Access nodes sequentially through a loop
 
 ```c
 void printList(struct Node* head) {
@@ -158,19 +158,19 @@ void printList(struct Node* head) {
 }
 ```
 
-### 完整代码
+### Complete Code
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义链表节点结构
+// Define the linked list node structure
 struct Node {
     int data;
     struct Node* next;
 };
 
-// 创建新节点
+// Create a new node
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
@@ -178,14 +178,14 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
-// 头部插入
+// Insert at head
 struct Node* insertAtHead(struct Node* head, int data) {
     struct Node* newNode = createNode(data);
     newNode->next = head;
     return newNode;
 }
 
-// 遍历链表
+// Traverse the list
 void printList(struct Node* head) {
     struct Node* temp = head;
     while (temp != NULL) {
@@ -195,49 +195,49 @@ void printList(struct Node* head) {
     printf("NULL\n");
 }
 
-// 主函数
+// Main function
 int main() {
-    struct Node* head = NULL; // 初始化链表为空
+    struct Node* head = NULL; // Initialize empty list
 
-    // 插入元素
+    // Insert elements
     head = insertAtHead(head, 10);
     head = insertAtHead(head, 20);
     head = insertAtHead(head, 30);
 
-    printf("链表内容：\n");
+    printf("List contents:\n");
     printList(head);
 
     return 0;
 }
 ```
 
-## 双向链表
+## Doubly Linked List
 
-在双向链表中，每个节点包含三个部分：
+In a doubly linked list, each node contains three parts:
 
-- **数据域（data）**
-- **指向前一个节点的指针（prev）**
-- **指向后一个节点的指针（next）**
+- **Data Field (data)**
+- **Pointer to previous node (prev)**
+- **Pointer to next node (next)**
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义双向链表的节点结构
+// Define the node structure of a doubly linked list
 struct DNode {
-    int data;              // 数据域
-    struct DNode* prev;    // 指向前一个节点
-    struct DNode* next;    // 指向后一个节点
+    int data;              // Data field
+    struct DNode* prev;    // Pointer to previous node
+    struct DNode* next;    // Pointer to next node
 };
 ```
 
-### 创建新节点
+### Creating a New Node
 
 ```c
 struct DNode* createNode(int data) {
     struct DNode* newNode = (struct DNode*)malloc(sizeof(struct DNode));
     if (newNode == NULL) {
-        printf("内存分配失败\n");
+        printf("Memory allocation failed\n");
         exit(1);
     }
     newNode->data = data;
@@ -247,9 +247,9 @@ struct DNode* createNode(int data) {
 }
 ```
 
-### 插入操作
+### Insertion Operations
 
-#### 在链表头部插入
+#### Insert at Head
 
 ```c
 struct DNode* insertAtHead(struct DNode* head, int data) {
@@ -258,18 +258,18 @@ struct DNode* insertAtHead(struct DNode* head, int data) {
         head->prev = newNode;
         newNode->next = head;
     }
-    return newNode; // 新节点成为头节点
+    return newNode; // New node becomes the head node
 }
 ```
 
-#### 在链表尾部插入
+#### Insert at Tail
 
 ```c
 void insertAtTail(struct DNode* head, int data) {
     struct DNode* newNode = createNode(data);
     struct DNode* temp = head;
 
-    while (temp->next != NULL) { // 找到尾节点
+    while (temp->next != NULL) { // Find the tail node
         temp = temp->next;
     }
 
@@ -278,29 +278,29 @@ void insertAtTail(struct DNode* head, int data) {
 }
 ```
 
-### 删除节点
+### Deleting a Node
 
-删除包含指定值的节点
+Delete the node containing the specified value
 
 ```c
 struct DNode* deleteNode(struct DNode* head, int key) {
     struct DNode* temp = head;
 
-    // 查找要删除的节点
+    // Find the node to delete
     while (temp != NULL && temp->data != key) {
         temp = temp->next;
     }
 
-    if (temp == NULL) return head; // 未找到节点
+    if (temp == NULL) return head; // Node not found
 
     if (temp->prev != NULL) {
-        temp->prev->next = temp->next; // 更新前节点的next
+        temp->prev->next = temp->next; // Update previous node's next
     } else {
-        head = temp->next; // 删除的是头节点
+        head = temp->next; // Deleting the head node
     }
 
     if (temp->next != NULL) {
-        temp->next->prev = temp->prev; // 更新后节点的prev
+        temp->next->prev = temp->prev; // Update next node's prev
     }
 
     free(temp);
@@ -308,14 +308,14 @@ struct DNode* deleteNode(struct DNode* head, int key) {
 }
 ```
 
-### 遍历链表
+### Traversing the List
 
-从头到尾遍历
+Traverse from head to tail
 
 ```c
 void printList(struct DNode* head) {
     struct DNode* temp = head;
-    printf("正向遍历：\n");
+    printf("Forward traversal:\n");
     while (temp != NULL) {
         printf("%d -> ", temp->data);
         temp = temp->next;
@@ -324,20 +324,20 @@ void printList(struct DNode* head) {
 }
 ```
 
-### 完整示例
+### Complete Example
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 双向链表的节点结构
+// Doubly linked list node structure
 struct DNode {
     int data;
     struct DNode* prev;
     struct DNode* next;
 };
 
-// 创建新节点
+// Create a new node
 struct DNode* createNode(int data) {
     struct DNode* newNode = (struct DNode*)malloc(sizeof(struct DNode));
     newNode->data = data;
@@ -346,7 +346,7 @@ struct DNode* createNode(int data) {
     return newNode;
 }
 
-// 在头部插入节点
+// Insert node at head
 struct DNode* insertAtHead(struct DNode* head, int data) {
     struct DNode* newNode = createNode(data);
     if (head != NULL) {
@@ -356,10 +356,10 @@ struct DNode* insertAtHead(struct DNode* head, int data) {
     return newNode;
 }
 
-// 遍历链表
+// Traverse the list
 void printList(struct DNode* head) {
     struct DNode* temp = head;
-    printf("链表内容：\n");
+    printf("List contents:\n");
     while (temp != NULL) {
         printf("%d -> ", temp->data);
         temp = temp->next;
@@ -367,7 +367,7 @@ void printList(struct DNode* head) {
     printf("NULL\n");
 }
 
-// 主函数
+// Main function
 int main() {
     struct DNode* head = NULL;
 
@@ -381,93 +381,93 @@ int main() {
 }
 ```
 
-## 循环链表
+## Circular Linked List
 
-循环链表的特点是尾节点的 `next` 指针指向头节点，形成一个闭环。
+The characteristic of a circular linked list is that the `next` pointer of the tail node points to the head node, forming a closed loop.
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义循环链表的节点结构
+// Define the node structure of a circular linked list
 struct CNode {
     int data;
     struct CNode* next;
 };
 ```
 
-### 创建新节点
+### Creating a New Node
 
 ```c
 struct CNode* createNode(int data) {
     struct CNode* newNode = (struct CNode*)malloc(sizeof(struct CNode));
     if (newNode == NULL) {
-        printf("内存分配失败\n");
+        printf("Memory allocation failed\n");
         exit(1);
     }
     newNode->data = data;
-    newNode->next = newNode; // 初始时指向自己
+    newNode->next = newNode; // Initially points to itself
     return newNode;
 }
 ```
 
-### 插入操作
+### Insertion Operations
 
-#### 在头部插入
+#### Insert at Head
 
 ```c
 struct CNode* insertAtHead(struct CNode* tail, int data) {
     struct CNode* newNode = createNode(data);
     if (tail == NULL) {
-        return newNode; // 如果链表为空，新节点即是尾节点
+        return newNode; // If list is empty, new node is the tail node
     }
-    newNode->next = tail->next; // 新节点指向原头节点
-    tail->next = newNode;       // 尾节点指向新节点
+    newNode->next = tail->next; // New node points to original head node
+    tail->next = newNode;       // Tail node points to new node
     return tail;
 }
 ```
 
-#### 在尾部插入
+#### Insert at Tail
 
 ```c
 struct CNode* insertAtTail(struct CNode* tail, int data) {
     struct CNode* newNode = createNode(data);
     if (tail == NULL) {
-        return newNode; // 如果链表为空，新节点即是尾节点
+        return newNode; // If list is empty, new node is the tail node
     }
-    newNode->next = tail->next; // 新节点指向头节点
-    tail->next = newNode;       // 尾节点指向新节点
-    return newNode;             // 新节点成为尾节点
+    newNode->next = tail->next; // New node points to head node
+    tail->next = newNode;       // Tail node points to new node
+    return newNode;             // New node becomes the tail node
 }
 ```
 
-### 遍历循环链表
+### Traversing a Circular Linked List
 
 ```c
 void printList(struct CNode* tail) {
     if (tail == NULL) return;
-    struct CNode* temp = tail->next; // 从头节点开始
+    struct CNode* temp = tail->next; // Start from head node
     do {
         printf("%d -> ", temp->data);
         temp = temp->next;
-    } while (temp != tail->next); // 循环到头节点结束
+    } while (temp != tail->next); // Loop until returning to head node
     printf("(HEAD)\n");
 }
 ```
 
-### 完整的循环链表示例
+### Complete Circular Linked List Example
 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义循环链表的节点
+// Define the circular linked list node
 struct CNode {
     int data;
     struct CNode* next;
 };
 
-// 创建节点
+// Create a node
 struct CNode* createNode(int data) {
     struct CNode* newNode = (struct CNode*)malloc(sizeof(struct CNode));
     newNode->data = data;
@@ -475,7 +475,7 @@ struct CNode* createNode(int data) {
     return newNode;
 }
 
-// 在尾部插入节点
+// Insert node at tail
 struct CNode* insertAtTail(struct CNode* tail, int data) {
     struct CNode* newNode = createNode(data);
     if (tail == NULL) {
@@ -486,7 +486,7 @@ struct CNode* insertAtTail(struct CNode* tail, int data) {
     return newNode;
 }
 
-// 遍历链表
+// Traverse the list
 void printList(struct CNode* tail) {
     if (tail == NULL) return;
     struct CNode* temp = tail->next;
@@ -497,7 +497,7 @@ void printList(struct CNode* tail) {
     printf("(HEAD)\n");
 }
 
-// 主函数
+// Main function
 int main() {
     struct CNode* tail = NULL;
 
@@ -511,10 +511,10 @@ int main() {
 }
 ```
 
-## 总结
+## Summary
 
-- **链表**：是一种线性数据结构，通过指针将多个节点串联起来。
-- **双向链表**：支持双向遍历，插入和删除操作更灵活。
-- **循环链表**：尾节点指向头节点，适合循环访问的场景。
+- **Linked List**: A linear data structure that connects multiple nodes through pointers.
+- **Doubly Linked List**: Supports bidirectional traversal, making insertion and deletion operations more flexible.
+- **Circular Linked List**: The tail node points to the head node, suitable for cyclic access scenarios.
 
-链表是一种动态数据结构，灵活性高，适用于需要频繁插入和删除元素的场景。掌握链表的关键在于理解指针的使用，包括节点的创建、链接、遍历和释放内存。
+Linked lists are dynamic data structures with high flexibility, appropriate for scenarios requiring frequent insertion and deletion of elements. Mastering linked lists hinges on understanding pointer usage, including node creation, linking, traversal, and memory deallocation.

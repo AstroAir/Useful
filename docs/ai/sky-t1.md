@@ -26,12 +26,14 @@ Models like o1 and Gemini 2.0 excel at reasoning by generating long chains of in
 ### The Problem with Closed Models
 
 **Limited Access**: Proprietary models restrict research and innovation
+
 - No access to training methodologies
 - No model weights for fine-tuning
 - No transparency in data curation
 - High API costs for extensive use
 
 **Research Barriers**: Academic institutions face significant challenges
+
 - Cannot reproduce results independently
 - Limited ability to build upon existing work
 - Difficulty in understanding failure modes
@@ -96,16 +98,19 @@ To ensure our work benefits the broader community, we are fully committed to ope
 By sharing all these resources, our goal is to enable the academic and open-source community to:
 
 **Build Upon Our Work**
+
 - Use our model as a starting point for specialized applications
 - Extend our methodology to new domains
 - Improve upon our training techniques
 
 **Explore New Possibilities**
+
 - Experiment with different reasoning approaches
 - Test novel evaluation methods
 - Develop domain-specific reasoning models
 
 **Push the Boundaries**
+
 - Advance the state-of-the-art in reasoning models
 - Make AI more accessible and democratic
 - Foster innovation through collaboration
@@ -113,23 +118,27 @@ By sharing all these resources, our goal is to enable the academic and open-sour
 ### 🚀 Getting Started
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/NovaSky-AI/SkyThought.git
    cd SkyThought
    ```
 
 2. **Install Dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Download Model Weights**
+
    ```bash
    # From HuggingFace
    huggingface-cli download NovaSky-AI/Sky-T1-32B-Preview
    ```
 
 4. **Run Inference**
+
    ```python
    from transformers import AutoTokenizer, AutoModelForCausalLM
 
@@ -199,6 +208,7 @@ def rejection_sampling_pipeline(dataset, model_outputs):
 ```
 
 **Results of Rejection Sampling**:
+
 - Mathematics: 85% pass rate (exact answer matching)
 - Coding: 78% pass rate (unit test execution)
 - Overall: 82% of generated samples retained
@@ -208,6 +218,7 @@ def rejection_sampling_pipeline(dataset, model_outputs):
 **The Problem**: QwQ outputs varied in format, making parsing difficult and reducing model performance.
 
 **Example - Before Standardization**:
+
 ```
 Let me think about this step by step...
 Actually, wait, let me reconsider...
@@ -216,6 +227,7 @@ The final answer is 42, but actually it might be 43...
 ```
 
 **After GPT-4o-mini Reformatting**:
+
 ```
 <thinking>
 I need to solve this step-by-step.
@@ -235,6 +247,7 @@ The answer is 42.
 ```
 
 **Impact of Reformatting**:
+
 - APPs dataset accuracy: 25% → 90%+ (3.6x improvement)
 - Parsing success rate: 60% → 98%
 - Training stability: Significantly improved
@@ -354,6 +367,7 @@ Our evaluation demonstrates that Sky-T1-32B-Preview achieves competitive perform
 | **GSM8K** | **94.7%** | 92.1% | 95.2% | 94.8% | 92.0% |
 
 **Key Insights:**
+
 - 📈 **6.2% improvement** over base model (Qwen-2.5-32B-Instruct) on Math500
 - 🚀 **159% improvement** on AIME2024 (43.3% vs 16.7%)
 - 🎯 **Competitive with o1-preview** across all mathematics benchmarks
@@ -370,6 +384,7 @@ Our evaluation demonstrates that Sky-T1-32B-Preview achieves competitive perform
 | **MBPP** | **82.3%** | 78.9% | 84.1% | 83.7% | 79.5% |
 
 **Key Insights:**
+
 - 🔥 **39% improvement** on LiveCodeBench-Medium (56.8% vs 40.8%)
 - 📊 **86% improvement** on LiveCodeBench-Hard (23.1% vs 12.4%)
 - 🎯 **Matches o1-preview** on medium difficulty problems
@@ -396,12 +411,14 @@ Epoch 3: Math500: 82.4% → AIME2024: 43.3%
 We conducted qualitative analysis of Sky-T1's reasoning process:
 
 **Strengths:**
+
 - ✅ **Structured Thinking**: Clear step-by-step reasoning
 - ✅ **Error Correction**: Self-identifies and fixes mistakes
 - ✅ **Multiple Approaches**: Explores different solution paths
 - ✅ **Verification**: Checks answers for consistency
 
 **Example Reasoning Chain:**
+
 ```
 Problem: Find the sum of all positive integers n such that n² + 19n + 88 is a perfect square.
 

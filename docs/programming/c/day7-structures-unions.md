@@ -10,14 +10,13 @@ Structures (`struct`) are one of the most powerful features in C programming, al
 4. [Accessing Structure Members](#accessing-structure-members)
 5. [Structure Arrays](#structure-arrays)
 6. [Structure Pointers](#structure-pointers)
-7. [Nested Structures](#nested-structures)
-8. [Structures as Function Parameters](#structures-as-function-parameters)
-9. [Dynamic Memory Allocation with Structures](#dynamic-memory-allocation-with-structures)
-10. [Memory Layout and Alignment](#memory-layout-and-alignment)
-11. [Unions vs Structures](#unions-vs-structures)
-12. [Advanced Techniques](#advanced-techniques)
-13. [Real-World Applications](#real-world-applications)
-14. [Best Practices](#best-practices)
+7. [结构体嵌套](#结构体嵌套)
+8. [结构体作为函数参数](#结构体作为函数参数)
+9. [结构体与 typedef](#结构体与-typedef)
+10. [结构体大小与内存对齐](#结构体大小与内存对齐)
+11. [联合体与结构体的区别](#联合体与结构体的区别)
+12. [实际应用](#实际应用)
+13. [Best Practices](#best-practices)
 
 ## Introduction to Structures
 
@@ -88,7 +87,8 @@ int main() {
 ```
 
 **Output:**
-```
+
+```bash
 === Book Information ===
 Title: The C Programming Language
 Author: Brian W. Kernighan & Dennis M. Ritchie
@@ -315,7 +315,8 @@ int main() {
 ```
 
 **Output:**
-```
+
+```bash
 === Student Database ===
 ID     Name                 Major                GPA    Credits
 ---------------------------------------------------------------
@@ -580,6 +581,7 @@ int main() {
 
 ```c
 #include <stdio.h>
+#include <string.h>
 
 struct Address {
     char city[20];
@@ -654,7 +656,7 @@ struct Point {
     int y;
 };
 
-void modifyPoint(struct Point \*p) { // 结构体传指针
+void modifyPoint(struct Point *p) { // 结构体传指针
     p->x += 10;
     p->y += 20;
 }
@@ -720,6 +722,7 @@ Size of struct Test: 12 bytes
 
 ```c
 #include <stdio.h>
+#include <string.h>
 
 union Data {
     int i;

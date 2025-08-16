@@ -5,6 +5,7 @@ This Python utility transforms conversation data between different formats, spec
 ## Overview
 
 The Data Format Conversion tool is designed to:
+
 - **Transform Data Structures** - Convert between different conversation formats
 - **Standardize Messages** - Create consistent message structures for AI training
 - **Add System Prompts** - Inject system-level instructions into conversations
@@ -13,12 +14,14 @@ The Data Format Conversion tool is designed to:
 ## Features
 
 ### Format Transformation
+
 - **Conversation Restructuring** - Transform nested conversation structures
 - **Message Standardization** - Create consistent role-based message format
 - **System Prompt Injection** - Add system-level instructions to conversations
 - **Multi-turn Support** - Handle complex multi-turn conversations
 
 ### AI Training Integration
+
 - **Training Data Preparation** - Format data for language model training
 - **Fine-tuning Support** - Create datasets for model fine-tuning
 - **Prompt Engineering** - Integrate advanced prompting strategies
@@ -27,17 +30,20 @@ The Data Format Conversion tool is designed to:
 ## Installation
 
 ### Prerequisites
+
 ```bash
 # No additional packages required - uses Python standard library
 python --version  # Requires Python 3.6+
 ```
 
 ### Dependencies
+
 - `json` - JSON parsing and generation (built-in)
 
 ## Usage
 
 ### Basic Usage
+
 ```python
 from convert import transform_data
 
@@ -47,7 +53,9 @@ transformed_data = transform_data(input_data)
 ```
 
 ### Input Format
+
 The tool expects data with conversation structure:
+
 ```json
 [
   {
@@ -67,7 +75,9 @@ The tool expects data with conversation structure:
 ```
 
 ### Output Format
+
 Produces standardized message format:
+
 ```json
 [
   {
@@ -92,6 +102,7 @@ Produces standardized message format:
 ## Core Functions
 
 ### Main Transformation Function
+
 ```python
 def transform_data(input_data):
     """
@@ -138,6 +149,7 @@ def transform_data(input_data):
 ## Advanced Features
 
 ### Custom System Prompts
+
 ```python
 def create_system_prompt(prompt_type="reasoning"):
     """Generate different types of system prompts"""
@@ -158,6 +170,7 @@ def transform_with_custom_prompt(input_data, prompt_type="reasoning"):
 ```
 
 ### Multi-format Support
+
 ```python
 def detect_input_format(data):
     """Automatically detect input data format"""
@@ -186,6 +199,7 @@ def transform_auto_detect(input_data):
 ```
 
 ### Batch Processing
+
 ```python
 import os
 import json
@@ -211,6 +225,7 @@ def convert_directory(input_dir, output_dir, prompt_type="reasoning"):
 ## Configuration Options
 
 ### Prompt Templates
+
 ```python
 class PromptTemplate:
     def __init__(self, template_type="reasoning"):
@@ -232,6 +247,7 @@ class PromptTemplate:
 ```
 
 ### Validation and Quality Control
+
 ```python
 def validate_transformed_data(data):
     """Validate transformed data structure"""
@@ -279,6 +295,7 @@ def quality_check(data):
 ## Performance Optimization
 
 ### Memory-Efficient Processing
+
 ```python
 def transform_streaming(input_file, output_file, chunk_size=1000):
     """Transform large files using streaming processing"""
@@ -316,6 +333,7 @@ def transform_streaming(input_file, output_file, chunk_size=1000):
 ```
 
 ### Parallel Processing
+
 ```python
 import concurrent.futures
 import multiprocessing
@@ -338,18 +356,21 @@ def parallel_transform(data_chunks, max_workers=None):
 ## Best Practices
 
 ### Data Quality
+
 - **Input Validation** - Verify input data structure before transformation
 - **Output Validation** - Confirm transformed data meets requirements
 - **Content Preservation** - Ensure no data loss during transformation
 - **Encoding Handling** - Use UTF-8 for international content
 
 ### Performance
+
 - **Batch Processing** - Process multiple files efficiently
 - **Memory Management** - Use streaming for large datasets
 - **Parallel Processing** - Leverage multiple cores for large transformations
 - **Progress Monitoring** - Track transformation progress for large datasets
 
 ### Training Integration
+
 - **Format Compatibility** - Ensure output works with target training frameworks
 - **Prompt Engineering** - Design effective system prompts for specific use cases
 - **Quality Metrics** - Monitor data quality throughout the pipeline
@@ -358,16 +379,19 @@ def parallel_transform(data_chunks, max_workers=None):
 ## Use Cases
 
 ### AI Model Training
+
 - **Fine-tuning Datasets** - Prepare conversation data for model fine-tuning
 - **Instruction Following** - Create instruction-following training datasets
 - **Reasoning Training** - Develop datasets for reasoning capability training
 
 ### Data Pipeline Integration
+
 - **ETL Processes** - Integrate into data extraction, transformation, and loading workflows
 - **Data Standardization** - Normalize conversation data from multiple sources
 - **Quality Assurance** - Ensure consistent data format across systems
 
 ### Research and Development
+
 - **Experiment Preparation** - Create datasets for AI research experiments
 - **Prompt Engineering** - Test different prompting strategies
 - **Model Evaluation** - Prepare evaluation datasets with consistent formatting

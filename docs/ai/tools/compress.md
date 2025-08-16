@@ -5,6 +5,7 @@ This Python utility provides efficient compression of JSON conversation data, sp
 ## Overview
 
 The JSON Compression tool is designed to:
+
 - **Compress JSON Data** - Convert multi-line JSON to single-line format
 - **Preserve Structure** - Maintain message roles and content integrity
 - **Optimize Storage** - Reduce file size and improve loading performance
@@ -13,12 +14,14 @@ The JSON Compression tool is designed to:
 ## Features
 
 ### Data Compression
+
 - **Single-Line Output** - Converts each JSON object to a single line
 - **Whitespace Removal** - Eliminates unnecessary whitespace from content
 - **Structure Preservation** - Maintains original message hierarchy
 - **Unicode Support** - Handles international characters correctly
 
 ### File Processing
+
 - **Batch Processing** - Handle large JSON files efficiently
 - **Error Handling** - Robust error management for malformed data
 - **Encoding Support** - UTF-8 encoding for international content
@@ -27,18 +30,21 @@ The JSON Compression tool is designed to:
 ## Installation
 
 ### Prerequisites
+
 ```bash
 # No additional packages required - uses Python standard library
 python --version  # Requires Python 3.6+
 ```
 
 ### Dependencies
+
 - `json` - JSON parsing and generation (built-in)
 - `os` - File system operations (built-in)
 
 ## Usage
 
 ### Basic Usage
+
 ```python
 from compress import compress_to_single_line
 
@@ -47,7 +53,9 @@ compress_to_single_line("input.json", "output.jsonl")
 ```
 
 ### Input Format
+
 The tool expects JSON files with conversation structure:
+
 ```json
 [
   {
@@ -66,7 +74,9 @@ The tool expects JSON files with conversation structure:
 ```
 
 ### Output Format
+
 Produces JSONL format with compressed content:
+
 ```jsonl
 {"messages": [{"role": "user", "content": "What is machine learning?"}, {"role": "assistant", "content": "Machine learning is a subset of artificial intelligence..."}]}
 ```
@@ -74,6 +84,7 @@ Produces JSONL format with compressed content:
 ## Core Functions
 
 ### Main Compression Function
+
 ```python
 def compress_to_single_line(input_file, output_file):
     """
@@ -120,6 +131,7 @@ def compress_to_single_line(input_file, output_file):
 ## Advanced Features
 
 ### Batch Processing
+
 ```python
 import os
 import glob
@@ -135,6 +147,7 @@ def compress_directory(input_dir, output_dir):
 ```
 
 ### Content Validation
+
 ```python
 def validate_message_structure(data):
     """Validate message structure before compression"""
@@ -153,6 +166,7 @@ def validate_message_structure(data):
 ```
 
 ### Statistics and Reporting
+
 ```python
 def get_compression_stats(input_file, output_file):
     """Generate compression statistics"""
@@ -173,6 +187,7 @@ def get_compression_stats(input_file, output_file):
 ## Configuration Options
 
 ### Custom Content Processing
+
 ```python
 def custom_content_processor(content):
     """Custom content processing function"""
@@ -196,6 +211,7 @@ def compress_with_custom_processor(input_file, output_file, processor=None):
 ```
 
 ### Output Format Options
+
 ```python
 def compress_with_options(input_file, output_file, options=None):
     """Compress with configurable options"""
@@ -216,6 +232,7 @@ def compress_with_options(input_file, output_file, options=None):
 ## Performance Optimization
 
 ### Memory-Efficient Processing
+
 ```python
 def compress_large_file(input_file, output_file, chunk_size=1000):
     """Process large files in chunks to manage memory"""
@@ -235,6 +252,7 @@ def compress_large_file(input_file, output_file, chunk_size=1000):
 ```
 
 ### Parallel Processing
+
 ```python
 import concurrent.futures
 import multiprocessing
@@ -259,18 +277,21 @@ def parallel_compress(file_list, output_dir, max_workers=None):
 ## Best Practices
 
 ### Data Integrity
+
 - **Backup Original Files** - Always keep backups before compression
 - **Validate Input** - Check JSON structure before processing
 - **Verify Output** - Confirm compressed data integrity
 - **Handle Encoding** - Use UTF-8 for international content
 
 ### Performance
+
 - **Chunk Large Files** - Process large datasets in manageable chunks
 - **Monitor Memory Usage** - Watch memory consumption during processing
 - **Use Parallel Processing** - Leverage multiple cores for batch operations
 - **Optimize I/O** - Use appropriate buffer sizes for file operations
 
 ### Error Handling
+
 - **Graceful Degradation** - Continue processing other files on individual failures
 - **Detailed Logging** - Log errors with context for debugging
 - **Recovery Options** - Provide options to resume interrupted operations
@@ -279,16 +300,19 @@ def parallel_compress(file_list, output_dir, max_workers=None):
 ## Use Cases
 
 ### AI Training Data
+
 - **Dataset Preparation** - Compress training datasets for efficient storage
 - **Model Fine-tuning** - Prepare conversation data for language model training
 - **Data Pipeline** - Integrate into ML data preprocessing workflows
 
 ### Data Storage
+
 - **Archive Compression** - Reduce storage requirements for historical data
 - **Transfer Optimization** - Minimize bandwidth usage for data transfers
 - **Database Import** - Prepare data for database ingestion
 
 ### Development Workflows
+
 - **Testing Data** - Create compact test datasets
 - **Configuration Files** - Compress configuration and settings files
 - **Log Processing** - Compress structured log files for analysis

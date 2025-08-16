@@ -1,176 +1,177 @@
-# 构建有效的代理
 
-在过去的一年里，我们与数十个团队合作，跨行业构建大型语言模型（LLM）代理。一致的是，最成功的实施并没有使用复杂的框架或专门的库。相反，他们使用的是简单、可组合的模式。
+# Building Effective Agents
 
-在这篇文章中，我们分享了从与客户合作和自行构建代理中学到的经验，并为开发者提供了构建有效代理的实用建议。
+Over the past year, we have collaborated with dozens of teams across industries to build large language model (LLM) agents. Consistently, the most successful implementations did not rely on complex frameworks or specialized libraries. Instead, they used simple, composable patterns.
 
-**什么是代理？**
-“代理”可以有多种定义。一些客户将代理定义为完全自主的系统，能够长时间独立运行，使用各种工具完成复杂任务。其他人则用这个术语来描述遵循预定义工作流程的更具规定性的实施。在 Anthropic，我们将所有这些变体归类为代理系统，但在工作流程和代理之间划出了重要的架构区别：
+In this article, we share lessons learned from working with clients and building agents ourselves, offering practical advice for developers building effective agents.
 
-- **工作流程**是通过预定义代码路径编排 LLMs 和工具的系统。
-- **代理**则是 LLMs 动态指导自己的流程和工具使用，保持对任务完成方式的控制的系统。
+**What is an Agent?**  
+"Agent" can have multiple definitions. Some clients define agents as fully autonomous systems capable of operating independently for extended periods, using various tools to complete complex tasks. Others use the term to describe more prescriptive implementations that follow predefined workflows. At Anthropic, we categorize all these variants as agent systems but draw an important architectural distinction between workflows and agents:
 
-下面，我们将详细探讨这两种代理系统。在附录 1（“实践中的代理”）中，我们描述了客户在使用这些系统时发现特别有价值的两个领域。
+- **Workflows** are systems that orchestrate LLMs and tools through predefined code paths.
+- **Agents** are systems where LLMs dynamically guide their own processes and tool usage, maintaining control over how tasks are completed.
 
-**何时（以及何时不）使用代理**
-在使用 LLMs 构建应用程序时，我们建议找到最简单的解决方案，只有在需要时才增加复杂性。这可能意味着根本不构建代理系统。代理系统通常以延迟和成本为代价换取更好的任务性能，您应该考虑何时这种权衡是合理的。
+Below, we explore both types of agent systems in detail. In Appendix 1 ("Agents in Practice"), we describe two areas where clients have found these systems particularly valuable.
 
-当需要更多复杂性时，工作流程为定义明确的任务提供了可预测性和一致性，而代理则是在需要灵活性和模型驱动的决策时更好的选择。然而，对于许多应用程序来说，通过检索和上下文示例优化单个 LLM 调用通常就足够了。
+**When (and When Not) to Use Agents**  
+When building applications with LLMs, we recommend finding the simplest solution and only adding complexity when necessary. This may mean not building an agent system at all. Agent systems typically trade latency and cost for better task performance, and you should consider when this tradeoff is justified.
 
-**何时以及如何使用框架**
-有许多框架可以使代理系统更容易实现，包括：
+When more complexity is needed, workflows provide predictability and consistency for well-defined tasks, while agents are better choices when flexibility and model-driven decision-making are required. However, for many applications, optimizing single LLM calls through retrieval and contextual examples is often sufficient.
 
-- LangChain 的 LangGraph；
-- Amazon Bedrock 的 AI 代理框架；
-- Rivet，一个拖放式 GUI LLM 工作流程构建器；以及
-- Vellum，另一个用于构建和测试复杂工作流程的 GUI 工具。
+**When and How to Use Frameworks**  
+Many frameworks can make agent systems easier to implement, including:
 
-这些框架通过简化标准的低级任务（如调用 LLMs、定义和解析工具以及链接调用）使入门变得容易。然而，它们通常会创建额外的抽象层，可能会掩盖底层的提示和响应，使其更难调试。它们还可能诱使您在更简单的设置就足够时增加复杂性。
+- LangChain's LangGraph;
+- Amazon Bedrock's AI Agent Framework;
+- Rivet, a drag-and-drop GUI LLM workflow builder; and
+- Vellum, another GUI tool for building and testing complex workflows.
 
-我们建议开发者首先直接使用 LLM API：许多模式可以用几行代码实现。如果您确实使用框架，请确保您了解底层代码。对底层内容的错误假设是客户错误的常见来源。
+These frameworks make getting started easier by simplifying standard low-level tasks like calling LLMs, defining and parsing tools, and chaining calls. However, they often create additional abstraction layers that can obscure underlying prompts and responses, making debugging harder. They may also tempt you to add complexity when a simpler setup would suffice.
 
-请参阅我们的食谱以获取一些示例实现。
+We recommend developers start by using LLM APIs directly: many patterns can be implemented in just a few lines of code. If you do use a framework, make sure you understand the underlying code. Incorrect assumptions about underlying components are a common source of client errors.
 
-**构建模块、工作流程和代理**
-在本节中，我们将探讨我们在生产中看到的代理系统的常见模式。我们将从我们的基础构建模块——增强型 LLM——开始，逐步增加复杂性，从简单的组合工作流程到自主代理。
+See our recipes for some example implementations.
 
-**构建模块：增强型 LLM**
-代理系统的基本构建模块是通过检索、工具和记忆等增强功能增强的 LLM。我们当前的模型可以主动使用这些功能——生成自己的搜索查询、选择适当的工具并确定保留哪些信息。
+**Building Blocks, Workflows, and Agents**  
+In this section, we explore common patterns for agent systems we've seen in production. We'll start with our foundational building block—the augmented LLM—and gradually increase complexity from simple compositional workflows to autonomous agents.
 
-我们建议关注实施的两个关键方面：根据您的具体用例定制这些功能，并确保它们为您的 LLM 提供易于使用的、文档完善的接口。虽然有许多方法可以实现这些增强功能，但一种方法是通过我们最近发布的模型上下文协议，该协议允许开发者通过简单的客户端实现与不断增长的第三方工具生态系统集成。
+**Building Block: Augmented LLM**  
+The fundamental building block of agent systems is an LLM enhanced with capabilities like retrieval, tools, and memory. Our current models can actively use these enhancements—generating their own search queries, selecting appropriate tools, and determining what information to retain.
 
-在本文的其余部分，我们将假设每个 LLM 调用都可以访问这些增强功能。
+We recommend focusing on two key aspects of implementation: customizing these enhancements for your specific use case and ensuring they provide easy-to-use, well-documented interfaces for your LLM. While there are many ways to implement these enhancements, one approach is through our recently released Model Context Protocol, which allows developers to integrate with a growing ecosystem of third-party tools through simple client implementations.
 
-**工作流程：提示链**
-提示链将任务分解为一系列步骤，其中每个 LLM 调用处理前一个调用的输出。您可以在任何中间步骤上添加程序检查（见下图中的“门”），以确保过程仍在正轨上。
+For the remainder of this article, we'll assume each LLM call has access to these enhancements.
 
-**何时使用此工作流程**：此工作流程非常适合可以轻松且干净地分解为固定子任务的任务。主要目标是通过使每个 LLM 调用成为更简单的任务来以延迟换取更高的准确性。
+**Workflow: Prompt Chaining**  
+Prompt chaining breaks tasks into a series of steps where each LLM call processes the output of the previous call. You can add programmatic checks at any intermediate step (the "gates" shown in the diagram below) to ensure the process remains on track.
 
-**提示链有用的示例**：
+**When to use this workflow**: This workflow is ideal for tasks that can be easily and cleanly decomposed into fixed subtasks. The primary goal is to trade latency for higher accuracy by making each LLM call a simpler task.
 
-- 生成营销文案，然后将其翻译成不同的语言。
-- 编写文档大纲，检查大纲是否符合某些标准，然后根据大纲编写文档。
+**Examples where prompt chaining is useful**:
 
-**工作流程：路由**
-路由对输入进行分类并将其定向到专门的后续任务。此工作流程允许关注点分离，并构建更专业的提示。如果没有此工作流程，优化一种输入可能会损害其他输入的性能。
+- Generating marketing copy and then translating it into different languages.
+- Writing a document outline, checking if the outline meets certain criteria, and then writing the document based on the outline.
 
-**何时使用此工作流程**：路由适用于复杂任务，其中存在更好单独处理的不同类别，并且分类可以通过 LLM 或更传统的分类模型/算法准确处理。
+**Workflow: Routing**  
+Routing classifies inputs and directs them to specialized subsequent tasks. This workflow enables separation of concerns and building more specialized prompts. Without this workflow, optimizing for one type of input might degrade performance for others.
 
-**路由有用的示例**：
+**When to use this workflow**: Routing is appropriate for complex tasks where there are distinct categories that are better handled separately, and classification can be accurately handled by an LLM or more traditional classification models/algorithms.
 
-- 将不同类型的客户服务查询（一般问题、退款请求、技术支持）定向到不同的下游流程、提示和工具。
-- 将简单/常见问题路由到较小的模型（如 Claude 3.5 Haiku），将困难/不常见的问题路由到更强大的模型（如 Claude 3.5 Sonnet）以优化成本和速度。
+**Examples where routing is useful**:
 
-**工作流程：并行化**
-LLMs 有时可以同时处理任务，并通过程序聚合它们的输出。此工作流程，并行化，表现为两个关键变体：
+- Directing different types of customer service queries (general questions, refund requests, technical support) to different downstream processes, prompts, and tools.
+- Routing simple/common questions to smaller models (like Claude 3.5 Haiku) and difficult/rare questions to more powerful models (like Claude 3.5 Sonnet) to optimize cost and speed.
 
-- **分段**：将任务分解为并行运行的独立子任务。
-- **投票**：多次运行同一任务以获得多样化的输出。
+**Workflow: Parallelization**  
+LLMs can sometimes process tasks simultaneously and programmatically aggregate their outputs. This workflow, parallelization, manifests in two key variants:
 
-**何时使用此工作流程**：当划分的子任务可以并行化以提高速度，或者当需要多个视角或尝试以获得更高置信度的结果时，并行化是有效的。对于具有多个考虑的复杂任务，LLMs 通常在每个考虑由单独的 LLM 调用处理时表现更好，从而允许对每个特定方面进行集中关注。
+- **Segmentation**: Breaking a task into independent subtasks that run in parallel.
+- **Voting**: Running the same task multiple times to get diverse outputs.
 
-**并行化有用的示例**：
+**When to use this workflow**: Parallelization is effective when the divided subtasks can be parallelized for speed, or when multiple perspectives or attempts are needed for higher-confidence results. For complex tasks with multiple considerations, LLMs often perform better when each consideration is handled by a separate LLM call, allowing focused attention on each specific aspect.
 
-- **分段**：
-  - 实施护栏，其中一个模型实例处理用户查询，而另一个模型实例筛选它们以查找不适当的内容或请求。这往往比让同一个 LLM 调用同时处理护栏和核心响应表现更好。
-  - 自动化评估 LLM 性能的评估，其中每个 LLM 调用评估模型在给定提示下的不同方面的性能。
-- **投票**：
-  - 审查一段代码的漏洞，其中几个不同的提示审查并标记代码，如果发现问题。
-  - 评估给定内容是否不适当，多个提示评估不同方面或需要不同的投票阈值以平衡误报和漏报。
+**Examples where parallelization is useful**:
 
-**工作流程：协调者-工作者**
-在协调者-工作者工作流程中，一个中央 LLM 动态分解任务，将它们委派给工作者 LLMs，并综合它们的结果。
+- **Segmentation**:
+  - Implementing guardrails where one model instance processes user queries while another filters them for inappropriate content or requests. This often performs better than having the same LLM call handle both guardrails and core responses.
+  - Automating evaluation of LLM performance where each LLM call assesses the model's performance on different aspects of a given prompt.
+- **Voting**:
+  - Reviewing code for vulnerabilities where several different prompts review and flag code if issues are found.
+  - Evaluating whether given content is inappropriate, with multiple prompts assessing different aspects or requiring different voting thresholds to balance false positives and negatives.
 
-**何时使用此工作流程**：此工作流程非常适合复杂任务，其中您无法预测所需的子任务（例如，在编码中，需要更改的文件数量和每个文件中的更改性质可能取决于任务）。虽然它在拓扑上相似，但与并行化的关键区别在于其灵活性——子任务不是预定义的，而是由协调者根据特定输入确定的。
+**Workflow: Orchestrator-Worker**  
+In the orchestrator-worker workflow, a central LLM dynamically decomposes tasks, delegates them to worker LLMs, and synthesizes their results.
 
-**协调者-工作者有用的示例**：
+**When to use this workflow**: This workflow is ideal for complex tasks where you cannot predict the required subtasks (e.g., in coding, the number of files needing changes and the nature of changes in each file may depend on the task). While topologically similar to parallelization, the key difference is its flexibility—the subtasks are not predefined but determined by the orchestrator based on specific inputs.
 
-- 每次对多个文件进行复杂更改的编码产品。
-- 涉及从多个来源收集和分析信息以获取可能相关信息的搜索任务。
+**Examples where orchestrator-worker is useful**:
 
-**工作流程：评估者-优化器**
-在评估者-优化器工作流程中，一个 LLM 调用生成响应，而另一个 LLM 在循环中提供评估和反馈。
+- Coding products that make complex changes across multiple files with each iteration.
+- Search tasks involving gathering and analyzing information from multiple sources to obtain potentially relevant information.
 
-**何时使用此工作流程**：当我们有明确的评估标准，并且迭代改进提供了可衡量的价值时，此工作流程特别有效。两个适合的标志是，首先，当人类表达他们的反馈时，LLM 响应可以明显改进；其次，LLM 可以提供这样的反馈。这类似于人类作家在生成精炼文档时可能经历的迭代写作过程。
+**Workflow: Evaluator-Optimizer**  
+In the evaluator-optimizer workflow, one LLM call generates a response while another provides evaluation and feedback in a loop.
 
-**评估者-优化器有用的示例**：
+**When to use this workflow**: This workflow is particularly effective when we have clear evaluation criteria and iterative improvement provides measurable value. Two good indicators are, first, when human expression of feedback can noticeably improve LLM responses; and second, when LLMs can provide such feedback. This resembles the iterative writing process a human writer might go through when generating refined documents.
 
-- 文学翻译，其中翻译 LLM 可能最初没有捕捉到的细微差别，但评估者 LLM 可以提供有用的批评。
-- 需要多轮搜索和分析以收集全面信息的复杂搜索任务，其中评估者决定是否需要进一步搜索。
+**Examples where evaluator-optimizer is useful**:
 
-**代理**
-随着 LLMs 在关键能力上的成熟——理解复杂输入、参与推理和规划、可靠地使用工具以及从错误中恢复——代理正在生产中崭露头角。代理开始工作时，要么是来自人类用户的命令，要么是与人类用户的交互讨论。一旦任务明确，代理就会独立计划和操作，可能会返回给人类以获取更多信息或判断。在执行过程中，代理在每一步从环境中获取“真实情况”（如工具调用结果或代码执行）以评估其进展至关重要。代理可以在检查点或遇到障碍时暂停以获取人类反馈。任务通常在完成时终止，但通常也包括停止条件（如最大迭代次数）以保持控制。
+- Literary translation where nuances initially missed by the translation LLM can be addressed with useful criticism from an evaluator LLM.
+- Complex search tasks requiring multiple rounds of searching and analysis to gather comprehensive information, where the evaluator determines if further searching is needed.
 
-代理可以处理复杂的任务，但它们的实施通常很简单。它们通常只是基于环境反馈循环使用工具的 LLMs。因此，清晰而周到地设计工具集及其文档至关重要。我们在附录 2（“提示工程您的工具”）中扩展了工具开发的最佳实践。
+**Agents**  
+As LLMs mature in key capabilities—understanding complex inputs, engaging in reasoning and planning, reliably using tools, and recovering from errors—agents are emerging in production. Agents begin working either from a command from a human user or through an interactive discussion with a human user. Once the task is clear, the agent independently plans and operates, potentially returning to humans for more information or judgment. Crucially, during execution, the agent gathers "ground truth" from the environment at each step (such as tool call results or code execution) to assess its progress. Agents can pause at checkpoints or when encountering obstacles to get human feedback. Tasks typically terminate upon completion, but often include stop conditions (like maximum iteration counts) to maintain control.
 
-**何时使用代理**：代理可以用于开放式问题，其中难以或无法预测所需的步骤数量，并且您无法硬编码固定路径。LLM 可能会运行多次，您必须对其决策有一定程度的信任。代理的自主性使其成为在可信环境中扩展任务的理想选择。
+Agents can handle complex tasks, but their implementations are often simple. They're typically just LLMs using tools in an environment feedback loop. Therefore, designing the toolset and its documentation clearly and thoughtfully is critical. We expand on best practices for tool development in Appendix 2 ("Prompt Engineering Your Tools").
 
-代理的自主性意味着更高的成本和潜在的错误累积。我们建议在沙盒环境中进行广泛测试，并设置适当的护栏。
+**When to use agents**: Agents can be used for open-ended problems where the number of required steps is difficult or impossible to predict, and you cannot hardcode fixed paths. The LLM may run multiple times, and you must have a certain level of trust in its decisions. An agent's autonomy makes it ideal for scaling tasks in trusted environments.
 
-**代理有用的示例**：
+An agent's autonomy means higher costs and potential error accumulation. We recommend extensive testing in sandboxed environments and setting appropriate guardrails.
 
-以下示例来自我们自己的实施：
+**Examples where agents are useful**:
 
-- 一个编码代理，用于解决 SWE-bench 任务，这些任务涉及基于任务描述对多个文件进行编辑；
-- 我们的“计算机使用”参考实现，其中 Claude 使用计算机完成任务。
+The following examples come from our own implementations:
 
-**编码代理的高级流程**
-**组合和定制这些模式**
-这些构建模块不是规定性的。它们是开发者可以塑造和组合以适应不同用例的常见模式。与任何 LLM 功能一样，成功的关键是衡量性能并迭代实施。再次强调：您应该仅在复杂性明显改善结果时才考虑增加复杂性。
+- A coding agent for solving SWE-bench tasks, which involve editing multiple files based on task descriptions;
+- Our "Computer Use" reference implementation where Claude uses a computer to complete tasks.
 
-**总结**
-在 LLM 领域的成功不是构建最复杂的系统。而是构建适合您需求的系统。从简单的提示开始，通过全面评估优化它们，只有在更简单的解决方案不足时才添加多步代理系统。
+**Advanced Flow for Coding Agents**  
+**Combining and Customizing These Patterns**  
+These building blocks aren't prescriptive. They're common patterns developers can shape and combine to fit different use cases. As with any LLM capability, the key to success is measuring performance and iterating on implementations. Again: you should only consider adding complexity when it clearly improves results.
 
-在实施代理时，我们尝试遵循三个核心原则：
+**Summary**  
+Success in the LLM space isn't about building the most complex system. It's about building the system that fits your needs. Start with simple prompts, optimize them through comprehensive evaluation, and only add multi-step agent systems when simpler solutions fall short.
 
-1. 保持代理设计的简单性。
-2. 通过明确显示代理的规划步骤来优先考虑透明度。
-3. 通过彻底的文档和测试精心设计代理-计算机接口（ACI）。
+When implementing agents, we try to follow three core principles:
 
-框架可以帮助您快速入门，但在进入生产时不要犹豫减少抽象层并使用基本组件构建。通过遵循这些原则，您可以创建不仅强大而且可靠、可维护并受用户信任的代理。
+1. Keep agent designs simple.
+2. Prioritize transparency by clearly showing the agent's planning steps.
+3. Carefully design the Agent-Computer Interface (ACI) through thorough documentation and testing.
 
-**致谢**
-由 Erik Schluntz 和 Barry Zhang 撰写。这项工作借鉴了我们在 Anthropic 构建代理的经验以及客户分享的宝贵见解，我们对此深表感谢。
+Frameworks can help you get started quickly, but don't hesitate to reduce abstraction layers and build with basic components when moving to production. By following these principles, you can create agents that are not only powerful but also reliable, maintainable, and trusted by users.
 
-**附录 1：实践中的代理**
-我们与客户的工作揭示了两个特别有前途的 AI 代理应用，展示了上述模式的实用价值。这两个应用都说明了代理在需要对话和操作、有明确成功标准、启用反馈循环并整合有意义的人类监督的任务中增加最大价值。
+**Acknowledgments**  
+Written by Erik Schluntz and Barry Zhang. This work draws on our experience building agents at Anthropic and valuable insights shared by clients, for which we're deeply grateful.
 
-**A. 客户支持**
-客户支持结合了熟悉的聊天机器人界面和通过工具集成增强的功能。这是更开放式代理的自然契合，因为：
+**Appendix 1: Agents in Practice**  
+Our work with clients has revealed two particularly promising applications of AI agents, demonstrating the practical value of the patterns above. Both applications illustrate where agents add the most value: in tasks that require conversation and action, have clear success criteria, enable feedback loops, and incorporate meaningful human oversight.
 
-- 支持交互自然地遵循对话流程，同时需要访问外部信息和操作；
-- 可以集成工具以提取客户数据、订单历史记录和知识库文章；
-- 诸如发放退款或更新票据等操作可以以编程方式处理；以及
-- 可以通过用户定义的解决方案明确衡量成功。
+**A. Customer Support**  
+Customer support combines the familiar chatbot interface with functionality enhanced through tool integration. This is a natural fit for more open-ended agents because:
 
-几家公司通过基于使用情况的定价模型展示了这种方法的可行性，该模型仅对成功的解决方案收费，显示了对其代理有效性的信心。
+- Support interactions naturally follow conversational flows while requiring access to external information and actions;
+- Tools can be integrated to extract customer data, order history, and knowledge base articles;
+- Actions like issuing refunds or updating tickets can be handled programmatically; and
+- Success can be measured explicitly through user-defined solutions.
 
-**B. 编码代理**
-软件开发领域展示了 LLM 功能的显著潜力，能力从代码完成发展到自主问题解决。代理特别有效，因为：
+Several companies have demonstrated the viability of this approach through usage-based pricing models that charge only for successful resolutions, showing confidence in their agents' effectiveness.
 
-- 代码解决方案可以通过自动化测试验证；
-- 代理可以使用测试结果作为反馈迭代解决方案；
-- 问题空间定义明确且结构化；以及
-- 输出质量可以客观衡量。
+**B. Coding Agents**  
+The software development domain showcases significant potential for LLM capabilities, evolving from code completion to autonomous problem-solving. Agents are particularly effective because:
 
-在我们自己的实施中，代理现在可以根据拉取请求描述单独解决 SWE-bench Verified 基准中的真实 GitHub 问题。然而，虽然自动化测试有助于验证功能，但人类审查对于确保解决方案符合更广泛的系统要求仍然至关重要。
+- Code solutions can be verified through automated testing;
+- Agents can iterate on solutions using test results as feedback;
+- The problem space is well-defined and structured; and
+- Output quality can be objectively measured.
 
-**附录 2：提示工程您的工具**
-无论您构建哪种代理系统，工具都可能是您代理的重要组成部分。工具使 Claude 能够通过在我们的 API 中指定其确切结构和定义与外部服务和 API 交互。当 Claude 响应时，如果它计划调用工具，它将在 API 响应中包含一个工具使用块。工具定义和规范应与您的整体提示一样受到提示工程的关注。在这个简短的附录中，我们描述了如何提示工程您的工具。
+In our own implementations, agents can now solve real GitHub issues from the SWE-bench Verified benchmark individually based on pull request descriptions. However, while automated testing helps verify functionality, human review remains crucial to ensure solutions meet broader system requirements.
 
-通常有几种方法可以指定相同的操作。例如，您可以通过编写差异或重写整个文件来指定文件编辑。对于结构化输出，您可以在 markdown 或 JSON 中返回代码。在软件工程中，这些差异是表面上的，可以无损地从一种转换为另一种。然而，某些格式比其他格式更难让 LLM 编写。编写差异需要知道在编写新代码之前块头中有多少行正在更改。在 JSON 中编写代码（与 markdown 相比）需要对换行符和引号进行额外的转义。
+**Appendix 2: Prompt Engineering Your Tools**  
+Regardless of which agent system you build, tools are likely to be a critical component of your agent. Tools enable Claude to interact with external services and APIs by specifying their exact structure in our API. When Claude responds, if it plans to call a tool, it will include a tool use block in the API response. Tool definitions and specifications should receive as much prompt engineering attention as your overall prompt. In this brief appendix, we describe how to prompt engineer your tools.
 
-我们关于决定工具格式的建议如下：
+There are often multiple ways to specify the same action. For example, you could specify a file edit by writing a diff or rewriting the entire file. For structured output, you could return code in markdown or JSON. In software engineering, these differences are superficial and can be losslessly converted from one to another. However, certain formats are harder for LLMs to write than others. Writing diffs requires knowing how many lines are changing in the block header before writing new code. Writing code in JSON (compared to markdown) requires additional escaping of newlines and quotes.
 
-- 给模型足够的令牌“思考”，以免它把自己逼入绝境。
-- 保持格式接近模型在互联网文本中自然看到的内容。
-- 确保没有格式“开销”，例如必须准确计算数千行代码，或对其编写的任何代码进行字符串转义。
+Our recommendations for deciding tool formats are:
 
-一个经验法则是考虑在人机界面（HCI）上投入了多少精力，并计划在创建良好的代理-计算机界面（ACI）上投入同样多的精力。以下是一些关于如何做到这一点的想法：
+- Give the model enough tokens to "think" so it doesn't paint itself into a corner.
+- Keep formats close to what the model naturally sees in internet text.
+- Ensure there's no format "overhead," such as having to accurately count thousands of lines of code or string-escape any code it writes.
 
-- 站在模型的角度思考。根据描述和参数，使用此工具是否显而易见，还是您需要仔细思考？如果是后者，那么对模型来说可能也是如此。一个好的工具定义通常包括示例用法、边缘情况、输入格式要求以及与其他工具的明确界限。
-- 您如何更改参数名称或描述以使事情更明显？将其视为为团队中的初级开发人员编写一个优秀的文档字符串。在使用许多类似工具时，这一点尤其重要。
-- 测试模型如何使用您的工具：在我们的工作台中运行许多示例输入，看看模型犯了什么错误，并进行迭代。
-- 防错您的工具。更改参数，使其更难犯错误。
+A rule of thumb is to consider how much effort you'd put into human-computer interfaces (HCI) and plan to put the same amount of effort into creating good Agent-Computer Interfaces (ACI). Here are some ideas for how to do this:
 
-在构建我们的 SWE-bench 代理时，我们实际上花了更多时间优化我们的工具，而不是整体提示。例如，我们发现当代理移出根目录后，模型在使用相对文件路径的工具时会犯错误。为了解决这个问题，我们将工具更改为始终需要绝对文件路径——我们发现模型使用这种方法时毫无瑕疵。
+- Think from the model's perspective. Is using this tool obvious given the description and parameters, or do you need to think carefully about it? If the latter, it's probably the same for the model. A good tool definition typically includes example usage, edge cases, input format requirements, and clear boundaries with other tools.
+- How could you change parameter names or descriptions to make things more obvious? Treat it as writing an excellent docstring for a junior developer on your team. This is especially important when using many similar tools.
+- Test how the model uses your tools: run many example inputs in our playground to see what mistakes the model makes and iterate.
+- Make your tools foolproof. Change parameters to make it harder to make mistakes.
+
+When building our SWE-bench agent, we actually spent more time optimizing our tools than the overall prompt. For example, we found that the model made mistakes with tools using relative file paths after the agent moved out of the root directory. To solve this, we changed the tool to always require absolute file paths—we found the model used this approach flawlessly.

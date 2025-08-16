@@ -2,6 +2,8 @@
 
 Welcome to the **Useful** documentation collection! This comprehensive resource brings together a wide range of technical documents, tutorials, tools, and guides across multiple domains including programming, artificial intelligence, astronomy, and more.
 
+**English** | [中文](index.zh.md)
+
 ## What You'll Find Here
 
 ### 🖥️ [Programming](programming/index.md)

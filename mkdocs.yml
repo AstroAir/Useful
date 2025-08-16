@@ -37,8 +37,43 @@ theme:
     code: Roboto Mono
 
 plugins:
-  - search:
-      lang: en
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          site_name: "Useful - 技术文档集合"
+          site_description: "涵盖编程、人工智能、天文学等多个领域的综合技术文档集合"
+          nav_translations:
+            Home: 主页
+            Programming: 编程
+            Artificial Intelligence: 人工智能
+            Astronomy: 天文学
+            Linux: Linux
+            Libraries: 库
+            Creative Writing: 创意写作
+            Overview: 概述
+            "C Programming": "C 编程"
+            "C++ Programming": "C++ 编程"
+            "C# Programming": "C# 编程"
+            JavaScript: JavaScript
+            Python: Python
+            Tools: 工具
+            NINA: NINA
+            "Auto WiFi Tool": "自动 WiFi 工具"
+            "Web Crawling": "网络爬虫"
+            "Three Day War": "三日之战"
+            "Wave Function Collapse": "波函数坍塌"
+            "Quantum Entanglement": "量子纠缠"
+  - search
 
 markdown_extensions:
   - pymdownx.highlight:

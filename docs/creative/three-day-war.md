@@ -1,874 +1,873 @@
+# **Ink-Stained Dust: The Three-Day War**
 
-# **墨染浮尘：三日之战**
+## **Volume I: Gathering Storms**
 
-## **第一卷：风云暗涌**
+### **Chapter 1: Imperial Mysteries**
 
-### **第一章：帝国迷云**
+At the top of the Central Tower in the Imperial Capital, Chief Mage Mo Ran stood by the window, gazing down at the bustling metropolis below. Dressed in deep blue robes embroidered with golden magical patterns along the sleeves and collar, he held a crystal staff that emitted a faint blue glow.
 
-帝都中央塔楼的顶层，首席大法师墨染站在窗前，俯瞰着整座繁华都城。他身着深蓝色法袍，袖口和领边绣着金丝魔纹，手中水晶法杖散发着微弱的蓝光。
+"**Master, the 'Black Skull' has returned and is expected to arrive at the imperial port tomorrow,**" a young apprentice mage reported respectfully.
 
-"**大师，'黑骷髅号'已经返航，预计明日抵达帝国港口**。"一位年轻法师学徒恭敬地报告道。
+Mo Ran nodded slightly, a complex expression flickering in his eyes. "**Notify Lord Max that I need to meet with him.**"
 
-墨染微微点头，眼中闪过一丝复杂神色。"通知max城主，我需要与他会面。"
-
-学徒退下后，墨染转向书架，取出一本古老典籍，翻开布满符文的页面。五年了，那艘船终于回来了，而它的船长——浮尘，帝国远征将军，也将带回远东大陆的秘密。
-
----
-
-与此同时，帝国农业部一片忙碌景象。
-
-"萤火部长，今年北境的粮食收成比预期低了两成，恐怕..."
-
-身着华丽粉色长袍的萤火轻轻摆手，打断了下属的报告。作为帝国农业部男娘部长，他那精致的妆容下是一双充满智慧的眼睛。
-
-"**我们早有预备，调动南部粮仓储备即可**。对了，DW呢？"
-
-"大将军一早就去港口了，说是有重要船只返航。"
-
-萤火若有所思地点头："是浮尘将军回来了...告诉DW，今晚在'醉月楼'召开紧急会议。"
+After the apprentice left, Mo Ran turned to the bookshelf, retrieving an ancient tome and opening its rune-covered pages. Five years had passed—finally, that ship had returned, along with its captain—Fu Chen, the Imperial Expeditionary General—who would bring back the secrets of the Eastern Continent.
 
 ---
 
-帝国港口外海，一艘黑色巨舰缓缓驶近。船身巨大，船首雕刻着骷髅图案，桅杆上飘扬的旗帜在海风中猎猎作响。
+Meanwhile, the Imperial Ministry of Agriculture was abuzz with activity.
 
-船长室内，浮尘将军站在海图前，他身材高大，面容沉毅，左眼上的疤痕诉说着无数战斗的历史。
+"Minister Ying Huo, this year’s northern harvest is twenty percent lower than expected. I fear..."
 
-"将军，帝国已派信鸽通知我们减速航行，推迟到明日入港。"大副报告道。
+Ying Huo, dressed in an elegant pink robe, gently waved a hand, interrupting the subordinate's report. As the effeminate male minister of the Imperial Ministry of Agriculture, his delicate makeup concealed a pair of wise eyes.
 
-浮尘冷笑一声："**墨染那老狐狸，想必已经等不及了**。五年前他阻挠我们东征，如今我带回了能证明他阴谋的证据，他自然坐立不安。"
+"**We have prepared for this. Mobilize the southern grain reserves,**" he said calmly. "**By the way, where is General DW?**"
 
-"那我们..."
+"General DW went to the port early this morning, saying an important ship was returning."
 
-"**按原计划行事，今夜偷偷靠岸。通知岸上的独守，让他准备接应**。"浮尘抚摸着腰间的黑檀木剑柄，眼中闪烁着寒光。
-
----
-
-帝都西郊的樱花庄园内，封侯小墨正与妻子佩洛洛在花园散步。
-
-"夫君，你今天似乎心事重重？"温柔的佩洛洛递上一杯热茶。
-
-小墨接过茶杯，望向远方："**浮尘将军要回来了，我担心会有大麻烦**。五年前那场东征背后，隐藏着不为人知的秘密。"
-
-"是关于墨染大师的事吗？"
-
-小墨叹息："墨染与浮尘，一个是帝国最强大的法师，一个是最勇猛的将军，若他们真正对立，恐怕整个帝国都将动荡不安。"
-
-佩洛洛轻抚丈夫的手背："max城主不会坐视不管的。"
-
-"城主大人神秘莫测，谁也猜不透他的想法。"小墨皱眉道，"不过我已经请南风前来助阵，他虽然隐居为渔夫多年，但实力深不可测。"
+Ying Huo nodded thoughtfully. "**Fu Chen General has returned... Tell General DW to convene an emergency meeting tonight at the 'Moon Drunken Pavilion.'**"
 
 ---
 
-夜幕降临，一艘不起眼的小渔船悄悄靠近黑骷髅号。船上站着一位看似普通的中年渔夫，正是南风。
+Off the coast of the Imperial Port, a massive black warship slowly approached. Towering in size, its bow carved with a skull motif, the ship’s flag fluttered proudly in the sea breeze.
 
-"老朋友，多年不见。"南风跃上甲板，与浮尘相视一笑。
+Inside the captain’s cabin, General Fu Chen stood before a nautical chart. Tall and imposing, his stern face bore a scar over his left eye—a testament to countless battles.
 
-浮尘拍拍他的肩膀："**事情比我们想象的更复杂**。墨染背后站着一股神秘势力，他们觊觎的东西，足以颠覆整个帝国。"
+"General, the empire has sent a messenger pigeon ordering us to slow our approach and delay entry until tomorrow," the first mate reported.
 
-南风点头："我已通知了独守，他会在北城门接应我们。"
+Fu Chen sneered. "**That old fox Mo Ran must be getting impatient. Five years ago, he obstructed our eastern expedition. Now that I’ve returned with evidence of his conspiracy, of course he can’t sit still.**"
 
-浮尘从怀中取出一枚古老的玉佩："**这是远东大陆找到的'元灵玉'，它能激活帝国地下沉睡的上古法阵**。墨染想要得到它，但我们必须先见到max城主。"
+"Then what should we do?"
 
-"小心，我感觉到法力波动。"南风突然警觉地望向天空。
-
-只见夜空中，无数蓝色光点正迅速聚集，形成一张巨网向黑骷髅号罩来。
-
-"是墨染！他发现我们了！"浮尘怒吼一声，拔出长剑。
-
-南风双手结印："老朋友，看来你的归来比预想的更热闹啊。"
+"**Proceed as planned. Dock secretly tonight. Notify Du Shou on shore to prepare for our arrival,**" Fu Chen said, stroking the ebony hilt of his sword, his eyes glinting coldly.
 
 ---
 
-帝都中央塔顶，墨染双眼发光，手中法杖指向港口方向："**浮尘，你以为能逃过我的感知吗？今晚，就让我们了结五年前的恩怨**！"
+Within the cherry blossom garden of the Marquisate Estate on the western outskirts of the capital, Marquis Xiao Mo strolled with his wife, Pei Luo Luo.
 
-### **第二章：初战惊天**
+"Husband, you seem troubled today?" Pei Luo Luo gently handed him a cup of hot tea.
 
-蓝色法网以迅雷不及掩耳之势罩向黑骷髅号，浮尘长剑出鞘，剑身泛起黑色火焰，猛地向上一挑。
+Xiao Mo accepted the tea, gazing into the distance. "**General Fu Chen is returning. I fear great trouble lies ahead.** Five years ago, that eastern expedition concealed secrets unknown to most."
 
-"**断！**"
+"Is it about Master Mo Ran?"
 
-随着浮尘一声暴喝，黑焰化作巨龙冲天而起，与法网相撞，爆发出震耳欲聋的轰鸣。法网被撕开一道巨大裂缝，但很快又开始自我修复。
+Xiao Mo sighed. "Mo Ran and Fu Chen—one the empire’s most powerful mage, the other its bravest general. If they truly oppose each other, the entire empire may fall into chaos."
 
-南风见状，双手翻飞结出复杂手印："**风遁·万里无云**！"
+Pei Luo Luo softly stroked her husband’s hand. "**Lord Max won’t stand idly by.**"
 
-顿时，一股强劲旋风从他掌心喷射而出，化作无数风刃切割着法网。两人合力之下，终于将法网击碎。
-
-"**全速前进，靠岸！**"浮尘命令道，"墨染肯定已经在岸上设下埋伏。"
-
-黑骷髅号开足马力冲向港口，与此同时，岸边已聚集了数十名身着蓝袍的法师，为首的正是墨染。他漂浮在半空中，法杖向前一指：
-
-"**浮尘，交出元灵玉，我可饶你不死！**"
-
-浮尘冷笑："墨染，五年前你暗中破坏我的远征，害死我数千将士，今日我必讨还这血债！"
-
-船只尚未靠岸，浮尘已纵身一跃，黑焰长剑划破夜空，直取墨染咽喉。墨染不慌不忙，法杖轻点，一道蓝色屏障瞬间成形。
-
-"锵！"
-
-剑与屏障相撞，火花四溅。墨染趁机反击，法杖连点，数十道蓝色光矛凭空凝聚，如暴雨般射向浮尘。
-
-浮尘身形在空中连续闪烁，灵活躲过大部分光矛，余下几道则被他的黑焰长剑击碎。两人就这样在港口上空展开了激烈交锋，剑气与法术交织成一片光芒四射的战场。
-
-南风见状，对船上众人喊道："按计划行事，我去助浮尘一臂之力！"
-
-说完，南风身形化作一道青烟，瞬间出现在战场另一侧，双掌推出："**风遁·割裂苍穹**！"
-
-一道巨大的青色风刃横空出世，直切墨染后背。墨染似有所感，不得不分心应对，蓝色屏障迅速转向，堪堪挡住风刃。
-
-就在这一刹那，浮尘抓住机会，黑焰长剑猛地刺入屏障，竟将其刺穿一个小洞。墨染闷哼一声，身形急退，法袍上已多了一道口子，渗出丝丝血迹。
-
-"**不愧是帝国远征将军，五年未见，实力大进**。"墨染冷笑道，手中法杖突然脱手而出，在空中迅速膨胀，化作一条巨大的蓝色巨蟒，向浮尘缠绕而去。
-
-浮尘不惊不慌，长剑回转，黑焰暴涨："**燃魂斩！**"
-
-剑光如黑色闪电，将巨蟒拦腰斩断。然而断开的蟒身却化作无数小蛇，继续向他扑来。
-
-就在此时，港口一侧突然传来一声大喝："**浮尘，接着！**"
-
-只见一名身材魁梧的将军——正是独守，手持巨斧冲入战场，随手扔出一面古朴的盾牌。浮尘伸手接住，盾面上立刻亮起金色符文，形成一道光幕将小蛇尽数弹开。
-
-"老友，你来得正是时候！"浮尘大笑。
-
-独守咧嘴一笑："怎么能让你一个人出风头？DW正带人在城中策应，我们先脱身！"
-
-墨染见状，面色阴沉，双手结印："想走？没那么容易！**禁锢法阵·万重牢笼**！"
-
-刹那间，整个港口上空浮现出复杂的蓝色法阵，无数魔法锁链从法阵中垂下，向三人缠绕而去。
-
-南风见状，从怀中掏出一张符纸："**不得已而为之了...风遁·瞬影千里**！"
-
-符纸燃烧，化作一道青色旋风将三人包裹。当魔法锁链即将触及他们时，旋风骤然收缩，三人身影瞬间消失，只在原地留下一片青烟。
-
-墨染望着消失的三人，脸上闪过一丝怒意，但很快又恢复平静："跑得了初夜，跑不了天明。传令下去，封锁全城，搜查浮尘及其同伙。"
+"Lord Max is enigmatic; no one can predict his intentions," Xiao Mo frowned. "**Still, I’ve already summoned Nan Feng for assistance. Though he’s lived in seclusion as a fisherman for years, his strength remains unfathomable.**"
 
 ---
 
-城北一处隐蔽的地下酒窖中，DW正焦急地踱步。突然，一阵青烟涌动，浮尘、南风和独守的身影出现在眼前。
+As night fell, an unassuming fishing boat quietly approached the Black Skull. Standing aboard was a middle-aged man who appeared to be an ordinary fisherman—Nan Feng.
 
-"总算来了！"DW松了口气，"情况如何？"
+"Old friend, long time no see," Nan Feng leapt onto the deck, exchanging a knowing smile with Fu Chen.
 
-浮尘神色凝重："**墨染早有准备，实力比五年前强了不少**。现在全城恐怕已经戒严，我们必须尽快见到max城主。"
+Fu Chen clapped him on the shoulder. "**Things are more complicated than we imagined.** Mo Ran is backed by a mysterious force. What they seek could topple the entire empire."
 
-南风虚弱地靠在墙上："刚才那一招消耗太大，我需要休息。"
+Nan Feng nodded. "I’ve already informed Du Shou. He’ll be waiting for us at the North Gate."
 
-独守拍拍南风肩膀："老兄，多亏你及时出手，否则我们已被墨染擒获。"
+Fu Chen retrieved an ancient jade pendant from his robe. "**This is the 'Primordial Spirit Jade' we found on the Eastern Continent. It can activate the ancient magical array slumbering beneath the empire. Mo Ran wants it, but we must see Lord Max first.**"
 
-DW打开地图："我已经安排好路线，可以秘密前往城主府。不过墨染的法师们正在全城搜捕，我们必须小心行事。"
+"Be careful—I sense magical fluctuations," Nan Feng suddenly warned, glancing toward the sky.
 
-浮尘点头："**先休整一下，天亮前动身**。这场战斗，才刚刚开始。"
+Above them, countless blue lights gathered rapidly, forming a vast net descending upon the Black Skull.
 
-### **第三章：城中激战**
+"It’s Mo Ran! He’s found us!" Fu Chen roared, drawing his sword.
 
-黎明前的帝都笼罩在一片诡异的蓝光之中。墨染站在中央塔顶，双手张开，口中念动咒语。数百名法师分布在城市各处，形成一个巨大的法阵，蓝色光线在空中交织成网。
-
-"**通灵法眼，寻踪觅影**！"随着墨染一声低喝，整座城市上空的法阵骤然亮起刺目光芒。
-
-在农业部办公室内，萤火望着窗外的异象，眉头紧锁。身后传来脚步声，他头也不回地说："墨染这是用尽全力了，连禁术都敢在城中施展。"
-
-来人正是小墨，他神色凝重："**佩洛洛已经准备好樱花庄园作为安全屋**。浮尘将军带回的东西，真有那么重要吗？"
-
-萤火转身，精致的脸上罕见地露出严肃表情："**那枚元灵玉关系到帝国的命运。五年前，墨染阻挠浮尘东征，正是不想让他发现远东大陆的秘密**。"
-
-"那我们现在..."
-
-"**按计划行事，尽可能支援浮尘他们**。"萤火望向窗外，"但愿max城主已经知晓此事。"
+Nan Feng formed intricate hand seals. "**Wind Release: Clear Skies!**"
 
 ---
 
-地下酒窖中，浮尘等人正在准备出发。
+Atop the Central Tower, Mo Ran’s eyes glowed as he pointed his staff toward the port. "**Fu Chen, did you really think you could escape my detection? Tonight, we settle the score from five years ago!**"
 
-"感觉到了吗？"南风抬头望向天花板，"墨染已经启动了通灵法眼，全城都在他的监视之下。"
+### **Chapter 2: First Clash**
 
-独守咧嘴一笑："那我们就给他点颜色看看。"说着，他取出几枚金属球，"这是我和DW特制的'幻影弹'，可以干扰法术探测。"
+The blue magical net descended upon the Black Skull with lightning speed. Fu Chen unsheathed his sword, its blade igniting with black flames as he slashed upward.
 
-DW补充道："**我已经安排了几支小队在城内不同地点制造骚动，分散墨染的注意力**。现在，我们分头行动。"
+"**Break!**"
 
-浮尘点头："元灵玉我随身携带。独守，你和南风走东线；DW，你负责西线；我从中路突进，直奔城主府。"
+With a thunderous roar, the black flames surged skyward like a dragon, colliding with the net and tearing a massive rift. Yet the net quickly began to repair itself.
 
-四人互相握手，眼中都闪烁着决然的光芒。
+Seeing this, Nan Feng’s hands flew through complex seals. "**Wind Release: Sky-Splitting Gale!**"
 
-"**无论结果如何，今日过后，帝国将不再是从前的帝国**。"浮尘沉声道。
+A powerful whirlwind erupted from his palms, slicing through the net with countless wind blades. Together, they finally shattered the magical barrier.
+
+"**Full speed ahead—make for shore!**" Fu Chen commanded. "**Mo Ran must have set an ambush on land.**"
+
+The Black Skull surged toward the harbor. Meanwhile, dozens of blue-robed mages had gathered onshore, led by Mo Ran himself, floating midair with staff raised.
+
+"**Fu Chen, hand over the Primordial Spirit Jade, and I may yet spare your life!**" Mo Ran declared.
+
+Fu Chen sneered. "**Mo Ran, five years ago you sabotaged my expedition, killing thousands of my soldiers. Today, I will repay that blood debt!**"
+
+Before the ship could dock, Fu Chen leapt into the air, his black-flamed sword slicing through the night sky straight for Mo Ran’s throat. Unfazed, Mo Ran tapped his staff, instantly forming a blue barrier.
+
+*Clang!*
+
+The sword struck the barrier, sparks flying. Seizing the moment, Mo Ran retaliated, his staff flicking rapidly as dozens of blue spears materialized and rained down upon Fu Chen.
+
+Darting through the air, Fu Chen evaded most of the spears, shattering the rest with his black-flamed sword. High above the harbor, the two clashed fiercely, their sword strikes and spells illuminating the battlefield.
+
+Seeing this, Nan Feng shouted to those aboard. "**Proceed as planned—I’ll assist Fu Chen!**"
+
+In an instant, Nan Feng transformed into a wisp of green smoke, appearing on the opposite side of the battlefield. With a thrust of both palms, he unleashed: "**Wind Release: Sky-Splitting Blade!**"
+
+A massive green wind blade sliced through the air toward Mo Ran’s back. Sensing danger, Mo Ran redirected his barrier just in time to block the strike.
+
+At that very moment, Fu Chen seized the opening, driving his black-flamed sword through the barrier, piercing a small hole. Mo Ran grunted in pain, retreating hastily as blood seeped through a tear in his robe.
+
+"**Impressive, Imperial Expeditionary General. Your strength has grown much in five years,**" Mo Ran said coldly. His staff suddenly flew from his grasp, swelling into a massive blue serpent that coiled toward Fu Chen.
+
+Unfazed, Fu Chen swung his sword, black flames blazing. "**Soul-Blazing Slash!**"
+
+The sword flash cut the serpent in half like black lightning. Yet the severed halves transformed into countless smaller serpents, continuing their assault.
+
+Just then, a loud shout came from the harbor’s edge. "**Fu Chen—catch!**"
+
+Du Shou, the burly general, charged into the fray, hurling an ancient shield. Fu Chen caught it, golden runes flaring across its surface, forming a protective barrier that deflected the serpents.
+
+"Old friend, you’ve arrived just in time!" Fu Chen laughed.
+
+Du Shou grinned. "How could I let you have all the glory? General DW is preparing a diversion in the city—we must escape!"
+
+Mo Ran’s expression darkened. Hands forming seals, he intoned: "**Binding Array: Ten Thousand Shackles!**"
+
+Instantly, a complex blue array materialized above the harbor, countless magical chains descending to ensnare the trio.
+
+Nan Feng pulled out a talisman. "**No choice now... Wind Release: Instant Shadow Travel!**"
+
+The talisman burned, enveloping them in a green whirlwind. As the magical chains nearly touched them, the whirlwind contracted, and the three vanished, leaving only a wisp of green smoke behind.
+
+Mo Ran stared at the empty space, a flicker of anger crossing his face before returning to calm. "**You may escape tonight, but not by dawn. Seal the city—search for Fu Chen and his accomplices.**"
 
 ---
 
-城东集市，一阵爆炸声突然响起，浓烟冲天。民众惊慌奔逃，法师卫队迅速集结。烟雾中，独守和南风借着混乱快速穿行。
+In a hidden underground wine cellar in the northern part of the city, General DW paced anxiously. Suddenly, green smoke swirled, and Fu Chen, Nan Feng, and Du Shou appeared.
 
-"左前方，三点钟位置，五名法师。"南风低声提醒。
+"Finally!" DW exhaled in relief. "How did it go?"
 
-独守狞笑一声："交给我！"说完，他从腰间抽出两把短斧，猛地掷出。斧刃破空，精准命中两名法师的肩膀，将他们钉在墙上。
+Fu Chen’s expression was grave. "**Mo Ran was prepared. His strength has grown significantly since five years ago.** The city is likely under martial law—we must see Lord Max as soon as possible."
 
-剩下三名法师立刻反应过来，蓝色法球在手中凝聚。南风身形一闪，已到他们身后："抱歉了。**风遁·无声之刃**。"
+Nan Feng leaned weakly against the wall. "That last technique drained me—I need rest."
 
-一阵无形气浪扫过，三名法师无声无息地倒下。南风上前检查："只是昏迷，我没下重手。"
+Du Shou patted Nan Feng’s shoulder. "Old friend, we owe you our lives."
 
-独守收回短斧："别太仁慈，这些人可不会手下留情。继续前进，按计划在北市场与浮尘会合。"
+DW spread a map. "I’ve prepared a route to the City Lord’s mansion. But Mo Ran’s mages are searching the city—we must move carefully."
 
----
+Fu Chen nodded. "**Rest first—we move before dawn. This battle has only just begun.**"
 
-城西的守备营地同样陷入混乱。DW身着将军铠甲，正大模大样地走在营地中央。
+### **Chapter 3: Urban Battle**
 
-"将军！"一名守卫敬礼，"墨染大师命令全军戒备，搜捕叛将浮尘！"
+Before dawn, the Imperial Capital lay beneath an eerie blue glow. Mo Ran stood atop the Central Tower, arms outstretched, chanting incantations. Hundreds of mages stationed throughout the city formed a vast magical array, blue threads weaving through the sky.
 
-DW面无表情地点头，继续前行。当他走到营地中心时，突然停下脚步，从怀中取出一个小盒子，轻轻打开。
+"**Spiritual Eye—Seek and Locate!**" Mo Ran intoned, and the city-wide array flared with blinding light.
 
-"**启动**。"
+Inside the Ministry of Agriculture office, Ying Huo gazed out the window, brow furrowed. Footsteps approached from behind, but without turning, he said, "Mo Ran has gone all out—even daring to use forbidden techniques within the city."
 
-盒中飞出数十只机械蜂鸟，迅速散向四周。守卫们还未反应过来，蜂鸟已在各处爆炸，释放出大量白色烟雾。
+It was Xiao Mo who had entered, his expression serious. "**Pei Luo Luo has prepared the cherry blossom estate as a safe house. Is the Primordial Spirit Jade truly that important?**"
 
-"敌袭！"守卫们慌乱喊叫，但很快便在烟雾中昏迷倒下。
+Ying Huo turned, his usually delicate features now stern. "**That jade determines the empire’s fate. Five years ago, Mo Ran obstructed Fu Chen’s eastern expedition precisely to prevent him from discovering the Eastern Continent’s secrets.**"
 
-DW戴上特制面具，从容穿过烟雾区。一个声音突然从他身后响起："平远大将军，你这是叛国吗？"
+"So what do we do now?"
 
-DW转身，看到一名身着高级法袍的男子站在那里，周身蓝光闪烁，将烟雾隔绝在外。
-
-"墨染的得意弟子？"DW冷笑一声，"**叛国的是你们的师父**。"
-
-法师冷哼一声："大逆不道的话，足以处死！"说完，双手猛地推出，一道蓝色光束射向DW。
-
-DW不避不让，右手突然变形，化作金属利爪，直接抓住光束，生生将其捏碎。
-
-"什么？"法师大惊失色。
-
-DW迅速冲到法师面前，金属利爪已抵在对方咽喉："**五年前在东征中，我失去了右臂，换上了这个机械臂。这是浮尘将军送我的礼物，也是我追随他的原因**。现在，睡一觉吧。"
-
-利爪轻轻一点，法师应声倒地。DW望向城主府方向："浮尘将军，希望你那边一切顺利。"
+"**Follow the plan—support Fu Chen and his group as much as possible,**" Ying Huo said, looking out the window. "**I hope Lord Max already knows of this.**"
 
 ---
 
-城中央大道上，浮尘身着普通商人服饰，混在人群中前行。通灵法眼的蓝光笼罩城市，让他不得不放慢脚步，小心前进。
+In the underground wine cellar, Fu Chen and his companions prepared to depart.
 
-突然，前方街角出现一队法师，正挨家挨户搜查。浮尘转身欲避，却发现身后也出现了巡逻队伍。
+"Do you feel it?" Nan Feng looked up at the ceiling. "Mo Ran has activated the Spiritual Eye—his surveillance covers the entire city."
 
-"糟了，被包围了。"浮尘暗暗握紧腰间长剑。
+Du Shou grinned. "Then let’s give him something to see." He pulled out several metallic spheres. "These are the 'Phantom Bombs' DW and I designed—they disrupt magical detection."
 
-就在此时，一辆华丽马车从侧街驶来，车帘掀开，露出萤火那张精致的脸庞："商人先生，需要搭车吗？"
+DW added, "**I’ve arranged several teams to create diversions across the city, drawing Mo Ran’s attention. Now, we split up.**"
 
-浮尘一愣，随即会意，快步上了马车。马车缓缓驶过法师队伍，无人阻拦。
+Fu Chen nodded. "I’ll carry the Primordial Spirit Jade. Du Shou, you and Nan Feng take the eastern route; DW, you handle the west; I’ll push straight through the center to the City Lord’s mansion."
 
-"农业部长大人亲自出马，我受宠若惊。"浮尘低声道。
+The four clasped hands, determination burning in their eyes.
 
-萤火微笑："**国家栋梁，理应相助**。我已经安排了一条安全路线，可以直达城主府后花园。"
-
-浮尘神色凝重："墨染不会轻易放过我们。"
-
-话音刚落，马车上方突然传来一声巨响。车顶被一股蓝色能量撕开，强光照射进来。车外传来墨染冰冷的声音：
-
-"**找到你了，浮尘**！"
-
-浮尘猛地踢开车门，拔剑而出。萤火紧随其后，手中已多了一柄粉色折扇，扇面上符文闪烁。
-
-街道上，墨染凌空而立，数十名法师将他们团团围住。路人惊慌逃散，很快就只剩下对峙的双方。
-
-"交出元灵玉，饶你不死。"墨染冷声道。
-
-浮尘冷笑："五年前你就是这么说的，结果我的三千将士葬身大海！"
-
-墨染摇头："那是必要的牺牲。**元灵玉若落入帝国，将带来灭顶之灾**。"
-
-"谎言！"浮尘怒吼，"我在远东发现的古籍清楚记载，元灵玉是帝国祖先留下的圣物，能够激活地下沉睡的守护法阵，保护帝国免受外敌入侵！"
-
-"愚蠢！"墨染双眼闪烁蓝光，"那些只是表象！元灵玉背后隐藏的真相，你根本不知道！"
-
-萤火突然开口："**墨染大师，您是在害怕元灵玉揭露您的真实身份吗**？"
-
-墨染脸色骤变："萤火，你..."
-
-不等他说完，浮尘已纵身跃起，黑焰长剑直指墨染咽喉："**少废话，今日必取你性命**！"
-
-墨染法杖一挥，蓝色屏障再次成形，挡住了浮尘的攻击。两人瞬间缠斗在一起，剑气与法术在街道上爆发，掀起阵阵冲击波。
-
-萤火见状，展开折扇："诸位法师，得罪了。**幻花·千蝶起舞**！"
-
-粉色折扇猛地一挥，无数粉色蝴蝶从扇面飞出，散向周围法师。那些蝴蝶看似脆弱，却能穿透法师的防御，只要沾上一只，法师就会陷入幻觉，失去战斗能力。
-
-很快，大部分法师都倒在地上，呓语不断。萤火收起折扇，抬头望向激战中的浮尘和墨染。
-
-天空中，浮尘与墨染的战斗已进入白热化。浮尘的黑焰剑法凌厉无比，每一剑都携带着足以撕裂法术的力量。墨染则游刃有余，法杖挥舞间，无数蓝色法术如流星般射向浮尘。
-
-"**焱魂·爆裂斩**！"浮尘长剑高举，黑焰凝聚成一条火龙，随着剑势劈下。
-
-墨染双手合十，法杖悬浮在前："**禁咒·苍穹壁垒**！"
-
-一道巨大的蓝色光墙在他面前形成，浮尘的火龙撞上光墙，爆发出震耳欲聋的轰鸣。两股力量相持不下，最终同时溃散，产生的冲击波将周围建筑的窗户尽数震碎。
-
-浮尘趁机欺身上前，剑尖直指墨染胸口。墨染来不及施法，只能侧身闪避，但仍被剑锋划破法袍，留下一道浅伤。
-
-"**你果然有所保留**。"墨染冷笑，"五年前你就不是我的对手，今日也是如此！"
-
-说完，墨染突然撕开自己的法袍，露出里面布满蓝色符文的身体。那些符文开始发光，墨染的身体逐渐变得透明，如同水晶一般。
-
-"**禁忌法术·元素化身**！"
-
-墨染的身体完全化作蓝色能量体，速度和力量大幅提升。他如闪电般冲向浮尘，每一击都带着摧毁一切的力量。
-
-浮尘节节败退，黑焰长剑上已布满裂纹，随时可能断裂。
-
-"将军！"萤火焦急喊道，"我来助你！"
-
-就在墨染准备发动致命一击时，一支金色箭矢突然从远处射来，精准命中墨染的能量体，让他的身形出现短暂凝滞。
-
-所有人顺着箭矢方向望去，只见城主府方向，一个身影站在高塔之上。
-
-"那是...max城主？"萤火惊讶道。
-
-墨染回过神来，面色大变："不可能！你怎么会出手！"
-
-远处的身影再次拉弓，又一支金色箭矢破空而来。墨染不敢硬接，急速后退，恢复人形。
-
-"**浮尘将军，速来城主府**！"远处传来max的声音，洪亮而威严。
-
-浮尘抓住机会，收起断裂的长剑，对萤火喊道："走！"
-
-二人迅速向城主府方向奔去。墨染想要追击，却发现身体被一股无形力量禁锢。
-
-"**墨染，够了**。"max的声音再次响起，"**五年前的事，是时候有个了断了**。"
-
-墨染脸色阴晴不定，最终冷哼一声："如你所愿，城主大人。但这场战斗，还远未结束。"
-
-说完，他化作一道蓝光消失在原地。
-
-浮尘和萤火一路狂奔，终于抵达城主府后花园，与独守、南风和DW会合。
-
-"将军！"众人齐声呼唤。
-
-浮尘喘着粗气，脸上却露出笑容："**我们成功了，终于见到max城主了**。"
-
-就在此时，max的身影出现在花园中央。他身着金色长袍，面容却隐藏在兜帽的阴影中，给人一种神秘莫测的感觉。
-
-"**浮尘将军，欢迎回来**。"max平静的声音传来，"**展示给我看看，你从远东带回的宝物**。"
-
-浮尘单膝跪地，从怀中取出那枚散发着古老气息的玉佩——元灵玉。
-
-"城主大人，这是我用三千将士性命换来的真相。"
-
-## **第二卷：真相之战**
-
-### **第四章：往事与隐秘**
-
-城主府最高层的会议厅内，气氛凝重。浮尘、南风、独守、DW和萤火站在一侧，元灵玉被放置在中央的水晶台上，散发着微弱的绿光。max站在窗前，背对众人，沉默不语。
-
-"**五年前，我奉命远征东方大陆**。"浮尘打破沉默，"表面上是为了扩张领土，实际上我接到了一个秘密任务——寻找传说中的元灵玉。"
-
-max缓缓转身："谁给你的秘密任务？"
-
-"是先前的城主顾问，他临终前告诉我，元灵玉是帝国最重要的护国神器，曾在千年前的大战中被敌国偷走，藏在东方大陆。"
-
-南风补充道："我曾是宫廷史官，古籍中确实有元灵玉的记载，它能激活埋藏在帝国地下的守护法阵。"
-
-max点头："继续。"
-
-浮尘神色黯然："**远征途中，我们的舰队遭遇了不明来源的魔法风暴，损失惨重**。后来我才得知，那是墨染秘密派人制造的。他不想让我们找到元灵玉。"
-
-"能证明吗？"max问道。
-
-DW站出来："我有证据。"他取出一个小型记录水晶，"这是我从墨染一名弟子那里缴获的，记录了五年前的魔法风暴施法过程。"
-
-水晶激活，蓝光中显现出墨染指挥法师们施法的画面。
-
-max沉默片刻："浮尘，你是怎么找到元灵玉的？"
-
-"在东方大陆最深处的古老遗迹中，我们发现了一座守护森严的神庙。**损失了大半兵力后，我们终于进入核心区域，找到了这枚玉佩和一些古籍**。"浮尘指向元灵玉，"古籍记载，元灵玉必须在满月之夜放入帝国中央神殿的法阵中，才能唤醒沉睡的守护阵法。"
-
-"而三天后，正好是满月。"南风补充道。
-
-max走到水晶台前，仔细观察元灵玉："**墨染的行为确实可疑，但他是帝国首席大法师，一向忠心耿耿**。为何他会不惜一切代价阻止元灵玉回归？"
-
-萤火轻轻摇头："我有一个大胆的猜测。**墨染大师可能不是我们认识的那个墨染**。"
-
-众人惊讶地望向萤火。
-
-"什么意思？"独守问道。
-
-萤火取出一卷丝绸画卷："这是墨染成为首席大法师前的画像。"他展开画卷，指向墨染的眼睛，"注意这里，当时他的眼睛是褐色的。"
-
-DW皱眉："但现在墨染的眼睛是蓝色的。"
-
-"**最初我以为是施法过多导致的变化**。"萤火继续道，"但今天看到他使用元素化身法术，我确信了一件事——墨染很可能被某种存在附身或替换了。"
-
-浮尘猛地站起："**难怪他对元灵玉如此忌惮！如果元灵玉能激活守护法阵，那么任何潜伏在帝国的外来存在都会被驱逐或消灭**！"
-
-max若有所思："这个推测合理，但我们需要更多证据。在决定下一步行动前，我必须亲自与墨染对话。"
-
-就在此时，窗外突然天色骤变，乌云密布，蓝色闪电划破天际。
-
-"不好！"南风冲到窗前，"**墨染在中央塔启动了某种大型法术**！"
-
-max眼中闪过一丝锐利光芒："**看来他等不及了。浮尘，保护好元灵玉，我去会会他**。"
+"**No matter the outcome, after today, the empire will never be the same,**" Fu Chen declared solemnly.
 
 ---
 
-中央塔顶，墨染双手高举，周身环绕着蓝色能量漩涡。数百名法师在塔的各层协助施法，整座塔被蓝光笼罩。
+In the eastern market, an explosion suddenly erupted, sending thick smoke billowing into the sky. Civilians fled in panic as mage guards quickly mobilized. Amidst the chaos, Du Shou and Nan Feng moved swiftly.
 
-"**禁忌法术·次元裂缝**！"墨染高声吟唱，声音已不似人类，带着某种金属质感。
+"Left front, three o’clock position—five mages," Nan Feng whispered.
 
-塔顶上空，云层中渐渐出现一道发光的裂缝，无数蓝色能量体从中涌出，盘旋在城市上空。
+Du Shou smirked. "Leave it to me!" He drew two short axes and hurled them. The blades pierced two mages’ shoulders, pinning them to the wall.
 
-"墨染！"一声怒喝传来。
+The remaining three mages reacted instantly, blue energy spheres forming in their hands. Nan Feng flashed behind them. "**Wind Release: Silent Blade!**"
 
-max凭空出现在塔顶对面，金色长袍猎猎作响，兜帽已经脱落，露出一张威严的面容。他右手持弓，左手握箭，金光闪烁。
+An invisible gust swept through, and the three mages collapsed silently. Nan Feng checked them. "Just unconscious—I didn’t go too hard."
 
-"停止你的法术，否则我不会手下留情！"
-
-墨染转头，露出一个诡异的笑容："**太迟了，城主大人。主人即将降临，这个世界将迎来新的秩序**！"
-
-说完，他猛地将法杖刺入塔顶中央的魔法阵，蓝光骤然爆发。次元裂缝迅速扩大，一个巨大的蓝色身影隐约浮现在裂缝中。
-
-max毫不犹豫，拉弓射箭。金色箭矢划破长空，直取墨染咽喉。然而就在箭即将命中的瞬间，一道蓝色屏障凭空出现，挡住了箭矢。
-
-"**凡人的武器，无法伤害神明的使者**。"墨染的声音越发怪异，"五年来，我一直在为这一刻做准备。元灵玉本该永远沉睡在东方，但浮尘那个蠢货非要将它带回来。"
-
-max再次拉弓："那你就是承认，五年前故意破坏远征舰队？"
-
-"那不过是必要的牺牲。"墨染不屑地挥手，"**比起即将到来的命运，那点损失不值一提**。"
-
-max松开弓弦，又一支金箭破空而出，这次却不是射向墨染，而是射向塔顶中央的魔法阵。箭矢命中法阵，爆发出耀眼金光。
-
-魔法阵出现裂纹，次元裂缝的扩张速度减缓。墨染怒吼一声："你！"
-
-"我早就怀疑你了，墨染。"max冷静道，"**或者说，占据墨染身体的东西**。"
-
-墨染面容扭曲，皮肤下隐约可见蓝色光线流动："聪明的城主，但你阻止不了必然的命运。"
-
-说完，他双手猛地合十，体内蓝光爆发。"**献祭·万灵归一**！"
-
-顿时，塔内所有协助施法的法师身体同时僵直，生命能量被抽取，形成无数蓝色光点涌向墨染。他的身体迅速膨胀，皮肤撕裂，露出内里的蓝色晶体结构。
-
-"这是...献祭法术？"max震惊道。
-
-墨染已完全变成一个蓝色晶体巨人，身高近三米，声音如雷鸣："**现在，你面对的是我的真身**！"
+Du Shou retrieved his axes. "Don’t be too merciful—they won’t show us any. Keep moving—we rendezvous with Fu Chen at the northern market."
 
 ---
 
-城主府中，浮尘等人通过魔法投影目睹了这一幕。
+The western garrison camp was equally chaotic. DW, clad in general’s armor, strode confidently through the center.
 
-"天呐，墨染根本不是人类！"萤火惊呼。
+"General!" a guard saluted. "Chief Mage Mo Ran has ordered full alert—search for the traitor General Fu Chen!"
 
-浮尘面色凝重："**我们必须立刻行动，趁着次元裂缝被减缓，将元灵玉送往中央神殿**！"
+DW nodded expressionlessly and continued walking. Reaching the camp’s center, he stopped,取出 a small box from his robe and opened it.
 
-"但满月还有三天才到。"DW提醒道。
+"**Activate.**"
 
-南风摇头："情况紧急，只能提前尝试。元灵玉的力量或许不会完全释放，但应该足以对抗墨染的阴谋。"
+Dozens of mechanical hummingbirds flew out, scattering in all directions. Before the guards could react, the birds exploded, releasing thick white smoke.
 
-浮尘点头："独守、DW，你们带领守卫保护城主府；南风、萤火，你们随我前往中央神殿。"
+"Intruders!" the guards shouted, but soon collapsed unconscious within the smoke.
 
-众人领命，迅速行动起来。浮尘小心地将元灵玉收入特制盒子，率领南风和萤火离开城主府，向中央神殿进发。
+DW donned a special mask and walked calmly through the smoke. A voice suddenly came from behind. "General Pingyuan, is this treason?"
 
-城市上空，max与晶体巨人墨染已展开激烈战斗。max不再使用弓箭，而是手持一柄金色长剑，与墨染的蓝色能量巨爪对抗。每次武器相交，都爆发出震耳欲聋的轰鸣。
+DW turned to face a high-ranking mage in blue robes, his body encased in a blue energy field that repelled the smoke.
 
-"**你究竟是什么存在**？"max一边战斗一边质问。
+"Mo Ran’s prized disciple?" DW sneered. "**It’s your master who’s the traitor.**"
 
-晶体巨人狞笑："**我们是来自次元裂缝另一端的存在，你们称我们为'蓝晶族'**。千年前，我们曾试图征服这个世界，却被元灵玉的力量阻挡。如今，我们卷土重来！"
+The mage scoffed. "Such blasphemy warrants death!" He thrust both hands forward, sending a blue energy beam toward DW.
 
-max剑锋一转，斩向墨染的晶体手臂："那真正的墨染呢？"
+DW didn’t flinch. His right hand transformed into a metallic claw, grabbing and crushing the beam.
 
-"他的意识早已消散，只剩下这具完美的容器，承载着我的力量！"墨染猛地一掌拍向max，"**你们的帝国即将覆灭，新的纪元将由蓝晶族主宰**！"
+"What?!" the mage exclaimed in shock.
 
-max侧身闪避，剑光如瀑："只要我还在，帝国就不会沦陷！"
+DW lunged, the claw pressing against the mage’s throat. "**Five years ago during the eastern expedition, I lost my right arm—replaced with this mechanical one. It was General Fu Chen’s gift, and the reason I follow him. Now, sleep.**"
 
-两人的战斗愈发激烈，能量冲击波席卷整座城市，建筑物不断崩塌。民众惊慌逃散，城市陷入前所未有的混乱。
+A light tap, and the mage collapsed. DW glanced toward the City Lord’s mansion. "General Fu Chen, I hope your path is clear."
 
 ---
 
-浮尘、南风和萤火在前往中央神殿的路上，不得不频繁改变路线，躲避坍塌的建筑和肆虐的能量风暴。
+Along the central avenue, Fu Chen, disguised as a merchant, moved cautiously through the crowd. The Spiritual Eye’s blue glow blanketed the city, forcing him to slow his pace.
 
-"前面就是神殿广场了！"萤火指向前方。
+Suddenly, a squad of mages appeared ahead, searching house to house. Fu Chen turned to avoid them, only to find another patrol blocking his rear.
 
-然而，就在他们即将抵达时，数十名蓝光闪烁的"法师"突然出现，拦住去路。
+"Damn—it’s an encirclement," Fu Chen muttered, gripping his sword.
 
-"不是普通法师..."南风凝神观察，"他们已被完全转化，成为蓝晶族的傀儡！"
+Just then, an ornate carriage pulled up from a side street. The curtain parted, revealing Ying Huo’s delicate face. "Merchant, need a ride?"
 
-浮尘抽出备用长剑："**无论如何，都要冲过去**！"
+Fu Chen hesitated, then understood, quickly boarding the carriage. It passed through the mage squad without challenge.
 
-三人冲向傀儡法师群。浮尘的剑法凌厉，每一剑都能斩断敌人的能量连接；南风的风系法术则能扰乱对方的感知；萤火的幻术更是让不少敌人陷入混乱。
+"Agriculture Minister personally coming to my aid—I’m honored," Fu Chen whispered.
 
-就在战斗胶着之际，一阵熟悉的声音传来："浮尘将军！这边！"
+Ying Huo smiled. "**A pillar of the nation deserves assistance.** I’ve arranged a safe route directly to the City Lord’s mansion garden."
 
-小墨和佩洛洛出现在侧街，身后跟着一队身穿轻甲的战士。
+Fu Chen’s expression darkened. "Mo Ran won’t let us go easily."
 
-"封侯大人！"浮尘惊喜道。
+As if on cue, a loud explosion tore through the carriage roof. Bright light flooded in as Mo Ran’s cold voice rang out.
 
-小墨迅速下令："掩护将军冲入神殿！"
+"**Found you, Fu Chen!**"
 
-战士们立刻散开，射出特制箭矢，逼退傀儡法师。佩洛洛则取出一根水晶法杖，轻轻挥舞，在前方开辟出一条安全通道。
+Fu Chen kicked open the door and leapt out, sword drawn. Ying Huo followed, now holding a pink folding fan inscribed with glowing runes.
 
-"**快走，我们掩护你**！"小墨催促道。
+On the street, Mo Ran hovered midair, surrounded by dozens of mages. Civilians had fled, leaving only the opposing forces.
 
-浮尘点头致谢，与南风、萤火冲向神殿大门。
+"Hand over the Primordial Spirit Jade, and I’ll spare your life," Mo Ran demanded coldly.
 
-中央神殿是帝国最古老的建筑，历经千年而不倒。巨大的石门缓缓开启，三人快步进入。神殿内部空旷而庄严，中央是一个巨大的圆形法阵，周围刻满古老符文。
+Fu Chen sneered. "Five years ago, you said the same thing—then my three thousand soldiers perished at sea!"
 
-"就是这里。"南风指向法阵中心的凹槽，"元灵玉应该放在那个位置。"
+Mo Ran shook his head. "**That was a necessary sacrifice. The Primordial Spirit Jade would bring catastrophe upon the empire if it returned.**"
 
-浮尘取出元灵玉，正要上前，突然一道蓝色光束从天而降，击中他的手臂。元灵玉脱手而出，落在地上。
+"Lies!" Fu Chen roared. "Ancient texts I discovered in the East clearly state the Primordial Spirit Jade is a sacred relic left by our ancestors—it can activate the slumbering protective array beneath the empire, shielding us from foreign invaders!"
 
-"**想都别想**！"
+"Foolish!" Mo Ran’s eyes glowed blue. "Those are mere illusions! The truth hidden behind the Primordial Spirit Jade is beyond your comprehension!"
 
-三人抬头，只见神殿穹顶破开一个大洞，墨染的晶体巨人形态缓缓降落。他身上多处破损，显然在与max的战斗中受了伤，但气势依然恐怖。
+Ying Huo suddenly interjected. "**Chief Mage Mo Ran, are you afraid the Primordial Spirit Jade will expose your true identity?**"
 
-"max呢？"浮尘厉声问道。
+Mo Ran’s face paled. "Ying Huo, you—"
 
-墨染狞笑："**你们的城主大人暂时被我困在空间夹缝中，短时间内无法脱身**。现在，交出元灵玉！"
+Before he could finish, Fu Chen lunged, black-flamed sword aimed at Mo Ran’s throat. "**Enough talk—I’ll take your life today!**"
 
-萤火悄悄向浮尘传音："拖住他，我去取元灵玉。"
+Mo Ran waved his staff, forming a blue barrier that blocked the attack. The two instantly engaged in fierce combat, sword strikes and spells lighting up the street.
 
-浮尘微不可察地点头，随即怒喝："墨染！不，应该称你为蓝晶族的入侵者！**五年前我舰队中三千将士的血债，今日必将讨还**！"
+Ying Huo unfurled his fan. "**Mages, forgive me. Illusionary Flowers—Thousand Butterflies Dance!**"
 
-说完，浮尘长剑出鞘，黑焰暴涨。南风也展开全力，风系法术呼啸而出。两人同时攻向墨染，试图分散他的注意力。
+A wave of pink butterflies flew from the fan, scattering toward the surrounding mages. Though delicate, they pierced magical defenses—any mage touched fell into a trance, losing combat ability.
 
-墨染不屑一顾："**蝼蚁之力，也敢挑战神明**？"
+Soon, most mages lay unconscious, murmuring incoherently. Ying Huo closed his fan, watching Fu Chen and Mo Ran’s aerial battle.
 
-他随手挥出两道蓝色能量波，将浮尘和南风击退数十米。二人撞在神殿石柱上，吐血不止。
+High above, their clash had reached its peak. Fu Chen’s black-flame sword technique was devastating, each strike capable of tearing through magic itself. Mo Ran countered effortlessly, his staff conjuring countless blue spells like shooting stars.
 
-就在此时，萤火已悄然接近元灵玉，迅速将其拾起。
+"**Soul-Blaze—Explosive Slash!**" Fu Chen raised his sword, black flames coalescing into a dragon that slashed downward.
 
-"**住手**！"墨染察觉到动静，转身挥出能量巨爪。
+Mo Ran clasped his hands, staff hovering before him. "**Forbidden Technique—Celestial Barrier!**"
 
-萤火来不及闪避，被正面击中，整个人飞出数米，撞在石墙上。但在被击飞的瞬间，他已将元灵玉抛向法阵中心。
+A massive blue wall formed, meeting Fu Chen’s dragon in a thunderous explosion. The opposing forces held briefly before collapsing simultaneously, the shockwave shattering nearby windows.
 
-元灵玉在空中划出一道优美的弧线，精准落入法阵中央的凹槽中。
+Seizing the moment, Fu Chen closed in, sword tip aimed at Mo Ran’s chest. Mo Ran barely dodged, but his robe was slashed, leaving a shallow wound.
 
-"不！"墨染怒吼，冲向法阵。
+"**So you’ve been holding back,**" Mo Ran sneered. "**Five years ago, you couldn’t match me—and neither can you today!**"
 
-然而已经迟了。元灵玉落入凹槽的瞬间，整个法阵亮起耀眼的绿光。光芒迅速扩散，形成一道能量屏障，将墨染阻挡在外。
+Suddenly, Mo Ran tore open his robe, revealing a body covered in glowing blue runes. They brightened as his form turned translucent, crystalline.
 
-"**元灵玉啊，帝国的守护者，请听从我的召唤**..."浮尘强撑着站起，开始用古老语言吟诵启动咒语。
+"**Forbidden Technique—Elemental Transformation!**"
 
-墨染疯狂攻击能量屏障，蓝色能量与绿色屏障碰撞，发出刺耳的嗡鸣。"**你们以为这样就能阻止我**？元灵玉的力量只有在满月之夜才能完全激活，现在不过是杯水车薪！"
+Mo Ran’s body fully transformed into a blue energy being, speed and strength vastly enhanced. He charged Fu Chen like lightning, each strike carrying world-shattering force.
 
-南风也站起身，接续浮尘的咒语："**远古的契约，沉睡的力量，请在帝国危难之际觉醒**..."
+Fu Chen retreated step by step, his black-flame sword now cracked, moments from breaking.
 
-墨染的攻击越来越猛烈，能量屏障开始出现裂纹。萤火虚弱地爬起，也加入咒语吟诵："**以先祖之名，以守护之誓，驱逐异域入侵者**..."
+"General!" Ying Huo cried anxiously. "Let me help!"
 
-三人的声音交织在一起，法阵的绿光越发明亮。元灵玉开始旋转，释放出脉冲状的能量波，逐渐扩散到整个神殿，然后是整座城市。
+Just as Mo Ran prepared a killing blow, a golden arrow shot from afar, striking his energy form and causing a brief hesitation.
 
-墨染的晶体身躯开始出现更多裂纹，蓝光不稳定地闪烁着："**不可能！元灵玉怎么会提前激活**？"
+All turned toward the arrow’s origin—City Lord’s mansion, where a figure stood atop a high tower.
 
-就在此时，神殿大门再次打开，max出现在门口，金色长袍已破损不堪，但眼神依然锐利。
+"Is that... Lord Max?" Ying Huo gasped.
 
-"**墨染，或者说，蓝晶族的入侵者**。"max缓步上前，"你忘了一件事——元灵玉不仅仅依靠月相之力，更重要的是守护者的意志！"
+Mo Ran regained composure, face darkening. "Impossible! Why would you intervene?!"
 
-max走到法阵边缘，将手放在绿色屏障上："**身为帝国城主，我以最高权柄启动守护法阵**！"
+The figure drew again, another golden arrow piercing the air. Mo Ran dared not block it, retreating hastily and reverting to human form.
 
-随着他的话音落下，元灵玉骤然爆发出刺目光芒，整个神殿被绿光充满。墨染的晶体身躯在光芒中迅速崩解，发出痛苦的嚎叫。
+"**General Fu Chen—come to the City Lord’s mansion!**" Lord Max’s voice rang out, powerful and authoritative.
 
-"**不！主人...救我**..."
+Seizing the opportunity, Fu Chen sheathed his broken sword and called to Ying Huo. "Let’s go!"
 
-空中的次元裂缝开始收缩，那些盘旋在城市上空的蓝色能量体纷纷被吸回裂缝中。墨染的身体完全分解为无数蓝色碎片，也被裂缝吸走。
+The two sprinted toward the City Lord’s mansion. Mo Ran tried to pursue but found himself restrained by an invisible force.
 
-最终，次元裂缝彻底闭合，天空恢复了平静。
+"**Enough, Mo Ran,**" Lord Max’s voice came again. "**The time has come to settle what happened five years ago.**"
 
-浮尘、南风和萤火瘫坐在地上，筋疲力尽但面露喜色。
+Mo Ran’s expression shifted between anger and calculation before he finally snorted. "As you wish, Lord Max. But this battle is far from over."
 
-"**我们...成功了**？"浮尘喘息着问道。
+With that, he vanished in a streak of blue light.
 
-max点头，脸上却没有轻松的表情："**暂时成功了。元灵玉的力量封闭了次元裂缝，驱逐了蓝晶族的先锋部队**。但这只是开始，蓝晶族不会就此罢休。"
+Fu Chen and Ying Huo sprinted through the streets, finally reaching the City Lord’s mansion garden, where Du Shou, Nan Feng, and DW awaited.
 
-"那真正的墨染呢？"萤火关切地问。
+"General!" they called in unison.
 
-max叹息一声："已经不在了。那个蓝晶族完全占据了他的身体，他的灵魂早已消散。"
+Fu Chen, panting, managed a smile. "**We made it—we’ve finally met Lord Max.**"
 
-四人沉默片刻，为逝去的同胞默哀。
+At that moment, Lord Max appeared in the garden’s center. Dressed in golden robes, his face remained hidden beneath a hood, exuding an aura of mystery.
 
-浮尘打破沉默："我们下一步该怎么做？"
+"**General Fu Chen, welcome back,**" Lord Max said calmly. "**Show me the treasure you’ve brought from the Eastern Continent.**"
 
-max走向法阵中央，取出仍在发光的元灵玉："**等待满月之夜，完全激活元灵玉的力量。然后，准备迎接真正的战争**。"
+Fu Chen knelt, retrieving the ancient jade pendant—the Primordial Spirit Jade—from his robe.
 
-### **第五章：巅峰之战**
+"Lord Max, this is the truth I paid for with three thousand soldiers’ lives."
 
-接下来的两天，帝国上下忙于修复城市和治疗伤员。浮尘和他的伙伴们则轮流守护着中央神殿中的元灵玉，防止任何可能的袭击。
+## **Volume II: The Battle for Truth**
 
-满月前夜，max召集众人在城主府会议厅商议。
+### **Chapter 4: Past Secrets and Hidden Truths**
 
-"根据古籍记载，**满月之夜元灵玉将发挥最大威力，彻底封印次元裂缝**。"南风展示着一幅古老的星象图，"但同时，这也是蓝晶族最后的机会。"
+Inside the highest chamber of the City Lord’s mansion, the atmosphere was heavy. Fu Chen, Nan Feng, Du Shou, DW, and Ying Huo stood on one side, while the Primordial Spirit Jade rested on a crystal pedestal at the center, emitting a faint green glow. Lord Max stood by the window, his back to them, silent.
 
-max点头："**他们一定会全力以赴，试图夺回元灵玉或破坏仪式**。"
+"**Five years ago, I led an expedition to the Eastern Continent,**" Fu Chen broke the silence. "**Officially, it was to expand our territory—but secretly, I was tasked with finding the legendary Primordial Spirit Jade.**"
 
-浮尘问道："墨染...或者说那个蓝晶族，真的被消灭了吗？"
+Lord Max turned slowly. "Who gave you this secret mission?"
 
-"没有。"max断然道，"**那只是他的一个分身。根据我的推测，真正的'墨染'可能已经潜入更危险的地方**。"
+"The former City Lord’s advisor. Before his death, he told me the Primordial Spirit Jade is the empire’s most sacred protective relic—it was stolen by enemy nations during the great war a thousand years ago and hidden in the Eastern Continent."
 
-众人面面相觑。
+Nan Feng added, "As a former court historian, I confirm ancient records mention the Primordial Spirit Jade—it can activate the protective array buried beneath the empire."
 
-"什么地方？"DW追问。
+Lord Max nodded. "Continue."
 
-max神色凝重："**地下神殿**。帝国地下还有一个更古老的神殿，是元灵玉力量的真正源头。如果蓝晶族控制了那里，即使我们启动元灵玉，也可能适得其反。"
+Fu Chen’s expression darkened. "**During the expedition, our fleet encountered an unexplained magical storm, suffering heavy losses. Only later did I learn Mo Ran secretly orchestrated it—he didn’t want us to find the Primordial Spirit Jade.**"
 
-独守皱眉："地下神殿？我在军方档案中从未听说过。"
+"Can you prove it?" Lord Max asked.
 
-"**那是帝国最高机密**。"max解释道，"只有历代城主才知道入口位置。现在，我们必须分成两队行动——一队保护中央神殿的元灵玉仪式，一队随我前往地下神殿阻止蓝晶族。"
+DW stepped forward. "I have evidence." He produced a small recording crystal. "I seized this from one of Mo Ran’s disciples—it records the magical storm’s casting process five years ago."
 
-经过商议，决定由小墨、佩洛洛、萤火和DW守护中央神殿，浮尘、南风和独守则随max前往地下神殿。
+The crystal activated, revealing blue light images of Mo Ran directing mages in the ritual.
 
-散会后，浮尘独自来到城墙上眺望远方。夜幕低垂，明月初升，银辉洒向大地。
+Lord Max remained silent for a moment. "Fu Chen, how did you find the Primordial Spirit Jade?"
 
-"将军，明日一战，必将载入史册。"南风不知何时站在了他身后。
+"Deep within the Eastern Continent, we discovered a heavily guarded ancient temple. **After losing most of our forces, we finally reached the core chamber and found this jade and some ancient texts.**" Fu Chen pointed to the jade. "**The texts state the Primordial Spirit Jade must be placed in the central temple’s array during a full moon to awaken the slumbering protective formation.**"
 
-浮尘笑了笑："**五年前出征时，我以为最大的功勋就是找回元灵玉。谁知这背后竟牵连如此巨大的秘密**。"
+"And the full moon is three days from now," Nan Feng added.
 
-南风叹息："**历史总是充满讽刺。我们以为是在保卫帝国，实际上是在拯救整个世界**。"
+Lord Max approached the crystal pedestal, studying the jade closely. "**Mo Ran’s actions are indeed suspicious, yet he has always been loyal as the empire’s Chief Mage. Why would he go to such lengths to stop the Primordial Spirit Jade’s return?**"
 
-浮尘望向月亮："墨染曾是我尊敬的对手，可惜如今只剩下一个外星生物的躯壳。"
+Ying Huo shook his head gently. "I have a bold theory. **Chief Mage Mo Ran may not be who we believe him to be.**"
 
-"**明日一战，将为他报仇**。"南风坚定地说。
+Everyone turned to Ying Huo in surprise.
+
+"What do you mean?" Du Shou asked.
+
+Ying Huo produced a silk scroll. "This is a portrait of Mo Ran before he became Chief Mage." He unrolled it, pointing to Mo Ran’s eyes. "Notice this—his eyes were brown back then."
+
+DW frowned. "But now Mo Ran’s eyes are blue."
+
+"**Initially, I thought it was due to excessive spellcasting,**" Ying Huo continued. "**But today, seeing him use the Elemental Transformation technique, I’m certain—Mo Ran has likely been possessed or replaced.**"
+
+Fu Chen stood abruptly. "**That explains his fear of the Primordial Spirit Jade! If it activates the protective array, any foreign presence lurking within the empire would be expelled or destroyed!**"
+
+Lord Max pondered. "This theory is plausible, but we need more evidence. Before deciding our next move, I must speak with Mo Ran myself."
+
+Just then, the sky outside darkened abruptly, storm clouds gathering, blue lightning splitting the heavens.
+
+"Not good!" Nan Feng rushed to the window. "**Mo Ran has activated some large-scale spell atop the Central Tower!**"
+
+Lord Max’s eyes sharpened. "**It seems he can’t wait any longer. Fu Chen, protect the Primordial Spirit Jade—I’ll confront him.**"
 
 ---
 
-满月之夜终于来临。
+Atop the Central Tower, Mo Ran raised his hands, surrounded by a swirling vortex of blue energy. Hundreds of mages assisted from various levels of the tower, the entire structure bathed in blue light.
 
-中央神殿中，小墨指挥着守卫布防。佩洛洛和萤火则在法阵周围设置额外的防护魔法。DW检查着自己带来的各种机械装置。
+"**Forbidden Technique—Dimensional Rift!**" Mo Ran chanted, his voice no longer human but metallic.
 
-"**按照古籍记载，元灵玉的仪式将在午夜正式启动**。"萤火对众人说道，"在那之前，我们必须保证法阵不受干扰。"
+Above the tower, a glowing fissure formed in the clouds, spewing countless blue energy beings that circled above the city.
 
-小墨点头："已经安排了三重防御，外围有精锐守卫，中层有机关陷阱，内层有我们四人坐镇。"
+"Mo Ran!" a voice roared.
 
-就在此时，神殿外突然传来一阵骚动。一名守卫冲进来报告："大人们！天空出现异常！"
+Lord Max appeared opposite him atop the tower, golden robes billowing, hood fallen to reveal a stern face. In his right hand, a golden bow; in his left, an arrow glowing with light.
 
-众人冲出神殿，抬头望去。只见满月周围出现了一圈诡异的蓝色光晕，月光也变得不自然。
+"Cease your spell, or I won’t hold back!"
 
-"**开始了**..."萤火喃喃道，"蓝晶族正试图影响月相，干扰元灵玉的力量。"
+Mo Ran turned, revealing an eerie smile. "**Too late, Lord Max. My master is about to descend—the world will embrace a new order!**"
 
-DW立刻下令："所有人回到岗位！准备迎敌！"
+With that, he plunged his staff into the magical array at the tower’s center. Blue light exploded outward. The dimensional rift rapidly expanded, a massive blue figure emerging within it.
 
----
+Lord Max didn’t hesitate—he drew and released. The golden arrow shot through the air, aimed straight for Mo Ran’s throat. Yet just before impact, a blue barrier materialized, blocking the arrow.
 
-与此同时，max带领浮尘一行人穿过帝都最古老的地下水道，向地下神殿前进。
+"**Mortal weapons cannot harm the messenger of the gods,**" Mo Ran’s voice grew increasingly alien. "**For five years, I’ve prepared for this moment. The Primordial Spirit Jade should have remained buried in the East forever, but that fool Fu Chen had to bring it back.**"
 
-"这条路已经存在千年以上。"max解释道，"**当初建造帝国时，先祖们就预见到可能有外来入侵，所以在地下建造了这座神殿作为最后的防线**。"
+Lord Max drew again. "So you admit—you sabotaged the expedition fleet five years ago?"
 
-浮尘好奇道："既然地下神殿如此重要，为何历代都保密？为何不派重兵把守？"
+"A necessary sacrifice," Mo Ran waved dismissively. "**Compared to what’s coming, those losses were insignificant.**"
 
-max苦笑："**因为那里不仅是防线，也是诱饵。神殿中有一装置，能将入侵者引入永恒的迷失空间**。如果消息走漏，反而会失去这一优势。"
+Lord Max released another arrow—not aimed at Mo Ran, but at the magical array at the tower’s center. The arrow struck, causing the array to crack and the rift’s expansion to slow.
 
-南风若有所思："所以墨染，或者说那个蓝晶族，发现了这个秘密，想要破坏装置？"
+"**You!**" Mo Ran roared.
 
-"不。"max摇头，"**他们想利用这个装置，反向打开通往他们世界的永久通道**。"
+"I’ve long suspected you, Mo Ran," Lord Max said calmly. "**Or rather, whatever occupies Mo Ran’s body.**"
 
-一行人继续深入。随着深度增加，周围的墙壁上开始出现古老的符文，发出微弱的绿光。
+Mo Ran’s face contorted, blue light visible beneath his skin. "Clever Lord Max, but you cannot stop destiny."
 
-"**我们接近了**。"max示意众人放轻脚步。
+With that, he clapped his hands together, blue light erupting from within. "**Sacrifice—All Spirits Unite!**"
 
-穿过一段蜿蜒的通道后，他们来到一个巨大的圆形石门前。石门表面雕刻着与元灵玉相似的纹路，中央是一个玉石凹槽。
+Instantly, every mage assisting in the ritual stiffened, their life energy drawn out as blue specks flowing into Mo Ran. His body swelled rapidly, skin tearing to reveal an inner crystalline structure.
 
-"**需要钥匙才能打开**。"max从怀中取出一枚小巧的玉石，正要放入凹槽，突然警觉地停下动作。
+"This is... a sacrifice spell?" Lord Max exclaimed in shock.
 
-"不对，有人先我们一步到了。"
-
-话音刚落，石门缓缓开启，蓝光从门缝中泄出。门完全打开后，众人看到了令人震惊的一幕。
-
-一个与墨染完全相同的身影站在巨大的地下神殿中央，手持法杖，身后是一个正在形成的巨大蓝色漩涡。但不同的是，这个"墨染"全身覆盖着蓝色晶体铠甲，头顶有一个小型蓝色王冠。
-
-"**欢迎，max城主，还有可敬的远征将军浮尘**。"蓝晶墨染转过身，声音比之前更加低沉有力，"我等候多时了。"
-
-max面色凝重："**蓝晶王**...果然是你亲自降临。"
-
-蓝晶墨染——现在可以确定是蓝晶族的王者——优雅地鞠了一躬："能被认出来，我很荣幸。**五年前我就已将意识投射到这个世界，附身在这位可敬的大法师身上**。可惜功亏一篑，被你们发现了计划。"
-
-浮尘怒道："**你杀害了多少无辜者，就为了侵略我们的世界**？"
-
-蓝晶王不屑一笑："侵略？我更愿意称之为'拯救'。**你们的世界在自我毁灭，而我们将带来新的秩序**。"
-
-南风目光锐利："**你在地下神殿做了什么**？"
-
-"一个小小的改造。"蓝晶王指向身后的蓝色漩涡，"**这个装置原本是用来封印入侵者，我只是稍稍调整了一下方向，让它连接到我的世界**。很快，我的大军就将通过这个门户降临。"
-
-max取出金色长剑："**那我们只能阻止你了**。"
-
-蓝晶王冷笑："**四个蝼蚁，对抗一个王者**？"
-
-话音未落，浮尘已率先发动攻击。黑焰长剑直取蓝晶王咽喉，速度快得惊人。然而蓝晶王只是轻轻偏头，就躲过了这致命一击。
-
-"太慢了。"
-
-蓝晶王右手一挥，一道蓝色能量波以不可思议的速度击中浮尘，将他整个人抛飞出去，重重撞在石柱上。
-
-南风见状，立刻结印："**风遁·千刃风暴**！"
-
-无数风刃凭空出现，从四面八方袭向蓝晶王。独守也不甘示弱，双斧出手，劈向蓝晶王背后。
-
-蓝晶王不躲不闪，身体表面突然爆发出一层蓝色能量盾，将所有攻击都弹开。随后，他伸出手掌，对准南风和独守："**蓝晶法术·重力崩塌**。"
-
-刹那间，南风和独守感到一股无法抵抗的力量压下，整个人被生生按入地面，无法动弹。
-
-"**太弱了，你们太弱了**。"蓝晶王轻蔑地说，"也许我该先解决掉你们，再去处理那边的元灵玉仪式。"
-
-就在此时，max突然出现在蓝晶王背后，金色长剑直刺其后心。蓝晶王似有所感，迅速转身，右手变形为蓝色晶体刀刃，架住了max的剑。
-
-"不愧是城主，还有点本事。"
-
-max与蓝晶王瞬间交手数十回合，金光与蓝光在神殿中交相辉映。max的剑法精妙绝伦，但蓝晶王的力量明显更胜一筹。几个回合后，max被逼退数步，胸前衣物被割裂，露出一道浅伤。
-
-"**你很强，城主大人**。"蓝晶王评价道，"**在这个世界上，你可能是最接近我力量的存在**。可惜，还是差得太远。"
-
-说完，蓝晶王突然化作一道蓝光，出现在max面前，晶体手掌直接插入max胸口。
-
-"不！"浮尘艰难地从废墟中爬起，目睹这一幕。
-
-max低头看着贯穿胸口的手掌，却没有预料中的痛苦表情，反而露出一丝神秘微笑："**你上当了**。"
-
-蓝晶王一愣，随即感到一股古老的能量从max体内涌出，金色光芒如同锁链般缠绕住他的手臂。
-
-"这是...封印之力？"蓝晶王惊讶道，试图抽回手臂，却发现无法动弹。
-
-max咳出一口鲜血，但眼神依然坚定："**作为历代城主，我们的身体就是'钥匙'，能够激活或封印这座神殿的力量**。"
-
-随着max的话音落下，整个神殿地面亮起金色纹路，与蓝色漩涡形成对抗。蓝晶王挣扎着，但金色锁链越缠越紧。
-
-"**愚蠢的牺牲！你以为这样就能阻止我**？"蓝晶王怒吼。
-
-max虚弱地笑了："**不，这只是拖延。真正的胜负，在另一边**。"
+Mo Ran had fully transformed into a blue crystal giant, nearly ten feet tall, his voice like thunder. "**Now, you face my true form!**"
 
 ---
 
-中央神殿中，战斗已经进入白热化。大批蓝晶傀儡冲破外围防线，正与守卫激战。小墨和DW守在前线，佩洛洛和萤火则保护法阵和元灵玉。
+Inside the City Lord’s mansion, Fu Chen and his companions watched the scene unfold through a magical projection.
 
-"**他们太多了**！"小墨一边挥剑一边喊道。
+"Good heavens—Mo Ran isn’t even human!" Ying Huo gasped.
 
-DW的机械臂已经损坏，但他仍在奋力战斗："**坚持住！时间快到了**！"
+Fu Chen’s expression hardened. "**We must act immediately—while the dimensional rift is slowed, we must deliver the Primordial Spirit Jade to the Central Temple!**"
 
-最前方的蓝晶傀儡突然分开，一个全新的身影走了进来——那是一个与墨染容貌一模一样，但通体蓝色的存在。
+"But the full moon is still three days away," DW reminded him.
 
-"**我是蓝晶王的副官**。"来者声音冰冷，"**投降吧，把元灵玉交给我**。"
+Nan Feng shook his head. "Given the emergency, we have no choice. The Primordial Spirit Jade’s power may not fully activate, but it should counter Mo Ran’s scheme."
 
-小墨厉声道："**休想**！"
+Fu Chen nodded. "Du Shou, DW—you’ll guard the City Lord’s mansion with the troops. Nan Feng, Ying Huo—you’ll accompany me to the Central Temple."
 
-蓝晶副官摇头："**何必白白牺牲？你们的城主已经落入蓝晶王之手，地下神殿即将沦陷**。"
+The group dispersed quickly. Fu Chen carefully placed the Primordial Spirit Jade into a special case and, with Nan Feng and Ying Huo, set off toward the Central Temple.
 
-众人闻言心头一震，但萤火突然站出来："**谎言！max城主和浮尘将军不会失败**！"
+Above the city, Lord Max and the crystal giant Mo Ran were locked in fierce combat. Lord Max no longer used his bow but wielded a golden longsword, clashing with Mo Ran’s crystalline claws. Each impact sent shockwaves through the air.
 
-副官冷笑一声，抬手便是一道蓝色能量束，直取萤火咽喉。眼看萤火避无可避，佩洛洛突然挡在前面，祭出一面水晶盾牌。能量束击中盾牌，将其打得粉碎，但总算保住了萤火的性命。
+"**What are you, truly?**" Lord Max demanded mid-combat.
 
-"**佩洛洛**！"小墨心急如焚，冲向妻子。
+The crystal giant sneered. "**We are beings from beyond the dimensional rift—you call us the 'Blue Crystal Clan.' A thousand years ago, we tried to conquer this world but were stopped by the Primordial Spirit Jade. Now, we return!**"
 
-佩洛洛捂着被能量束灼伤的手臂，虚弱地笑道："**我没事...守护元灵玉才是最重要的**。"
+Lord Max shifted his sword, slashing at Mo Ran’s crystalline arm. "And the real Mo Ran?"
 
-DW趁机发动攻击，机械臂中射出数枚飞刀，直取副官要害。副官轻松躲过，反手一道能量波将DW击退数米。
+"His consciousness has long since vanished—only this perfect vessel remains, carrying my power!" Mo Ran slammed a crystalline palm toward Lord Max. "**Your empire will fall—the new era will be ruled by the Blue Crystal Clan!**"
 
-"**时间不多了**。"副官望向神殿穹顶的满月，"**交出元灵玉，否则你们都将死在这里**。"
+Lord Max dodged, his sword flashing like a waterfall. "As long as I live, the empire will not fall!"
 
-就在此时，元灵玉突然开始发光，绿色光芒越来越强。法阵随之亮起，整个神殿被绿光笼罩。
-
-"**是时间到了**！"萤火惊喜道，"**仪式自动启动了**！"
-
-副官面色大变："**不可能！还没到午夜**..."
-
-他突然意识到什么，抬头望向满月。只见月亮周围的蓝色光晕已经消失，纯净的月光直射法阵。
-
-"**地下神殿**...蓝晶王失败了？"
+Their battle intensified, energy shockwaves collapsing buildings across the city. Civilians fled in panic as chaos engulfed the capital.
 
 ---
 
-地下神殿中，max已经被蓝晶王的手臂贯穿，生命垂危，但金色锁链仍牢牢缠住蓝晶王。浮尘、南风和独守也趁机恢复了行动能力，加入战斗。
+On their way to the Central Temple, Fu Chen, Nan Feng, and Ying Huo frequently changed routes to avoid collapsing structures and raging energy storms.
 
-"**浮尘**..."max虚弱地呼唤，"**过来**..."
+"The temple square is just ahead!" Ying Huo pointed forward.
 
-浮尘冲到max身边，max将一枚小巧的金色钥匙交给他："**中央控制台...逆时针转动三圈**..."
+Yet as they neared, dozens of blue-glowing "mages" suddenly appeared, blocking their path.
 
-蓝晶王见状，拼命挣扎："**阻止他！我的部下们**！"
+"Not ordinary mages..." Nan Feng observed carefully. "They’ve been fully converted into Blue Crystal Clan puppets!"
 
-神殿各处突然浮现出数十个蓝色身影——都是蓝晶族战士，向浮尘扑来。南风和独守立刻迎上，拼命抵挡。
+Fu Chen drew his spare sword. "**No matter what, we must break through!**"
 
-"**去！我们掩护你**！"南风大喊。
+The trio charged the puppet mages. Fu Chen’s sword technique was devastating, each strike severing energy connections; Nan Feng’s wind techniques disrupted their senses; Ying Huo’s illusions sent many into confusion.
 
-浮尘咬牙冲向神殿中央的控制台，一路斩杀数名蓝晶战士。当他终于抵达控制台时，又有三名强大的蓝晶战士围了上来。
+Just as the battle reached its peak, a familiar voice called out. "General Fu Chen—this way!"
 
-"**想都别想**！"
+Xiao Mo and Pei Luo Luo appeared from a side street, followed by lightly armored warriors.
 
-浮尘燃烧最后的力量，黑焰长剑化作一道黑色闪电，刺穿三名战士的胸口。他自己也受了重伤，但总算抵达了控制台。
+"Marquis Xiao Mo!" Fu Chen exclaimed in relief.
 
-控制台是一个古老的石台，中央有一个金色钥匙孔。浮尘将max给的钥匙插入，艰难地逆时针旋转第一圈。
+Xiao Mo quickly ordered, "Cover the general’s path to the temple!"
 
-神殿开始震动，地面的金色纹路亮度增强。
+The warriors scattered, firing special arrows that forced the puppets back. Pei Luo Luo raised a crystal staff, clearing a safe passage ahead.
 
-"**不**！"蓝晶王怒吼，更加剧烈地挣扎。
+"**Hurry—we’ll hold them off!**" Xiao Mo urged.
 
-浮尘继续旋转第二圈。蓝色漩涡开始不稳定，出现扭曲。
+Fu Chen nodded gratefully and, with Nan Feng and Ying Huo, rushed toward the temple gates.
 
-"**杀了他**！"蓝晶王命令道。
+The Central Temple was the empire’s oldest structure, standing unbroken for a thousand years. Its massive stone doors slowly opened as the trio entered. Inside, the vast chamber was solemn and majestic, with a large circular array at its center, surrounded by ancient runes.
 
-剩余的蓝晶战士不顾一切地冲向浮尘。南风使出最后的力量，施展出最强风遁："**风遁·天翔绝灭刃**！"
+"This is it," Nan Feng pointed to a recess in the array’s center. "The Primordial Spirit Jade should be placed here."
 
-一道巨大的半月形风刃横扫整个神殿，将冲锋的蓝晶战士全部斩成两段。南风也因过度消耗力量而倒下。
+Fu Chen retrieved the jade, moving forward—when suddenly a blue beam struck his arm from above. The jade flew from his grasp, landing on the ground.
 
-独守则保护着奄奄一息的max，双斧挥舞，战斗至最后一刻。
+"**Don’t even think about it!**"
 
-浮尘终于转动第三圈。随着"咔嗒"一声，整个神殿金光大盛，原本的蓝色漩涡完全逆转，变成一个金色漩涡。
+The three looked up to see the temple’s dome shattered, and Mo Ran’s crystal giant form descending slowly. Though damaged from his battle with Lord Max, his presence remained terrifying.
 
-"**不可能**！"蓝晶王感到一股巨大的吸力正将他拉向漩涡，"**我不会就这样失败**！"
+"Where’s Lord Max?" Fu Chen demanded.
 
-max用尽最后的力气，双手紧握蓝晶王的手臂："**你输了...回到你自己的世界去吧**..."
+Mo Ran sneered. "**Your City Lord is temporarily trapped in a spatial rift—he won’t be free anytime soon. Now, hand over the Primordial Spirit Jade!**"
 
-蓝晶王被金色漩涡吸入，挣扎着想要抓住什么，但一切都是徒劳。他最后愤怒地瞪了max一眼，随即彻底消失在漩涡中。
+Ying Huo quietly signaled Fu Chen. "Distract him—I’ll retrieve the jade."
 
-漩涡迅速收缩，最终化为一点金光消散。神殿中的金色纹路也逐渐暗淡下来。
+Fu Chen gave an almost imperceptible nod, then shouted. "Mo Ran! No—Blue Crystal Clan invader! **Five years ago, you killed three thousand of my soldiers—I will repay that blood debt today!**"
 
-浮尘虚弱地走到max身边，扶起这位伟大的城主："**城主大人...我们成功了**..."
+With that, Fu Chen unsheathed his sword, black flames blazing. Nan Feng joined him, unleashing his full wind techniques. Together, they attacked Mo Ran, trying to divert his attention.
 
-max咳出一口鲜血，微弱地笑了："**是的...我们成功了...蓝晶族被送回他们的世界，次元裂缝也永久封闭了**。"
+Mo Ran scoffed. "**Mere ants dare challenge a god?**"
 
-独守检查着max的伤势，摇了摇头。南风也艰难地爬过来，神色凝重。
+With a casual wave, he sent two blue energy waves that sent Fu Chen and Nan Feng flying backward, crashing into stone pillars, blood spilling from their mouths.
 
-max看着三人，虚弱地说："**不要悲伤...这是城主应尽的职责。浮尘**..."
+At that moment, Ying Huo had quietly reached the Primordial Spirit Jade and swiftly picked it up.
 
-"我在。"浮尘紧握max的手。
+"**Stop!**" Mo Ran sensed the movement, swiping a massive energy claw toward Ying Huo.
 
-"**帝国的未来...就交给你了**..."max艰难地取下胸前的城主徽章，交给浮尘，"**去中央神殿...完成元灵玉的仪式**..."
+Ying Huo couldn’t dodge in time—struck full force, he flew several meters, slamming into a stone wall. Yet as he was thrown back, he hurled the jade toward the array’s center.
 
-说完这些，max闭上了眼睛，永远地离开了这个他用生命守护的世界。
+The Primordial Spirit Jade arced gracefully through the air, landing precisely in the recess.
+
+"No!" Mo Ran roared, charging toward the array.
+
+But it was too late. The moment the jade settled, the entire array flared with brilliant green light. The light spread rapidly, forming an energy barrier that blocked Mo Ran’s advance.
+
+"**Primordial Spirit Jade, guardian of the empire, heed my call...**" Fu Chen struggled to his feet, beginning an ancient incantation.
+
+Mo Ran attacked the barrier furiously, blue energy clashing with the green shield, emitting a piercing hum. "**You think this will stop me? The Primordial Spirit Jade’s power only fully activates during the full moon—this is mere drops in the ocean!**"
+
+Nan Feng also rose, continuing the chant. "**Ancient covenant, slumbering power, awaken in this time of imperial peril...**"
+
+Ying Huo, weakly crawling up, joined the incantation. "**In the name of our ancestors, by the oath of guardianship, expel the foreign invaders...**"
+
+Their voices intertwined, the array’s green light growing brighter. The Primordial Spirit Jade began to spin, emitting pulsating energy waves that spread throughout the temple, then the entire city.
+
+Mo Ran’s crystalline body began cracking further, blue light flickering erratically. "**Impossible! How could the Primordial Spirit Jade activate early?**"
+
+At that moment, the temple doors opened again, and Lord Max appeared, his golden robes torn but his gaze still sharp.
+
+"**Mo Ran—or rather, Blue Crystal Clan invader,**" Lord Max stepped forward. "**You forgot one thing—the Primordial Spirit Jade doesn’t rely solely on lunar power—it also depends on the will of the guardians!**"
+
+Lord Max approached the array’s edge, placing his hand on the green barrier. "**As City Lord of the empire, I invoke the highest authority to activate the protective array!**"
+
+As he spoke, the Primordial Spirit Jade erupted in blinding light, filling the entire temple. Mo Ran’s crystalline body rapidly disintegrated, emitting agonized screams.
+
+"**No! Master... save me...**"
+
+The dimensional rift above began to shrink, the blue energy beings circling the city drawn back into it. Mo Ran’s body fully fragmented into countless blue shards, also sucked into the rift.
+
+Finally, the dimensional rift closed completely, and the sky returned to calm.
+
+Fu Chen, Nan Feng, and Ying Huo collapsed to the ground, exhausted but relieved.
+
+"**We... succeeded?**" Fu Chen gasped.
+
+Lord Max nodded, though his expression remained grave. "**For now. The Primordial Spirit Jade has sealed the dimensional rift, expelling the Blue Crystal Clan’s vanguard. But this is only the beginning—they won’t give up so easily.**"
+
+"And the real Mo Ran?" Ying Huo asked with concern.
+
+Lord Max sighed. "He’s gone. The Blue Crystal Clan fully possessed his body—his soul has long since vanished."
+
+The four fell silent, mourning their fallen comrade.
+
+Fu Chen broke the silence. "What’s our next move?"
+
+Lord Max walked to the array’s center, retrieving the still-glowing Primordial Spirit Jade. "**Wait for the full moon to fully activate its power. Then, prepare for the true war.**"
+
+### **Chapter 5: The Climactic Battle**
+
+Over the next two days, the empire busied itself repairing the city and treating the wounded. Fu Chen and his companions took turns guarding the Primordial Spirit Jade in the Central Temple, preventing any potential attacks.
+
+On the eve of the full moon, Lord Max summoned everyone to the City Lord’s mansion for a meeting.
+
+"According to ancient records, **the Primordial Spirit Jade will reach its peak power during the full moon, permanently sealing the dimensional rift,**" Nan Feng explained, displaying an ancient star chart. "**But this is also the Blue Crystal Clan’s last chance.**"
+
+Lord Max nodded. "**They’ll spare no effort to reclaim the Primordial Spirit Jade or disrupt the ritual.**"
+
+Fu Chen asked, "Has Mo Ran... or rather, that Blue Crystal Clan entity... truly been destroyed?"
+
+"No," Lord Max replied firmly. "**That was only a fragment of him. Based on my deductions, the true 'Mo Ran' has likely infiltrated a far more dangerous location.**"
+
+Everyone exchanged glances.
+
+"Where?" DW pressed.
+
+Lord Max’s expression darkened. "**The underground temple. Beneath the empire lies an even older temple—it’s the true source of the Primordial Spirit Jade’s power. If the Blue Crystal Clan controls it, even activating the Primordial Spirit Jade could backfire.**"
+
+Du Shou frowned. "Underground temple? I’ve never heard of it in military archives."
+
+"**It’s the empire’s highest secret,**" Lord Max explained. "**Only successive City Lords know its entrance. Now, we must split into two teams—one to protect the Primordial Spirit Jade ritual at the Central Temple, the other to accompany me to the underground temple to stop the Blue Crystal Clan.**"
+
+After discussion, it was decided Xiao Mo, Pei Luo Luo, Ying Huo, and DW would guard the Central Temple, while Fu Chen, Nan Feng, and Du Shou accompanied Lord Max to the underground temple.
+
+After the meeting, Fu Chen stood alone on the city wall, gazing into the distance. Night had fallen, the bright moon rising, its silver light bathing the land.
+
+"General, tomorrow’s battle will be recorded in history," Nan Feng said, appearing beside him.
+
+Fu Chen smiled faintly. "**Five years ago, when I set out, I thought the greatest honor would be retrieving the Primordial Spirit Jade. I never imagined it would uncover such a vast secret.**"
+
+Nan Feng sighed. "**History is full of irony. We thought we were defending the empire—only to realize we were saving the entire world.**"
+
+Fu Chen gazed at the moon. "Mo Ran was once my respected rival—shame his body now houses only an alien entity."
+
+"**Tomorrow’s battle will avenge him,**" Nan Feng said resolutely.
 
 ---
 
-中央神殿中，副官感受到远方的变化，面色剧变："**不可能...蓝晶王陛下怎么会**..."
+The full moon night finally arrived.
 
-萤火看出端倪，高声宣布："**蓝晶王已经被击败！我们胜利了**！"
+Inside the Central Temple, Xiao Mo directed the guards’ positioning. Pei Luo Luo and Ying Huo set up additional protective spells around the array. DW checked the mechanical devices he’d brought.
 
-守卫们爆发出欢呼声，士气大振。副官和剩余的蓝晶傀儡明显慌乱起来。
+"**According to ancient records, the Primordial Spirit Jade ritual will officially begin at midnight,**" Ying Huo told the group. "**Until then, we must ensure the array remains undisturbed.**"
 
-就在此时，神殿大门再次打开，浮尘、南风和独守走了进来，虽然满身伤痕，但眼神坚定。
+Xiao Mo nodded. "We’ve set up three layers of defense—outer guards, middle traps, inner guard by us four."
 
-"**浮尘将军**！"小墨惊喜地喊道。
+Just then, commotion erupted outside the temple. A guard rushed in. "My lords! The sky is abnormal!"
 
-副官见状，知道大势已去，转身欲逃。但浮尘早有准备，黑焰长剑破空而出，直接刺穿副官咽喉。
+They rushed out, looking up. The full moon was surrounded by an eerie blue halo, its light unnaturally distorted.
 
-"**为墨染，为max，也为所有牺牲的人**。"浮尘冷声道。
+"**It’s begun...**" Ying Huo murmured. "**The Blue Crystal Clan is trying to influence the moon phase, disrupting the Primordial Spirit Jade’s power.**"
 
-副官化作蓝色光点消散，剩余的蓝晶傀儡也纷纷倒下，失去了能量源泉。
+DW immediately ordered. "Everyone back to position! Prepare for battle!"
 
-浮尘走向法阵中央，取出max的城主徽章，与元灵玉并排放置。刹那间，绿光与金光交融，形成一道冲天光柱，直达云霄。
+---
 
-整座城市，乃至整个帝国的居民都看到了这一奇景。光柱持续了整整一刻钟，最后缓缓消散。当光芒褪去，元灵玉与城主徽章已经融为一体，形成一枚新的徽章。
+Meanwhile, Lord Max led Fu Chen’s group through the oldest underground waterways of the Imperial Capital, heading toward the underground temple.
 
-浮尘拾起这枚徽章，深深叹了口气："**一切都结束了**..."
+"This path has existed for over a thousand years," Lord Max explained. "**When the empire was first built, our ancestors foresaw potential foreign invasions and constructed this temple underground as the final line of defense.**"
 
-南风摇头："**不，是新的开始**。"
+Fu Chen asked curiously, "If the underground temple is so important, why has it been kept secret all these years? Why not station heavy guards?"
 
-### **尾声：新的开始**
+Lord Max smiled bitterly. "**Because it’s not just a defense—it’s also bait. The temple contains a device that lures invaders into an eternal迷失 space. If word got out, we’d lose this advantage.**"
 
-三个月后，帝国中央广场上举行了盛大的加冕仪式。浮尘正式成为新一任帝都城主，胸前佩戴着融合了元灵玉的新城主徽章。
+Nan Feng pondered. "So Mo Ran—or rather, that Blue Crystal Clan entity—discovered this secret and wants to destroy the device?"
 
-南风被任命为帝国首席大法师，接替墨染的位置；独守成为皇家卫队总指挥；DW升任平远总督；萤火继续担任农业部部长；小墨和佩洛洛则负责帝国外交事务。
+"No," Lord Max shook his head. "**They want to use the device to open a permanent portal to their world.**"
 
-加冕仪式后的宴会上，新任城主浮尘举杯致辞：
+The group continued deeper. As they descended, ancient runes began appearing on the walls, emitting faint green light.
 
-"**今天，我们纪念那些为保卫帝国而牺牲的勇士——墨染大法师，他的灵魂虽被蓝晶族夺取，但他的智慧和贡献永存；max城主，他用生命封印了敌人，保卫了我们的世界**。"
+"**We’re close,**" Lord Max signaled for quiet.
 
-众人举杯默哀。
+After navigating a winding passage, they reached a massive circular stone door. Its surface was carved with patterns similar to the Primordial Spirit Jade, with a jade recess at its center.
 
-浮尘继续道："**蓝晶族的威胁已经过去，但这不是终点，而是新的起点。帝国将更加强大，更加团结**。"
+"**We need a key to open it,**" Lord Max retrieved a small jade from his robe, about to insert it into the recess—when he suddenly stopped.
 
-南风补充道："**我们已经开始研究元灵玉的力量，加强帝国的防御系统，防止类似的入侵再次发生**。"
+"Something’s wrong. Someone’s already been here."
 
-宴会结束后，浮尘独自来到城主府的阳台，望着远处的中央神殿和更远处的皎洁明月。
+As if on cue, the stone door slowly opened, blue light spilling through the gap. When fully open, they saw a shocking sight.
 
-"怀念旧日时光？"南风走到他身边。
+An identical figure of Mo Ran stood in the center of the vast underground temple, staff in hand, behind him a massive blue vortex forming. But this "Mo Ran" was fully encased in blue crystal armor, a small blue crown atop his head.
 
-浮尘微笑："**有时我还是更习惯做一名船长和将军，而不是城主**。"
+"**Welcome, Lord Max, and esteemed Expeditionary General Fu Chen,**" the Blue Crystal Mo Ran turned, his voice deeper and more powerful. "**I’ve been expecting you.**"
 
-南风拍拍他的肩膀："**你会成为一位伟大的城主，就像max一样**。"
+Lord Max’s expression hardened. "**Blue Crystal King... so it’s you who’s descended personally.**"
 
-浮尘低头看着胸前闪烁着绿色和金色光芒的徽章："**有时我能感觉到，max的意志还存在于这枚徽章中，指引着我**。"
+The Blue Crystal King—now confirmed as the Blue Crystal Clan’s ruler—bowed elegantly. "**I’m honored to be recognized. Five years ago, I projected my consciousness into this world, possessing this esteemed Chief Mage.** Unfortunately, my plan was foiled when you discovered it."
 
-"**那是好事**。"南风望向星空，"**历代城主的智慧，会通过元灵玉传承下去**。"
+Fu Chen roared. "**How many innocents did you kill just to invade our world?**"
 
-浮尘点头，眼神坚定："**无论未来有什么挑战，我们都将共同面对**。"
+The Blue Crystal King sneered dismissively. "Invade? I prefer to call it 'salvation.' **Your world is destroying itself—we bring a new order.**"
 
-远处的中央神殿顶部，绿色的光芒依然微弱地闪烁着，守护着这座古老而伟大的帝国，也预示着一个和平与繁荣的新时代的到来。
+Nan Feng’s gaze sharpened. "**What have you done to the underground temple?**"
+
+"A small modification," the Blue Crystal King gestured toward the blue vortex. "**This device was originally meant to seal invaders—I merely adjusted its direction to connect to my world. Soon, my armies will pour through this portal.**"
+
+Lord Max drew his golden sword. "**Then we’ll stop you.**"
+
+The Blue Crystal King laughed coldly. "**Four ants against a king?**"
+
+Before he finished speaking, Fu Chen launched his attack. His black-flamed sword slashed toward the Blue Crystal King’s throat at incredible speed. Yet the Blue Crystal King merely tilted his head, dodging the fatal strike effortlessly.
+
+"Too slow."
+
+With a casual wave, a blue energy wave struck Fu Chen, sending him flying backward, crashing into a stone pillar.
+
+Nan Feng reacted instantly, forming hand seals. "**Wind Release: Thousand-Blade Storm!**"
+
+Countless wind blades materialized from all directions, attacking the Blue Crystal King. Du Shou joined the assault, dual axes striking from behind.
+
+The Blue Crystal King didn’t dodge. A blue energy shield erupted around him, deflecting all attacks. Then, he raised his palm toward Nan Feng and Du Shou. "**Blue Crystal Technique—Gravity Collapse.**"
+
+Instantly, Nan Feng and Du Shou felt an irresistible force pressing down, pinning them to the ground.
+
+"**Too weak—you’re all too weak,**" the Blue Crystal King sneered. "**Perhaps I should deal with you first, then handle the Primordial Spirit Jade ritual.**"
+
+At that moment, Lord Max appeared behind the Blue Crystal King, golden sword aimed straight for his back. Sensing danger, the Blue Crystal King turned, his right hand transforming into a crystal blade that blocked Lord Max’s sword.
+
+"Not bad, Lord Max."
+
+Lord Max and the Blue Crystal King exchanged dozens of blows in an instant, golden and blue light illuminating the temple. Lord Max’s swordsmanship was exquisite, but the Blue Crystal King’s strength clearly surpassed his. After several exchanges, Lord Max was forced back, a shallow cut appearing on his chest.
+
+"**You’re strong, Lord Max,**" the Blue Crystal King acknowledged. "**In this world, you’re likely the closest to my power. But still, far too weak.**"
+
+With that, the Blue Crystal King transformed into a streak of blue light, appearing before Lord Max, his crystal hand piercing straight through Lord Max’s chest.
+
+"No!" Fu Chen struggled to rise from the rubble, witnessing the scene.
+
+Lord Max looked down at the hand piercing his chest—not with pain, but with a mysterious smile. "**You’ve fallen for it.**"
+
+The Blue Crystal King hesitated, then felt ancient energy surging from Lord Max’s body. Golden light coiled around his arm like chains.
+
+"This is... sealing power?" the Blue Crystal King exclaimed in shock, trying to pull back but finding himself immobilized.
+
+Lord Max coughed blood but his gaze remained firm. "**As successive City Lords, our bodies are the 'keys'—able to activate or seal this temple’s power.**"
+
+As Lord Max spoke, golden runes illuminated the temple floor, opposing the blue vortex. The Blue Crystal King struggled, but the golden chains tightened relentlessly.
+
+"**Foolish sacrifice! Do you really think this will stop me?**" the Blue Crystal King roared.
+
+Lord Max smiled weakly. "**No—it’s merely a delay. The true outcome lies elsewhere.**"
+
+---
+
+Inside the Central Temple, the battle had reached its peak. Waves of Blue Crystal puppets had breached the outer defenses, clashing fiercely with the guards. Xiao Mo and DW held the front line, while Pei Luo Luo and Ying Huo protected the array and Primordial Spirit Jade.
+
+"**There are too many!**" Xiao Mo shouted while fighting.
+
+DW’s mechanical arm was damaged, but he continued battling. "**Hold on! Time’s almost up!**"
+
+Suddenly, the leading Blue Crystal puppets parted, and a new figure stepped forward—an exact replica of Mo Ran, but entirely blue.
+
+"**I am the Blue Crystal King’s deputy,**" the figure’s voice was icy cold. "**Surrender—the Primordial Spirit Jade belongs to me.**"
+
+Xiao Mo shouted fiercely. "**Never!**"
+
+The deputy shook his head. "**Why throw your lives away? Your City Lord has already fallen to the Blue Crystal King—the underground temple is lost.**"
+
+Everyone’s hearts sank, but Ying Huo stepped forward. "**Lies! Lord Max and General Fu Chen won’t fail!**"
+
+The deputy sneered, raising his hand to fire a blue energy beam straight for Ying Huo’s throat. Just as Ying Huo seemed unable to dodge, Pei Luo Luo stepped in front, raising a crystal shield. The beam struck the shield, shattering it but saving Ying Huo’s life.
+
+"**Pei Luo Luo!**" Xiao Mo cried in anguish, rushing toward his wife.
+
+Pei Luo Luo held her arm, burned by the energy beam, but smiled weakly. "**I’m fine... protecting the Primordial Spirit Jade is most important.**"
+
+DW seized the moment, firing mechanical darts from his arm toward the deputy’s vital points. The deputy dodged easily, retaliating with an energy wave that sent DW flying several meters.
+
+"**Time’s running out,**" the deputy glanced at the full moon above the temple dome. "**Hand over the Primordial Spirit Jade—or you’ll all die here.**"
+
+At that moment, the Primordial Spirit Jade began glowing intensely, green light growing stronger. The array activated, bathing the entire temple in green light.
+
+"**It’s time!**" Ying Huo exclaimed in relief. "**The ritual has started automatically!**"
+
+The deputy’s expression changed drastically. "**Impossible! It’s not yet midnight...**"
+
+He suddenly realized something, looking up at the full moon. The blue halo around it had vanished, pure moonlight shining directly onto the array.
+
+"**The underground temple... the Blue Crystal King has failed?**"
+
+---
+
+Inside the underground temple, Lord Max lay dying, pierced by the Blue Crystal King’s hand, but golden chains still bound the Blue Crystal King tightly. Fu Chen, Nan Feng, and Du Shou had regained their mobility and joined the fight.
+
+"**Fu Chen...**" Lord Max called weakly.
+
+Fu Chen rushed to Lord Max’s side as he handed over a small golden key. "**Central control panel... turn counterclockwise three times...**"
+
+The Blue Crystal King, realizing what was happening, roared. "**Stop him! My subordinates!**"
+
+Dozens of blue figures—Blue Crystal warriors—emerged from all corners of the temple, charging toward Fu Chen.
+
+"**Go! We’ll cover you!**" Nan Feng shouted.
+
+Fu Chen gritted his teeth and charged toward the central control panel, cutting down several Blue Crystal warriors along the way. When he finally reached it, three powerful Blue Crystal warriors surrounded him.
+
+"**Not happening!**"
+
+Fu Chen burned his last strength, his black-flamed sword flashing like black lightning, piercing all three warriors’ chests. He himself was severely injured but finally reached the control panel.
+
+The control panel was an ancient stone platform with a golden keyhole at its center. Fu Chen inserted Lord Max’s key and began turning it counterclockwise—the first rotation.
+
+The temple began to shake, golden runes on the floor brightening.
+
+"**No!**" the Blue Crystal King roared, struggling more violently.
+
+Fu Chen continued the second rotation. The blue vortex became unstable, twisting erratically.
+
+"**Kill him!**" the Blue Crystal King commanded.
+
+The remaining Blue Crystal warriors charged Fu Chen without hesitation. Nan Feng unleashed his final strength, performing his strongest wind technique. "**Wind Release: Sky-Cutting Annihilation Blade!**"
+
+A massive crescent-shaped wind blade swept through the entire temple, slicing all charging warriors in half. Nan Feng collapsed from overexertion.
+
+Du Shou protected the dying Lord Max, fighting to his last breath with dual axes.
+
+Fu Chen completed the third rotation. With a *click*, the entire temple blazed with golden light. The blue vortex reversed completely, transforming into a golden vortex.
+
+"**Impossible!**" the Blue Crystal King felt a massive suction pulling him toward the vortex. "**I won’t fail like this!**"
+
+Lord Max, using his last strength, gripped the Blue Crystal King’s arm tightly. "**You’ve lost... return to your own world...**"
+
+The Blue Crystal King was pulled into the golden vortex, desperately trying to grab onto something—but it was futile. With one last furious glare at Lord Max, he vanished completely into the vortex.
+
+The vortex rapidly shrank, finally dissipating into a single point of golden light. The golden runes across the temple gradually dimmed.
+
+Fu Chen weakly approached Lord Max, helping the great City Lord up. "**Lord Max... we succeeded...**"
+
+Lord Max coughed blood but managed a faint smile. "**Yes... we succeeded... the Blue Crystal Clan has been sent back to their world, the dimensional rift permanently sealed.**"
+
+Du Shou checked Lord Max’s injuries and shook his head. Nan Feng crawled over weakly, his expression grave.
+
+Lord Max looked at the three, speaking with great effort. "**Don’t grieve... this is the duty of a City Lord. Fu Chen...**"
+
+"I’m here," Fu Chen gripped Lord Max’s hand tightly.
+
+"**The empire’s future... is in your hands...**" Lord Max struggled to remove the City Lord’s insignia from his chest, handing it to Fu Chen. "**Go to the Central Temple... complete the Primordial Spirit Jade ritual...**"
+
+With those final words, Lord Max closed his eyes, leaving this world he had protected with his life.
+
+---
+
+Inside the Central Temple, the deputy sensed the distant change, his expression shifting dramatically. "**Impossible... how could the Blue Crystal King...**"
+
+Ying Huo saw the opportunity and announced loudly. "**The Blue Crystal King has been defeated! We’ve won!**"
+
+The guards erupted in cheers, morale soaring. The deputy and remaining Blue Crystal puppets visibly panicked.
+
+Just then, the temple doors opened again, and Fu Chen, Nan Feng, and Du Shou entered—battered but resolute.
+
+"**General Fu Chen!**" Xiao Mo called out in relief.
+
+The deputy, realizing the battle was lost, turned to flee. But Fu Chen was ready—his black-flamed sword shot through the air, piercing the deputy’s throat.
+
+"**For Mo Ran, for Lord Max, for all who sacrificed their lives,**" Fu Chen said coldly.
+
+The deputy dissolved into blue specks, and the remaining Blue Crystal puppets collapsed, their energy source gone.
+
+Fu Chen approached the array’s center, placing Lord Max’s City Lord insignia beside the Primordial Spirit Jade. Instantly, green and golden light merged, forming a pillar of light shooting straight into the sky.
+
+Across the entire city—and indeed, the entire empire—residents witnessed this miraculous sight. The light lasted a full quarter-hour before gradually fading. When the light disappeared, the Primordial Spirit Jade and City Lord insignia had fused into a single new insignia.
+
+Fu Chen picked up the insignia, sighing deeply. "**It’s finally over...**"
+
+Nan Feng shook his head. "**No—it’s a new beginning.**"
+
+### **Epilogue: A New Dawn**
+
+Three months later, a grand coronation ceremony was held in the Imperial Central Square. Fu Chen was officially inaugurated as the new City Lord of the Imperial Capital, wearing the newly fused insignia combining the Primordial Spirit Jade.
+
+Nan Feng was appointed Chief Mage of the Empire, succeeding Mo Ran; Du Shou became Commander of the Royal Guard; DW was promoted to Governor of Pingyuan; Ying Huo continued as Minister of Agriculture; Xiao Mo and Pei Luo Luo were tasked with foreign affairs.
+
+During the coronation banquet, the new City Lord Fu Chen raised his cup in a toast.
+
+"**Today, we honor those who sacrificed their lives defending the empire—Chief Mage Mo Ran, whose soul was taken by the Blue Crystal Clan, yet whose wisdom and contributions endure; Lord Max, who gave his life to seal the enemy and protect our world.**"
+
+Everyone raised their cups in silent tribute.
+
+Fu Chen continued. "**The threat of the Blue Crystal Clan has passed, but this is not the end—it’s a new beginning. The empire will grow stronger, more united.**"
+
+Nan Feng added. "**We’ve already begun researching the Primordial Spirit Jade’s power, strengthening the empire’s defenses to prevent similar invasions.**"
+
+After the banquet, Fu Chen stood alone on the City Lord’s mansion balcony, gazing at the Central Temple in the distance and the bright moon beyond.
+
+"Missing the old days?" Nan Feng joined him.
+
+Fu Chen smiled faintly. "**Sometimes I still prefer being a captain and general over being City Lord.**"
+
+Nan Feng patted his shoulder. "**You’ll become a great City Lord, just like Lord Max.**"
+
+Fu Chen looked down at the insignia on his chest, glowing with green and golden light. "**Sometimes I feel Lord Max’s will still exists within this insignia, guiding me.**"
+
+"**That’s a good thing,**" Nan Feng gazed at the stars. "**The wisdom of successive City Lords will be passed down through the Primordial Spirit Jade.**"
+
+Fu Chen nodded, his gaze firm. "**Whatever challenges lie ahead, we’ll face them together.**"
+
+In the distance, atop the Central Temple, a faint green light still glowed softly, guarding this ancient and great empire—and heralding the arrival of a new era of peace and prosperity.
