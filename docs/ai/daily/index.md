@@ -34,6 +34,10 @@ Follow-up analysis of ongoing AI industry developments:
 - **Investment Trends** - Capital allocation and funding patterns
 - **Regulatory Landscape** - Policy developments and compliance issues
 
+### [August 17, 2025 - The New Battlefield of Platform Wars](8.17.md)
+
+Focuses on the escalating platform wars between OpenAI, Google, and xAI, and the shift towards building integrated, agent-capable AI ecosystems.
+
 ## Content Categories
 
 ### Strategic Analysis
